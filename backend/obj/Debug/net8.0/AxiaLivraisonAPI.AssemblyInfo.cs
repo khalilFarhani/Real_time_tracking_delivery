@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AxiaLivraisonAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4b8895dd42454c8b66496727212c2332984ea67c")]
 [assembly: System.Reflection.AssemblyProductAttribute("AxiaLivraisonAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AxiaLivraisonAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

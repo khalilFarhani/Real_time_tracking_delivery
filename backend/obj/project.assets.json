@@ -5825,11 +5825,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\PFE\\Test\\Solution1\\AxiaLivraisonAPI\\AxiaLivraisonAPI.csproj",
+      "projectUniqueName": "E:\\PFE\\Test\\AxiaLivraison2\\backend\\AxiaLivraisonAPI.csproj",
       "projectName": "AxiaLivraisonAPI",
-      "projectPath": "E:\\PFE\\Test\\Solution1\\AxiaLivraisonAPI\\AxiaLivraisonAPI.csproj",
+      "projectPath": "E:\\PFE\\Test\\AxiaLivraison2\\backend\\AxiaLivraisonAPI.csproj",
       "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-      "outputPath": "E:\\PFE\\Test\\Solution1\\AxiaLivraisonAPI\\obj\\",
+      "outputPath": "E:\\PFE\\Test\\AxiaLivraison2\\backend\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

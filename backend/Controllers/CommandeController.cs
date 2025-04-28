@@ -394,7 +394,7 @@ namespace AxiaLivraisonAPI.Controllers
         {
             try
             {
-                // Verify if the livreur exists and is actually a delivery person
+              
                 var livreur = await _context.Utilisateurs
                     .FirstOrDefaultAsync(u => u.Id == locationUpdate.LivreurId && u.EstLivreur);
 
@@ -409,19 +409,30 @@ namespace AxiaLivraisonAPI.Controllers
                            && (c.Statut == "en transit" || c.Statut == "en préparation"))
                     .ToListAsync();
 
-                foreach (var delivery in activeDeliveries)
+                if (activeDeliveries.Any())
                 {
-                    delivery.Latitude = locationUpdate.Latitude;
-                    delivery.Longitude = locationUpdate.Longitude;
+                    foreach (var delivery in activeDeliveries)
+                    {
+                        delivery.Latitude = locationUpdate.Latitude;
+                        delivery.Longitude = locationUpdate.Longitude;
+                    }
+
+                    await _context.SaveChangesAsync();
                 }
 
-                await _context.SaveChangesAsync();
-
-                return Ok(new { message = "Position mise à jour avec succès" });
+                return Ok(new
+                {
+                    message = "Position mise à jour avec succès",
+                    updatedDeliveries = activeDeliveries.Count
+                });
             }
             catch (Exception ex)
             {
-                return StatusCode(500, new { message = "Erreur lors de la mise à jour de la position", error = ex.Message });
+                return StatusCode(500, new
+                {
+                    message = "Erreur lors de la mise à jour de la position",
+                    error = ex.Message
+                });
             }
         }
 
