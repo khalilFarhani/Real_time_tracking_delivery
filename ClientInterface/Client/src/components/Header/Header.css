@@ -1,0 +1,129 @@
+.header {
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 0.75rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Style spécifique pour le header de la page d'accueil */
+.header-home {
+  box-shadow: none;
+  background-color: transparent;
+}
+
+.header-home .header-content {
+  justify-content: center;
+}
+
+.header-home .logo-container {
+  margin: 2rem 0;
+}
+
+.header-content {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+}
+
+.brand-name {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.search-container {
+  flex: 1;
+  max-width: 600px;
+  display: flex;
+  align-items: center;
+  background-color: #f5f5f5;
+  border-radius: 24px;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s ease;
+  position: relative;
+}
+
+.search-container:hover {
+  background-color: #eeeeee;
+}
+
+.search-icon {
+  color: #666;
+  margin-right: 0.5rem;
+}
+
+.search-input {
+  flex: 1;
+  font-size: 1rem;
+}
+
+.search-input input {
+  padding: 0.25rem 0;
+}
+
+.search-error {
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  right: 0;
+  background-color: #fee2e2;
+  color: #dc2626;
+  padding: 4px 12px;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  z-index: 1;
+  text-align: center;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.action-button {
+  color: #666;
+}
+
+.action-button:hover {
+  color: var(--primary-color); /* Changé de #1a73e8 */
+  background-color: var(--primary-light); /* Changé de rgba(26, 115, 232, 0.04) */
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 0.75rem 1rem;
+  }
+
+  .brand-name {
+    display: none;
+  }
+
+  .search-container {
+    max-width: none;
+  }
+
+  .search-error {
+    font-size: 0.75rem;
+    bottom: -25px;
+  }
+}
+
+

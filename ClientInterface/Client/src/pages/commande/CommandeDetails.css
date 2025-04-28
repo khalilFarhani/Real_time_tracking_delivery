@@ -1,0 +1,94 @@
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: #4A5568;
+  font-size: 16.5px;
+  margin-bottom: 32px;
+  cursor: pointer;
+  border: none;
+  background: none;
+  padding: 4px 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  transition: all 0.2s ease-in-out;
+}
+
+.back-link:hover {
+  color: var(--primary-color);
+  transform: translateX(-1px);
+}
+
+
+
+.back-link svg {
+  width: 26px;
+  height: 26px;
+  margin-right: 6px;
+  position: relative;
+  top: 1px;
+
+}
+
+.back-link-text {
+  font-weight: 500;
+  letter-spacing: -0.3px;
+  position: relative;
+  top: 1px;
+  line-height: 1.2;
+}
+
+.locate-button {
+  margin-top: -25px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none;
+  background-color: #273F4F;
+  color: #EFEEEA;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.locate-button:hover {
+  background-color: #172630;
+}
+
+
+
+.locate-button svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* Ajuster le style responsive */
+@media (max-width: 600px) {
+  .locate-button {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+
+  .locate-button svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

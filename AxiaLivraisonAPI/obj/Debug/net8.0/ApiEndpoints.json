@@ -1,0 +1,814 @@
+[
+  {
+    "ContainingType": "AxiaLivraisonAPI.Controllers.AuthentificationController",
+    "Method": "Connexion",
+    "RelativePath": "api/authentification/connexion",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginDTO",
+        "Type": "AxiaLivraisonAPI.DTO.LoginDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AxiaLivraisonAPI.Controllers.AuthentificationController",
+    "Method": "ConnexionLivreur",
+    "RelativePath": "api/authentification/connexion-livreur",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginDTO",
+        "Type": "AxiaLivraisonAPI.DTO.LoginDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AxiaLivraisonAPI.Controllers.AuthentificationController",
+    "Method": "Deconnexion",
+    "RelativePath": "api/authentification/deconnexion",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AxiaLivraisonAPI.Controllers.CommandeController",
+    "Method": "CreateCommande",
+    "RelativePath": "api/commandes/ajouter",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "commandeDTO",
+        "Type": "AxiaLivraisonAPI.DTO.CommandeDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AxiaLivraisonAPI.Controllers.CommandeController",
+    "Method": "GetCommandeById",
+    "RelativePath": "api/commandes/details/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AxiaLivraisonAPI.DTO.CommandeDetailsDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AxiaLivraisonAPI.Controllers.CommandeController",
+    "Method": "GetCommandeByCodeSuivi",
+    "RelativePath": "api/commandes/details/code/{codeSuivi}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "codeSuivi",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AxiaLivraisonAPI.DTO.CommandeDetailsDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AxiaLivraisonAPI.Controllers.CommandeController",
+    "Method": "GetAllCommandes",
+    "RelativePath": "api/commandes/liste",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[AxiaLivraisonAPI.DTO.CommandeDTO, AxiaLivraisonAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AxiaLivraisonAPI.Controllers.CommandeController",
+    "Method": "GetCommandesByLivreurId",
+    "RelativePath": "api/commandes/livreur/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[AxiaLivraisonAPI.DTO.CommandeDTO, AxiaLivraisonAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AxiaLivraisonAPI.Controllers.CommandeController",
+    "Method": "UpdateCommandeStatut",
+    "RelativePath": "api/commandes/modifier-statut/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "updateDto",
+        "Type": "AxiaLivraisonAPI.DTO.UpdateStatutDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AxiaLivraisonAPI.Controllers.CommandeController",
+    "Method": "UpdateCommande",
+    "RelativePath": "api/commandes/modifier/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "commandeDTO",
+        "Type": "AxiaLivraisonAPI.DTO.CommandeDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AxiaLivraisonAPI.Controllers.CommandeController",
+    "Method": "UpdateLocation",
+    "RelativePath": "api/commandes/position",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "locationUpdate",
+        "Type": "AxiaLivraisonAPI.DTO.LocationUpdateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AxiaLivraisonAPI.Controllers.CommandeController",
+    "Method": "GetDeliveryLocation",
+    "RelativePath": "api/commandes/position/{commandeId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "commandeId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AxiaLivraisonAPI.Controllers.CommandeController",
+    "Method": "DeleteCommande",
+    "RelativePath": "api/commandes/supprimer/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AxiaLivraisonAPI.Controllers.FournisseurController",
+    "Method": "CreateFournisseur",
+    "RelativePath": "api/fournisseurs/ajouter",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fournisseurDTO",
+        "Type": "FournisseurDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AxiaLivraisonAPI.Controllers.FournisseurController",
+    "Method": "GetFournisseurById",
+    "RelativePath": "api/fournisseurs/details/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AxiaLivraisonAPI.Models.Fournisseur",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AxiaLivraisonAPI.Controllers.FournisseurController",
+    "Method": "GetFournisseurIdentifiants",
+    "RelativePath": "api/fournisseurs/identifiants",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AxiaLivraisonAPI.Controllers.FournisseurController",
+    "Method": "GetAllFournisseurs",
+    "RelativePath": "api/fournisseurs/liste",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[AxiaLivraisonAPI.Models.Fournisseur, AxiaLivraisonAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AxiaLivraisonAPI.Controllers.FournisseurController",
+    "Method": "UpdateFournisseur",
+    "RelativePath": "api/fournisseurs/modifier/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "fournisseurDTO",
+        "Type": "FournisseurDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AxiaLivraisonAPI.Controllers.FournisseurController",
+    "Method": "DeleteFournisseur",
+    "RelativePath": "api/fournisseurs/supprimer/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AxiaLivraisonAPI.Controllers.PermissionController",
+    "Method": "CreatePermission",
+    "RelativePath": "api/permissions/ajouter",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "permissionDTO",
+        "Type": "AxiaLivraisonAPI.DTO.PermissionDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AxiaLivraisonAPI.Controllers.PermissionController",
+    "Method": "AssignerPermissions",
+    "RelativePath": "api/permissions/assigner",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "AxiaLivraisonAPI.DTO.AssignerPermissionsDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AxiaLivraisonAPI.Controllers.PermissionController",
+    "Method": "GetPermissionById",
+    "RelativePath": "api/permissions/details/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AxiaLivraisonAPI.Models.Permission",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AxiaLivraisonAPI.Controllers.PermissionController",
+    "Method": "GetAllPermissions",
+    "RelativePath": "api/permissions/liste",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[AxiaLivraisonAPI.Models.Permission, AxiaLivraisonAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AxiaLivraisonAPI.Controllers.PermissionController",
+    "Method": "UpdatePermission",
+    "RelativePath": "api/permissions/modifier/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "permissionDTO",
+        "Type": "AxiaLivraisonAPI.DTO.PermissionDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AxiaLivraisonAPI.Controllers.PermissionController",
+    "Method": "DeletePermission",
+    "RelativePath": "api/permissions/supprimer/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AxiaLivraisonAPI.Controllers.PermissionController",
+    "Method": "GetPermissionsByUtilisateur",
+    "RelativePath": "api/permissions/utilisateur/{utilisateurId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "utilisateurId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[AxiaLivraisonAPI.Models.Permission, AxiaLivraisonAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AxiaLivraisonAPI.Controllers.UtilisateurController",
+    "Method": "CreateUtilisateur",
+    "RelativePath": "api/utilisateurs/ajouter",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Nom",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Telephone",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Identifiant",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "MotDePasse",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "EstAdmin",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "EstLivreur",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "ImageFile",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AxiaLivraisonAPI.Controllers.UtilisateurController",
+    "Method": "CreateLivreur",
+    "RelativePath": "api/utilisateurs/ajouter-livreur",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Nom",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Telephone",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Identifiant",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "MotDePasse",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "EstAdmin",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "EstLivreur",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "ImageFile",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AxiaLivraisonAPI.Controllers.UtilisateurController",
+    "Method": "GetUtilisateursAvecPermissions",
+    "RelativePath": "api/utilisateurs/avec-permissions",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[AxiaLivraisonAPI.DTO.UtilisateurAvecPermissionsDTO, AxiaLivraisonAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AxiaLivraisonAPI.Controllers.UtilisateurController",
+    "Method": "GetUtilisateurInfoByIdentifiant",
+    "RelativePath": "api/utilisateurs/details-livreur/{identifiant}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "identifiant",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AxiaLivraisonAPI.Controllers.UtilisateurController\u002BLivreurDetailsDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AxiaLivraisonAPI.Controllers.UtilisateurController",
+    "Method": "GetUtilisateurById",
+    "RelativePath": "api/utilisateurs/details/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AxiaLivraisonAPI.Models.Utilisateur",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AxiaLivraisonAPI.Controllers.UtilisateurController",
+    "Method": "GetUtilisateurIdentifiants",
+    "RelativePath": "api/utilisateurs/identifiants",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AxiaLivraisonAPI.Controllers.UtilisateurController",
+    "Method": "GetAllUtilisateurs",
+    "RelativePath": "api/utilisateurs/liste",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[AxiaLivraisonAPI.Models.Utilisateur, AxiaLivraisonAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AxiaLivraisonAPI.Controllers.UtilisateurController",
+    "Method": "GetLivreurs",
+    "RelativePath": "api/utilisateurs/livreurs",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[AxiaLivraisonAPI.Models.Utilisateur, AxiaLivraisonAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AxiaLivraisonAPI.Controllers.UtilisateurController",
+    "Method": "UpdateUtilisateur",
+    "RelativePath": "api/utilisateurs/modifier/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "Nom",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Telephone",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Identifiant",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "MotDePasse",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "EstAdmin",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "EstLivreur",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "ImageFile",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AxiaLivraisonAPI.Controllers.UtilisateurController",
+    "Method": "DeleteUtilisateur",
+    "RelativePath": "api/utilisateurs/supprimer/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

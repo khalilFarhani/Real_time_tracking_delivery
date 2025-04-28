@@ -1,0 +1,14 @@
+.home-header {
+  padding: 2rem;
+  text-align: center;
+}
+
+.home-logo-container {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.home-logo {
+  height: 60px;
+  width: auto;
+}

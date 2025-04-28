@@ -1,0 +1,93 @@
+{
+  "Files": [
+    {
+      "Id": "E:\\PFE\\Test\\Solution1\\AxiaLivraisonAPI\\wwwroot\\images\\13a6cb07-d72e-4070-9d53-a880bd5f102b.jpg",
+      "PackagePath": "staticwebassets\\images\\13a6cb07-d72e-4070-9d53-a880bd5f102b.jpg"
+    },
+    {
+      "Id": "E:\\PFE\\Test\\Solution1\\AxiaLivraisonAPI\\wwwroot\\images\\18c6d5b0-c941-4678-bda5-df4bb1483d0c.jpg",
+      "PackagePath": "staticwebassets\\images\\18c6d5b0-c941-4678-bda5-df4bb1483d0c.jpg"
+    },
+    {
+      "Id": "E:\\PFE\\Test\\Solution1\\AxiaLivraisonAPI\\wwwroot\\images\\195cb5e4-1395-40af-9f46-5a0a67a2c428.jpg",
+      "PackagePath": "staticwebassets\\images\\195cb5e4-1395-40af-9f46-5a0a67a2c428.jpg"
+    },
+    {
+      "Id": "E:\\PFE\\Test\\Solution1\\AxiaLivraisonAPI\\wwwroot\\images\\42432a2a-1ad9-4e9a-9810-97ef4b9164ba.jpg",
+      "PackagePath": "staticwebassets\\images\\42432a2a-1ad9-4e9a-9810-97ef4b9164ba.jpg"
+    },
+    {
+      "Id": "E:\\PFE\\Test\\Solution1\\AxiaLivraisonAPI\\wwwroot\\images\\65011fdc-6230-4810-b357-b9e6603e2c7b.jpg",
+      "PackagePath": "staticwebassets\\images\\65011fdc-6230-4810-b357-b9e6603e2c7b.jpg"
+    },
+    {
+      "Id": "E:\\PFE\\Test\\Solution1\\AxiaLivraisonAPI\\wwwroot\\images\\7fad217f-d87d-412b-9e80-cade35d639a8.jpg",
+      "PackagePath": "staticwebassets\\images\\7fad217f-d87d-412b-9e80-cade35d639a8.jpg"
+    },
+    {
+      "Id": "E:\\PFE\\Test\\Solution1\\AxiaLivraisonAPI\\wwwroot\\images\\88283923-7d5b-4e4f-9ae8-caec47aa7c41.jpg",
+      "PackagePath": "staticwebassets\\images\\88283923-7d5b-4e4f-9ae8-caec47aa7c41.jpg"
+    },
+    {
+      "Id": "E:\\PFE\\Test\\Solution1\\AxiaLivraisonAPI\\wwwroot\\images\\9bcd17a4-e657-40b8-a588-2ecc0b8fcf12.jpg",
+      "PackagePath": "staticwebassets\\images\\9bcd17a4-e657-40b8-a588-2ecc0b8fcf12.jpg"
+    },
+    {
+      "Id": "E:\\PFE\\Test\\Solution1\\AxiaLivraisonAPI\\wwwroot\\images\\a205a330-1d05-4b34-bff5-fc1ea560b66d.jpg",
+      "PackagePath": "staticwebassets\\images\\a205a330-1d05-4b34-bff5-fc1ea560b66d.jpg"
+    },
+    {
+      "Id": "E:\\PFE\\Test\\Solution1\\AxiaLivraisonAPI\\wwwroot\\images\\a43abb09-ce57-4753-af6a-c35200cc9a89.jpg",
+      "PackagePath": "staticwebassets\\images\\a43abb09-ce57-4753-af6a-c35200cc9a89.jpg"
+    },
+    {
+      "Id": "E:\\PFE\\Test\\Solution1\\AxiaLivraisonAPI\\wwwroot\\images\\b7f2d119-349b-4656-951e-abc0efc30ce4.jpg",
+      "PackagePath": "staticwebassets\\images\\b7f2d119-349b-4656-951e-abc0efc30ce4.jpg"
+    },
+    {
+      "Id": "E:\\PFE\\Test\\Solution1\\AxiaLivraisonAPI\\wwwroot\\images\\baa10373-2532-48b9-b4aa-31941d477813.jpg",
+      "PackagePath": "staticwebassets\\images\\baa10373-2532-48b9-b4aa-31941d477813.jpg"
+    },
+    {
+      "Id": "E:\\PFE\\Test\\Solution1\\AxiaLivraisonAPI\\wwwroot\\images\\cb3a3616-5d73-4018-afd7-3e465e11e182.jpg",
+      "PackagePath": "staticwebassets\\images\\cb3a3616-5d73-4018-afd7-3e465e11e182.jpg"
+    },
+    {
+      "Id": "E:\\PFE\\Test\\Solution1\\AxiaLivraisonAPI\\wwwroot\\images\\da31aaa6-2097-4f41-ae69-0e4a459829ac.jpg",
+      "PackagePath": "staticwebassets\\images\\da31aaa6-2097-4f41-ae69-0e4a459829ac.jpg"
+    },
+    {
+      "Id": "E:\\PFE\\Test\\Solution1\\AxiaLivraisonAPI\\wwwroot\\images\\f36dae9d-c214-46ca-a6a0-5b0d8cea7ce7.jpg",
+      "PackagePath": "staticwebassets\\images\\f36dae9d-c214-46ca-a6a0-5b0d8cea7ce7.jpg"
+    },
+    {
+      "Id": "E:\\PFE\\Test\\Solution1\\AxiaLivraisonAPI\\wwwroot\\images\\f3bca1f9-438c-4e34-8b3c-1f9a1671fd83.jpg",
+      "PackagePath": "staticwebassets\\images\\f3bca1f9-438c-4e34-8b3c-1f9a1671fd83.jpg"
+    },
+    {
+      "Id": "E:\\PFE\\Test\\Solution1\\AxiaLivraisonAPI\\wwwroot\\images\\f624a313-a4c5-4aab-a12e-b7418d1f7909.jpg",
+      "PackagePath": "staticwebassets\\images\\f624a313-a4c5-4aab-a12e-b7418d1f7909.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.AxiaLivraisonAPI.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.AxiaLivraisonAPI.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.AxiaLivraisonAPI.props",
+      "PackagePath": "build\\AxiaLivraisonAPI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.AxiaLivraisonAPI.props",
+      "PackagePath": "buildMultiTargeting\\AxiaLivraisonAPI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.AxiaLivraisonAPI.props",
+      "PackagePath": "buildTransitive\\AxiaLivraisonAPI.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

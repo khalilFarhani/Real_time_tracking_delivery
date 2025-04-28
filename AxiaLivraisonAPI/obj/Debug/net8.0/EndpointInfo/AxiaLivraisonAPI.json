@@ -1,0 +1,2028 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "AxiaLivraisonAPI",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/authentification/connexion": {
+      "post": {
+        "tags": [
+          "Authentification"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/authentification/connexion-livreur": {
+      "post": {
+        "tags": [
+          "Authentification"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/authentification/deconnexion": {
+      "post": {
+        "tags": [
+          "Authentification"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/commandes/liste": {
+      "get": {
+        "tags": [
+          "Commande"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/CommandeDTO"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/CommandeDTO"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/CommandeDTO"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/commandes/details/{id}": {
+      "get": {
+        "tags": [
+          "Commande"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/CommandeDetailsDTO"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CommandeDetailsDTO"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CommandeDetailsDTO"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/commandes/ajouter": {
+      "post": {
+        "tags": [
+          "Commande"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CommandeDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CommandeDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CommandeDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/commandes/modifier/{id}": {
+      "put": {
+        "tags": [
+          "Commande"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CommandeDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CommandeDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CommandeDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/commandes/modifier-statut/{id}": {
+      "put": {
+        "tags": [
+          "Commande"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateStatutDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateStatutDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateStatutDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/commandes/supprimer/{id}": {
+      "delete": {
+        "tags": [
+          "Commande"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/commandes/details/code/{codeSuivi}": {
+      "get": {
+        "tags": [
+          "Commande"
+        ],
+        "parameters": [
+          {
+            "name": "codeSuivi",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/CommandeDetailsDTO"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CommandeDetailsDTO"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CommandeDetailsDTO"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/commandes/livreur/{userId}": {
+      "get": {
+        "tags": [
+          "Commande"
+        ],
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/CommandeDTO"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/CommandeDTO"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/CommandeDTO"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/commandes/position": {
+      "post": {
+        "tags": [
+          "Commande"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LocationUpdateDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LocationUpdateDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/LocationUpdateDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/commandes/position/{commandeId}": {
+      "get": {
+        "tags": [
+          "Commande"
+        ],
+        "parameters": [
+          {
+            "name": "commandeId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/fournisseurs/liste": {
+      "get": {
+        "tags": [
+          "Fournisseur"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Fournisseur"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Fournisseur"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Fournisseur"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/fournisseurs/identifiants": {
+      "get": {
+        "tags": [
+          "Fournisseur"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/fournisseurs/details/{id}": {
+      "get": {
+        "tags": [
+          "Fournisseur"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Fournisseur"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Fournisseur"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Fournisseur"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/fournisseurs/ajouter": {
+      "post": {
+        "tags": [
+          "Fournisseur"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FournisseurDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FournisseurDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/FournisseurDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/fournisseurs/modifier/{id}": {
+      "put": {
+        "tags": [
+          "Fournisseur"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FournisseurDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FournisseurDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/FournisseurDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/fournisseurs/supprimer/{id}": {
+      "delete": {
+        "tags": [
+          "Fournisseur"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/permissions/liste": {
+      "get": {
+        "tags": [
+          "Permission"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Permission"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Permission"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Permission"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/permissions/details/{id}": {
+      "get": {
+        "tags": [
+          "Permission"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Permission"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Permission"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Permission"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/permissions/ajouter": {
+      "post": {
+        "tags": [
+          "Permission"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PermissionDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PermissionDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/PermissionDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/permissions/modifier/{id}": {
+      "put": {
+        "tags": [
+          "Permission"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PermissionDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PermissionDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/PermissionDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/permissions/supprimer/{id}": {
+      "delete": {
+        "tags": [
+          "Permission"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/permissions/utilisateur/{utilisateurId}": {
+      "get": {
+        "tags": [
+          "Permission"
+        ],
+        "parameters": [
+          {
+            "name": "utilisateurId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Permission"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Permission"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Permission"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/permissions/assigner": {
+      "post": {
+        "tags": [
+          "Permission"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AssignerPermissionsDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AssignerPermissionsDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AssignerPermissionsDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/utilisateurs/identifiants": {
+      "get": {
+        "tags": [
+          "Utilisateur"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/utilisateurs/liste": {
+      "get": {
+        "tags": [
+          "Utilisateur"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Utilisateur"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Utilisateur"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Utilisateur"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/utilisateurs/livreurs": {
+      "get": {
+        "tags": [
+          "Utilisateur"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Utilisateur"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Utilisateur"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Utilisateur"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/utilisateurs/details/{id}": {
+      "get": {
+        "tags": [
+          "Utilisateur"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Utilisateur"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Utilisateur"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Utilisateur"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/utilisateurs/ajouter": {
+      "post": {
+        "tags": [
+          "Utilisateur"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "Nom": {
+                    "type": "string"
+                  },
+                  "Email": {
+                    "type": "string"
+                  },
+                  "Telephone": {
+                    "type": "string"
+                  },
+                  "Identifiant": {
+                    "type": "string"
+                  },
+                  "MotDePasse": {
+                    "type": "string"
+                  },
+                  "EstAdmin": {
+                    "type": "boolean"
+                  },
+                  "EstLivreur": {
+                    "type": "boolean"
+                  },
+                  "ImageFile": {
+                    "type": "string",
+                    "format": "binary"
+                  }
+                }
+              },
+              "encoding": {
+                "Nom": {
+                  "style": "form"
+                },
+                "Email": {
+                  "style": "form"
+                },
+                "Telephone": {
+                  "style": "form"
+                },
+                "Identifiant": {
+                  "style": "form"
+                },
+                "MotDePasse": {
+                  "style": "form"
+                },
+                "EstAdmin": {
+                  "style": "form"
+                },
+                "EstLivreur": {
+                  "style": "form"
+                },
+                "ImageFile": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/utilisateurs/ajouter-livreur": {
+      "post": {
+        "tags": [
+          "Utilisateur"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "Nom": {
+                    "type": "string"
+                  },
+                  "Email": {
+                    "type": "string"
+                  },
+                  "Telephone": {
+                    "type": "string"
+                  },
+                  "Identifiant": {
+                    "type": "string"
+                  },
+                  "MotDePasse": {
+                    "type": "string"
+                  },
+                  "EstAdmin": {
+                    "type": "boolean"
+                  },
+                  "EstLivreur": {
+                    "type": "boolean"
+                  },
+                  "ImageFile": {
+                    "type": "string",
+                    "format": "binary"
+                  }
+                }
+              },
+              "encoding": {
+                "Nom": {
+                  "style": "form"
+                },
+                "Email": {
+                  "style": "form"
+                },
+                "Telephone": {
+                  "style": "form"
+                },
+                "Identifiant": {
+                  "style": "form"
+                },
+                "MotDePasse": {
+                  "style": "form"
+                },
+                "EstAdmin": {
+                  "style": "form"
+                },
+                "EstLivreur": {
+                  "style": "form"
+                },
+                "ImageFile": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/utilisateurs/modifier/{id}": {
+      "put": {
+        "tags": [
+          "Utilisateur"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "Nom": {
+                    "type": "string"
+                  },
+                  "Email": {
+                    "type": "string"
+                  },
+                  "Telephone": {
+                    "type": "string"
+                  },
+                  "Identifiant": {
+                    "type": "string"
+                  },
+                  "MotDePasse": {
+                    "type": "string"
+                  },
+                  "EstAdmin": {
+                    "type": "boolean"
+                  },
+                  "EstLivreur": {
+                    "type": "boolean"
+                  },
+                  "ImageFile": {
+                    "type": "string",
+                    "format": "binary"
+                  }
+                }
+              },
+              "encoding": {
+                "Nom": {
+                  "style": "form"
+                },
+                "Email": {
+                  "style": "form"
+                },
+                "Telephone": {
+                  "style": "form"
+                },
+                "Identifiant": {
+                  "style": "form"
+                },
+                "MotDePasse": {
+                  "style": "form"
+                },
+                "EstAdmin": {
+                  "style": "form"
+                },
+                "EstLivreur": {
+                  "style": "form"
+                },
+                "ImageFile": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/utilisateurs/supprimer/{id}": {
+      "delete": {
+        "tags": [
+          "Utilisateur"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/utilisateurs/details-livreur/{identifiant}": {
+      "get": {
+        "tags": [
+          "Utilisateur"
+        ],
+        "parameters": [
+          {
+            "name": "identifiant",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/LivreurDetailsDTO"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LivreurDetailsDTO"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LivreurDetailsDTO"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/utilisateurs/avec-permissions": {
+      "get": {
+        "tags": [
+          "Utilisateur"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/UtilisateurAvecPermissionsDTO"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/UtilisateurAvecPermissionsDTO"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/UtilisateurAvecPermissionsDTO"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "AssignerPermissionsDTO": {
+        "type": "object",
+        "properties": {
+          "utilisateurId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "permissionIds": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Commande": {
+        "required": [
+          "adressClient",
+          "codeSuivi",
+          "emailClient",
+          "fournisseurId",
+          "latitude",
+          "longitude",
+          "montantHorsTax",
+          "montantTotale",
+          "nomClient",
+          "prixUnitaire",
+          "quantite",
+          "statut",
+          "telephoneClient",
+          "tva",
+          "utilisateurId"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "codeSuivi": {
+            "maxLength": 50,
+            "minLength": 1,
+            "type": "string"
+          },
+          "dateCreation": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "statut": {
+            "maxLength": 100,
+            "minLength": 1,
+            "type": "string"
+          },
+          "utilisateurId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "fournisseurId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "prixUnitaire": {
+            "type": "number",
+            "format": "double"
+          },
+          "quantite": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "montantHorsTax": {
+            "type": "number",
+            "format": "double"
+          },
+          "tva": {
+            "type": "number",
+            "format": "double"
+          },
+          "montantTotale": {
+            "type": "number",
+            "format": "double"
+          },
+          "adressClient": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "nomClient": {
+            "maxLength": 255,
+            "minLength": 1,
+            "type": "string"
+          },
+          "telephoneClient": {
+            "maxLength": 50,
+            "minLength": 1,
+            "type": "string"
+          },
+          "emailClient": {
+            "minLength": 1,
+            "type": "string",
+            "format": "email"
+          },
+          "latitude": {
+            "type": "number",
+            "format": "double"
+          },
+          "longitude": {
+            "type": "number",
+            "format": "double"
+          },
+          "rapports": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Rapport"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CommandeDTO": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "statut": {
+            "type": "string",
+            "nullable": true
+          },
+          "utilisateurIdentifiant": {
+            "type": "string",
+            "nullable": true
+          },
+          "fournisseurIdentifiant": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "prixUnitaire": {
+            "type": "number",
+            "format": "double"
+          },
+          "quantite": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "montantHorsTax": {
+            "type": "number",
+            "format": "double"
+          },
+          "tva": {
+            "type": "number",
+            "format": "double"
+          },
+          "montantTotale": {
+            "type": "number",
+            "format": "double"
+          },
+          "adressClient": {
+            "type": "string",
+            "nullable": true
+          },
+          "nomClient": {
+            "type": "string",
+            "nullable": true
+          },
+          "telephoneClient": {
+            "type": "string",
+            "nullable": true
+          },
+          "emailClient": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CommandeDetailsDTO": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "codeSuivi": {
+            "type": "string",
+            "nullable": true
+          },
+          "statut": {
+            "type": "string",
+            "nullable": true
+          },
+          "utilisateurIdentifiant": {
+            "type": "string",
+            "nullable": true
+          },
+          "fournisseurIdentifiant": {
+            "type": "string",
+            "nullable": true
+          },
+          "quantite": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "montantTotale": {
+            "type": "number",
+            "format": "double"
+          },
+          "adressClient": {
+            "type": "string",
+            "nullable": true
+          },
+          "nomClient": {
+            "type": "string",
+            "nullable": true
+          },
+          "telephoneClient": {
+            "type": "string",
+            "nullable": true
+          },
+          "dateCreation": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "prixUnitaire": {
+            "type": "number",
+            "format": "double"
+          },
+          "montantHorsTax": {
+            "type": "number",
+            "format": "double"
+          },
+          "tva": {
+            "type": "number",
+            "format": "double"
+          },
+          "emailClient": {
+            "type": "string",
+            "nullable": true
+          },
+          "fournisseur": {
+            "$ref": "#/components/schemas/FournisseurDTO"
+          },
+          "utilisateur": {
+            "$ref": "#/components/schemas/UtilisateurDTO"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Fournisseur": {
+        "required": [
+          "adresse",
+          "identifiant",
+          "nom",
+          "telephone"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nom": {
+            "maxLength": 255,
+            "minLength": 1,
+            "type": "string"
+          },
+          "adresse": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "telephone": {
+            "maxLength": 20,
+            "minLength": 1,
+            "type": "string"
+          },
+          "identifiant": {
+            "maxLength": 50,
+            "minLength": 1,
+            "type": "string"
+          },
+          "commandes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Commande"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "FournisseurDTO": {
+        "required": [
+          "adresse",
+          "identifiant",
+          "nom",
+          "telephone"
+        ],
+        "type": "object",
+        "properties": {
+          "nom": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "adresse": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "telephone": {
+            "minLength": 1,
+            "type": "string",
+            "format": "tel"
+          },
+          "identifiant": {
+            "maxLength": 50,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "LivreurDetailsDTO": {
+        "type": "object",
+        "properties": {
+          "nom": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "telephone": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "LocationUpdateDTO": {
+        "type": "object",
+        "properties": {
+          "livreurId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "latitude": {
+            "type": "number",
+            "format": "double"
+          },
+          "longitude": {
+            "type": "number",
+            "format": "double"
+          }
+        },
+        "additionalProperties": false
+      },
+      "LoginDTO": {
+        "type": "object",
+        "properties": {
+          "identifiant": {
+            "type": "string",
+            "nullable": true
+          },
+          "motDePasse": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Permission": {
+        "required": [
+          "permissionName"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "permissionName": {
+            "maxLength": 255,
+            "minLength": 1,
+            "type": "string"
+          },
+          "description": {
+            "maxLength": 255,
+            "type": "string",
+            "nullable": true
+          },
+          "utilisateurPermissions": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/UtilisateurPermission"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "PermissionDTO": {
+        "required": [
+          "permissionName"
+        ],
+        "type": "object",
+        "properties": {
+          "permissionName": {
+            "maxLength": 255,
+            "minLength": 1,
+            "type": "string"
+          },
+          "description": {
+            "maxLength": 255,
+            "type": "string",
+            "nullable": true
+          },
+          "id": {
+            "type": "integer",
+            "format": "int32",
+            "readOnly": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Rapport": {
+        "required": [
+          "commandeId",
+          "contenu"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "contenu": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "commandeId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "commande": {
+            "$ref": "#/components/schemas/Commande"
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdateStatutDTO": {
+        "required": [
+          "statut"
+        ],
+        "type": "object",
+        "properties": {
+          "statut": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Utilisateur": {
+        "required": [
+          "email",
+          "identifiant",
+          "motDePasse",
+          "nom",
+          "telephone"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nom": {
+            "maxLength": 255,
+            "minLength": 1,
+            "type": "string"
+          },
+          "email": {
+            "maxLength": 255,
+            "minLength": 1,
+            "type": "string",
+            "format": "email"
+          },
+          "telephone": {
+            "maxLength": 20,
+            "minLength": 1,
+            "type": "string"
+          },
+          "identifiant": {
+            "maxLength": 255,
+            "minLength": 1,
+            "type": "string"
+          },
+          "motDePasse": {
+            "maxLength": 255,
+            "minLength": 1,
+            "type": "string"
+          },
+          "estAdmin": {
+            "type": "boolean"
+          },
+          "estLivreur": {
+            "type": "boolean"
+          },
+          "imagePath": {
+            "type": "string",
+            "nullable": true
+          },
+          "commandes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Commande"
+            },
+            "nullable": true
+          },
+          "utilisateurPermissions": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/UtilisateurPermission"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UtilisateurAvecPermissionsDTO": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nom": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "permissions": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PermissionDTO"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UtilisateurDTO": {
+        "type": "object",
+        "properties": {
+          "nom": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "telephone": {
+            "type": "string",
+            "nullable": true
+          },
+          "identifiant": {
+            "type": "string",
+            "nullable": true
+          },
+          "motDePasse": {
+            "type": "string",
+            "nullable": true
+          },
+          "estAdmin": {
+            "type": "boolean"
+          },
+          "estLivreur": {
+            "type": "boolean"
+          },
+          "imageFile": {
+            "type": "string",
+            "format": "binary",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UtilisateurPermission": {
+        "required": [
+          "permissionId",
+          "utilisateurId"
+        ],
+        "type": "object",
+        "properties": {
+          "utilisateurId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "utilisateur": {
+            "$ref": "#/components/schemas/Utilisateur"
+          },
+          "permissionId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "permission": {
+            "$ref": "#/components/schemas/Permission"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

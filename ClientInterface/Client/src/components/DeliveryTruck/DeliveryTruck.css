@@ -1,0 +1,72 @@
+.truck-container {
+  width: 100%;
+  height: 150px;
+  position: relative;
+  overflow: hidden;
+}
+
+.truck {
+  position: absolute;
+  animation: drive 15s linear infinite;
+}
+
+.truck-body {
+  width: 200px;
+  height: 80px;
+  position: relative;
+}
+
+.cabin {
+  width: 60px;
+  height: 60px;
+  background-color: #646cff;
+  position: absolute;
+  bottom: 0;
+  border-radius: 10px;
+}
+
+.cargo {
+  width: 120px;
+  height: 80px;
+  background-color: #535bf2;
+  position: absolute;
+  bottom: 0;
+  left: 70px;
+  border-radius: 10px;
+}
+
+.wheel {
+  width: 30px;
+  height: 30px;
+  background-color: #333;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -15px;
+  animation: rotate 1s linear infinite;
+}
+
+.front-wheel {
+  left: 45px;
+}
+
+.back-wheel {
+  right: 45px;
+}
+
+@keyframes drive {
+  from {
+    transform: translateX(-300px);
+  }
+  to {
+    transform: translateX(100vw);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,1773 @@
+{
+  "Version": 1,
+  "Hash": "vXFHHQ0jwXFGRZo0IItklPUC+VrNY9sYTAeGSrLG8MU=",
+  "Source": "AxiaLivraisonAPI",
+  "BasePath": "_content/AxiaLivraisonAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "AxiaLivraisonAPI\\wwwroot",
+      "Source": "AxiaLivraisonAPI",
+      "ContentRoot": "E:\\PFE\\Test\\Solution1\\AxiaLivraisonAPI\\wwwroot\\",
+      "BasePath": "_content/AxiaLivraisonAPI",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "E:\\PFE\\Test\\Solution1\\AxiaLivraisonAPI\\wwwroot\\images\\13a6cb07-d72e-4070-9d53-a880bd5f102b.jpg",
+      "SourceId": "AxiaLivraisonAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\PFE\\Test\\Solution1\\AxiaLivraisonAPI\\wwwroot\\",
+      "BasePath": "_content/AxiaLivraisonAPI",
+      "RelativePath": "images/13a6cb07-d72e-4070-9d53-a880bd5f102b#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "3517qrawef",
+      "Integrity": "h0fXlbQdu/l1Hd//CBo25CU3ycgNsaLk2IRqIHtxKL0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\13a6cb07-d72e-4070-9d53-a880bd5f102b.jpg"
+    },
+    {
+      "Identity": "E:\\PFE\\Test\\Solution1\\AxiaLivraisonAPI\\wwwroot\\images\\18c6d5b0-c941-4678-bda5-df4bb1483d0c.jpg",
+      "SourceId": "AxiaLivraisonAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\PFE\\Test\\Solution1\\AxiaLivraisonAPI\\wwwroot\\",
+      "BasePath": "_content/AxiaLivraisonAPI",
+      "RelativePath": "images/18c6d5b0-c941-4678-bda5-df4bb1483d0c#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "v79tpejokb",
+      "Integrity": "FUsBpailVUiFcTcorxfUkr+rqn/hlqxvMFrDL66Ti2o=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\18c6d5b0-c941-4678-bda5-df4bb1483d0c.jpg"
+    },
+    {
+      "Identity": "E:\\PFE\\Test\\Solution1\\AxiaLivraisonAPI\\wwwroot\\images\\195cb5e4-1395-40af-9f46-5a0a67a2c428.jpg",
+      "SourceId": "AxiaLivraisonAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\PFE\\Test\\Solution1\\AxiaLivraisonAPI\\wwwroot\\",
+      "BasePath": "_content/AxiaLivraisonAPI",
+      "RelativePath": "images/195cb5e4-1395-40af-9f46-5a0a67a2c428#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "qnm2sdhxlw",
+      "Integrity": "Nh8VmTOKvjBLfiQMV8dj8fcsV4P7dkbegPBRCBv2H/o=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\195cb5e4-1395-40af-9f46-5a0a67a2c428.jpg"
+    },
+    {
+      "Identity": "E:\\PFE\\Test\\Solution1\\AxiaLivraisonAPI\\wwwroot\\images\\42432a2a-1ad9-4e9a-9810-97ef4b9164ba.jpg",
+      "SourceId": "AxiaLivraisonAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\PFE\\Test\\Solution1\\AxiaLivraisonAPI\\wwwroot\\",
+      "BasePath": "_content/AxiaLivraisonAPI",
+      "RelativePath": "images/42432a2a-1ad9-4e9a-9810-97ef4b9164ba#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "8fxkx8b49a",
+      "Integrity": "zIjuv0OtSie5rlOdLBjWOvTm0hfT8kiNTaDEo0mjtMk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\42432a2a-1ad9-4e9a-9810-97ef4b9164ba.jpg"
+    },
+    {
+      "Identity": "E:\\PFE\\Test\\Solution1\\AxiaLivraisonAPI\\wwwroot\\images\\65011fdc-6230-4810-b357-b9e6603e2c7b.jpg",
+      "SourceId": "AxiaLivraisonAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\PFE\\Test\\Solution1\\AxiaLivraisonAPI\\wwwroot\\",
+      "BasePath": "_content/AxiaLivraisonAPI",
+      "RelativePath": "images/65011fdc-6230-4810-b357-b9e6603e2c7b#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "rt6dutv1i2",
+      "Integrity": "zwUqqSqhV1Aj5S14HWlByNrP9834i+lQ8Eweh2w/6EQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\65011fdc-6230-4810-b357-b9e6603e2c7b.jpg"
+    },
+    {
+      "Identity": "E:\\PFE\\Test\\Solution1\\AxiaLivraisonAPI\\wwwroot\\images\\7fad217f-d87d-412b-9e80-cade35d639a8.jpg",
+      "SourceId": "AxiaLivraisonAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\PFE\\Test\\Solution1\\AxiaLivraisonAPI\\wwwroot\\",
+      "BasePath": "_content/AxiaLivraisonAPI",
+      "RelativePath": "images/7fad217f-d87d-412b-9e80-cade35d639a8#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "umes14da17",
+      "Integrity": "FrqnONj4XnJDTQVui22gDqRGg/2aOjRIoErLVmvoaBM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\7fad217f-d87d-412b-9e80-cade35d639a8.jpg"
+    },
+    {
+      "Identity": "E:\\PFE\\Test\\Solution1\\AxiaLivraisonAPI\\wwwroot\\images\\88283923-7d5b-4e4f-9ae8-caec47aa7c41.jpg",
+      "SourceId": "AxiaLivraisonAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\PFE\\Test\\Solution1\\AxiaLivraisonAPI\\wwwroot\\",
+      "BasePath": "_content/AxiaLivraisonAPI",
+      "RelativePath": "images/88283923-7d5b-4e4f-9ae8-caec47aa7c41#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "qnm2sdhxlw",
+      "Integrity": "Nh8VmTOKvjBLfiQMV8dj8fcsV4P7dkbegPBRCBv2H/o=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\88283923-7d5b-4e4f-9ae8-caec47aa7c41.jpg"
+    },
+    {
+      "Identity": "E:\\PFE\\Test\\Solution1\\AxiaLivraisonAPI\\wwwroot\\images\\9bcd17a4-e657-40b8-a588-2ecc0b8fcf12.jpg",
+      "SourceId": "AxiaLivraisonAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\PFE\\Test\\Solution1\\AxiaLivraisonAPI\\wwwroot\\",
+      "BasePath": "_content/AxiaLivraisonAPI",
+      "RelativePath": "images/9bcd17a4-e657-40b8-a588-2ecc0b8fcf12#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "iipnr8wwz7",
+      "Integrity": "6vtSRyDCvFs5BGjxCbZA414TvqtCD+hD3AJKxcisegs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\9bcd17a4-e657-40b8-a588-2ecc0b8fcf12.jpg"
+    },
+    {
+      "Identity": "E:\\PFE\\Test\\Solution1\\AxiaLivraisonAPI\\wwwroot\\images\\a205a330-1d05-4b34-bff5-fc1ea560b66d.jpg",
+      "SourceId": "AxiaLivraisonAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\PFE\\Test\\Solution1\\AxiaLivraisonAPI\\wwwroot\\",
+      "BasePath": "_content/AxiaLivraisonAPI",
+      "RelativePath": "images/a205a330-1d05-4b34-bff5-fc1ea560b66d#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "3517qrawef",
+      "Integrity": "h0fXlbQdu/l1Hd//CBo25CU3ycgNsaLk2IRqIHtxKL0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\a205a330-1d05-4b34-bff5-fc1ea560b66d.jpg"
+    },
+    {
+      "Identity": "E:\\PFE\\Test\\Solution1\\AxiaLivraisonAPI\\wwwroot\\images\\a43abb09-ce57-4753-af6a-c35200cc9a89.jpg",
+      "SourceId": "AxiaLivraisonAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\PFE\\Test\\Solution1\\AxiaLivraisonAPI\\wwwroot\\",
+      "BasePath": "_content/AxiaLivraisonAPI",
+      "RelativePath": "images/a43abb09-ce57-4753-af6a-c35200cc9a89#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "r50pjbt1wt",
+      "Integrity": "D9zEY864E68vOpG4strTGEcI88FCfUUEUIpWuR60L6M=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\a43abb09-ce57-4753-af6a-c35200cc9a89.jpg"
+    },
+    {
+      "Identity": "E:\\PFE\\Test\\Solution1\\AxiaLivraisonAPI\\wwwroot\\images\\b7f2d119-349b-4656-951e-abc0efc30ce4.jpg",
+      "SourceId": "AxiaLivraisonAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\PFE\\Test\\Solution1\\AxiaLivraisonAPI\\wwwroot\\",
+      "BasePath": "_content/AxiaLivraisonAPI",
+      "RelativePath": "images/b7f2d119-349b-4656-951e-abc0efc30ce4#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "v79tpejokb",
+      "Integrity": "FUsBpailVUiFcTcorxfUkr+rqn/hlqxvMFrDL66Ti2o=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\b7f2d119-349b-4656-951e-abc0efc30ce4.jpg"
+    },
+    {
+      "Identity": "E:\\PFE\\Test\\Solution1\\AxiaLivraisonAPI\\wwwroot\\images\\baa10373-2532-48b9-b4aa-31941d477813.jpg",
+      "SourceId": "AxiaLivraisonAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\PFE\\Test\\Solution1\\AxiaLivraisonAPI\\wwwroot\\",
+      "BasePath": "_content/AxiaLivraisonAPI",
+      "RelativePath": "images/baa10373-2532-48b9-b4aa-31941d477813#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "r50pjbt1wt",
+      "Integrity": "D9zEY864E68vOpG4strTGEcI88FCfUUEUIpWuR60L6M=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\baa10373-2532-48b9-b4aa-31941d477813.jpg"
+    },
+    {
+      "Identity": "E:\\PFE\\Test\\Solution1\\AxiaLivraisonAPI\\wwwroot\\images\\cb3a3616-5d73-4018-afd7-3e465e11e182.jpg",
+      "SourceId": "AxiaLivraisonAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\PFE\\Test\\Solution1\\AxiaLivraisonAPI\\wwwroot\\",
+      "BasePath": "_content/AxiaLivraisonAPI",
+      "RelativePath": "images/cb3a3616-5d73-4018-afd7-3e465e11e182#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "eo3mxj5mxn",
+      "Integrity": "HnnJxEAnl0I0MUYdcfQyWLfUH9kgWPLdCotDkJvC9Ps=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\cb3a3616-5d73-4018-afd7-3e465e11e182.jpg"
+    },
+    {
+      "Identity": "E:\\PFE\\Test\\Solution1\\AxiaLivraisonAPI\\wwwroot\\images\\da31aaa6-2097-4f41-ae69-0e4a459829ac.jpg",
+      "SourceId": "AxiaLivraisonAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\PFE\\Test\\Solution1\\AxiaLivraisonAPI\\wwwroot\\",
+      "BasePath": "_content/AxiaLivraisonAPI",
+      "RelativePath": "images/da31aaa6-2097-4f41-ae69-0e4a459829ac#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "4d7105xi7w",
+      "Integrity": "eGBxAn1BxKCJ5IvYPhE8/m65l2kvXGz4sEenQXjC0J8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\da31aaa6-2097-4f41-ae69-0e4a459829ac.jpg"
+    },
+    {
+      "Identity": "E:\\PFE\\Test\\Solution1\\AxiaLivraisonAPI\\wwwroot\\images\\f36dae9d-c214-46ca-a6a0-5b0d8cea7ce7.jpg",
+      "SourceId": "AxiaLivraisonAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\PFE\\Test\\Solution1\\AxiaLivraisonAPI\\wwwroot\\",
+      "BasePath": "_content/AxiaLivraisonAPI",
+      "RelativePath": "images/f36dae9d-c214-46ca-a6a0-5b0d8cea7ce7#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "4d7105xi7w",
+      "Integrity": "eGBxAn1BxKCJ5IvYPhE8/m65l2kvXGz4sEenQXjC0J8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\f36dae9d-c214-46ca-a6a0-5b0d8cea7ce7.jpg"
+    },
+    {
+      "Identity": "E:\\PFE\\Test\\Solution1\\AxiaLivraisonAPI\\wwwroot\\images\\f3bca1f9-438c-4e34-8b3c-1f9a1671fd83.jpg",
+      "SourceId": "AxiaLivraisonAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\PFE\\Test\\Solution1\\AxiaLivraisonAPI\\wwwroot\\",
+      "BasePath": "_content/AxiaLivraisonAPI",
+      "RelativePath": "images/f3bca1f9-438c-4e34-8b3c-1f9a1671fd83#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "r50pjbt1wt",
+      "Integrity": "D9zEY864E68vOpG4strTGEcI88FCfUUEUIpWuR60L6M=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\f3bca1f9-438c-4e34-8b3c-1f9a1671fd83.jpg"
+    },
+    {
+      "Identity": "E:\\PFE\\Test\\Solution1\\AxiaLivraisonAPI\\wwwroot\\images\\f624a313-a4c5-4aab-a12e-b7418d1f7909.jpg",
+      "SourceId": "AxiaLivraisonAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\PFE\\Test\\Solution1\\AxiaLivraisonAPI\\wwwroot\\",
+      "BasePath": "_content/AxiaLivraisonAPI",
+      "RelativePath": "images/f624a313-a4c5-4aab-a12e-b7418d1f7909#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "r50pjbt1wt",
+      "Integrity": "D9zEY864E68vOpG4strTGEcI88FCfUUEUIpWuR60L6M=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\f624a313-a4c5-4aab-a12e-b7418d1f7909.jpg"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "images/13a6cb07-d72e-4070-9d53-a880bd5f102b.3517qrawef.jpg",
+      "AssetFile": "E:\\PFE\\Test\\Solution1\\AxiaLivraisonAPI\\wwwroot\\images\\13a6cb07-d72e-4070-9d53-a880bd5f102b.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1845070"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"h0fXlbQdu/l1Hd//CBo25CU3ycgNsaLk2IRqIHtxKL0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 16 Mar 2025 19:51:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3517qrawef"
+        },
+        {
+          "Name": "label",
+          "Value": "images/13a6cb07-d72e-4070-9d53-a880bd5f102b.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-h0fXlbQdu/l1Hd//CBo25CU3ycgNsaLk2IRqIHtxKL0="
+        }
+      ]
+    },
+    {
+      "Route": "images/13a6cb07-d72e-4070-9d53-a880bd5f102b.jpg",
+      "AssetFile": "E:\\PFE\\Test\\Solution1\\AxiaLivraisonAPI\\wwwroot\\images\\13a6cb07-d72e-4070-9d53-a880bd5f102b.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1845070"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"h0fXlbQdu/l1Hd//CBo25CU3ycgNsaLk2IRqIHtxKL0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 16 Mar 2025 19:51:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-h0fXlbQdu/l1Hd//CBo25CU3ycgNsaLk2IRqIHtxKL0="
+        }
+      ]
+    },
+    {
+      "Route": "images/18c6d5b0-c941-4678-bda5-df4bb1483d0c.jpg",
+      "AssetFile": "E:\\PFE\\Test\\Solution1\\AxiaLivraisonAPI\\wwwroot\\images\\18c6d5b0-c941-4678-bda5-df4bb1483d0c.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3543829"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FUsBpailVUiFcTcorxfUkr+rqn/hlqxvMFrDL66Ti2o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 16 Mar 2025 21:50:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-FUsBpailVUiFcTcorxfUkr+rqn/hlqxvMFrDL66Ti2o="
+        }
+      ]
+    },
+    {
+      "Route": "images/18c6d5b0-c941-4678-bda5-df4bb1483d0c.v79tpejokb.jpg",
+      "AssetFile": "E:\\PFE\\Test\\Solution1\\AxiaLivraisonAPI\\wwwroot\\images\\18c6d5b0-c941-4678-bda5-df4bb1483d0c.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3543829"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FUsBpailVUiFcTcorxfUkr+rqn/hlqxvMFrDL66Ti2o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 16 Mar 2025 21:50:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "v79tpejokb"
+        },
+        {
+          "Name": "label",
+          "Value": "images/18c6d5b0-c941-4678-bda5-df4bb1483d0c.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-FUsBpailVUiFcTcorxfUkr+rqn/hlqxvMFrDL66Ti2o="
+        }
+      ]
+    },
+    {
+      "Route": "images/195cb5e4-1395-40af-9f46-5a0a67a2c428.jpg",
+      "AssetFile": "E:\\PFE\\Test\\Solution1\\AxiaLivraisonAPI\\wwwroot\\images\\195cb5e4-1395-40af-9f46-5a0a67a2c428.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "294092"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Nh8VmTOKvjBLfiQMV8dj8fcsV4P7dkbegPBRCBv2H/o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 18 Mar 2025 23:33:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Nh8VmTOKvjBLfiQMV8dj8fcsV4P7dkbegPBRCBv2H/o="
+        }
+      ]
+    },
+    {
+      "Route": "images/195cb5e4-1395-40af-9f46-5a0a67a2c428.qnm2sdhxlw.jpg",
+      "AssetFile": "E:\\PFE\\Test\\Solution1\\AxiaLivraisonAPI\\wwwroot\\images\\195cb5e4-1395-40af-9f46-5a0a67a2c428.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "294092"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Nh8VmTOKvjBLfiQMV8dj8fcsV4P7dkbegPBRCBv2H/o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 18 Mar 2025 23:33:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qnm2sdhxlw"
+        },
+        {
+          "Name": "label",
+          "Value": "images/195cb5e4-1395-40af-9f46-5a0a67a2c428.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Nh8VmTOKvjBLfiQMV8dj8fcsV4P7dkbegPBRCBv2H/o="
+        }
+      ]
+    },
+    {
+      "Route": "images/42432a2a-1ad9-4e9a-9810-97ef4b9164ba.8fxkx8b49a.jpg",
+      "AssetFile": "E:\\PFE\\Test\\Solution1\\AxiaLivraisonAPI\\wwwroot\\images\\42432a2a-1ad9-4e9a-9810-97ef4b9164ba.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4199830"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zIjuv0OtSie5rlOdLBjWOvTm0hfT8kiNTaDEo0mjtMk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Mar 2025 00:07:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8fxkx8b49a"
+        },
+        {
+          "Name": "label",
+          "Value": "images/42432a2a-1ad9-4e9a-9810-97ef4b9164ba.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-zIjuv0OtSie5rlOdLBjWOvTm0hfT8kiNTaDEo0mjtMk="
+        }
+      ]
+    },
+    {
+      "Route": "images/42432a2a-1ad9-4e9a-9810-97ef4b9164ba.jpg",
+      "AssetFile": "E:\\PFE\\Test\\Solution1\\AxiaLivraisonAPI\\wwwroot\\images\\42432a2a-1ad9-4e9a-9810-97ef4b9164ba.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4199830"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zIjuv0OtSie5rlOdLBjWOvTm0hfT8kiNTaDEo0mjtMk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Mar 2025 00:07:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-zIjuv0OtSie5rlOdLBjWOvTm0hfT8kiNTaDEo0mjtMk="
+        }
+      ]
+    },
+    {
+      "Route": "images/65011fdc-6230-4810-b357-b9e6603e2c7b.jpg",
+      "AssetFile": "E:\\PFE\\Test\\Solution1\\AxiaLivraisonAPI\\wwwroot\\images\\65011fdc-6230-4810-b357-b9e6603e2c7b.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2723596"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zwUqqSqhV1Aj5S14HWlByNrP9834i+lQ8Eweh2w/6EQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 19 Mar 2025 03:32:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-zwUqqSqhV1Aj5S14HWlByNrP9834i+lQ8Eweh2w/6EQ="
+        }
+      ]
+    },
+    {
+      "Route": "images/65011fdc-6230-4810-b357-b9e6603e2c7b.rt6dutv1i2.jpg",
+      "AssetFile": "E:\\PFE\\Test\\Solution1\\AxiaLivraisonAPI\\wwwroot\\images\\65011fdc-6230-4810-b357-b9e6603e2c7b.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2723596"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zwUqqSqhV1Aj5S14HWlByNrP9834i+lQ8Eweh2w/6EQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 19 Mar 2025 03:32:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "rt6dutv1i2"
+        },
+        {
+          "Name": "label",
+          "Value": "images/65011fdc-6230-4810-b357-b9e6603e2c7b.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-zwUqqSqhV1Aj5S14HWlByNrP9834i+lQ8Eweh2w/6EQ="
+        }
+      ]
+    },
+    {
+      "Route": "images/7fad217f-d87d-412b-9e80-cade35d639a8.jpg",
+      "AssetFile": "E:\\PFE\\Test\\Solution1\\AxiaLivraisonAPI\\wwwroot\\images\\7fad217f-d87d-412b-9e80-cade35d639a8.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2342654"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FrqnONj4XnJDTQVui22gDqRGg/2aOjRIoErLVmvoaBM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 11:18:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-FrqnONj4XnJDTQVui22gDqRGg/2aOjRIoErLVmvoaBM="
+        }
+      ]
+    },
+    {
+      "Route": "images/7fad217f-d87d-412b-9e80-cade35d639a8.umes14da17.jpg",
+      "AssetFile": "E:\\PFE\\Test\\Solution1\\AxiaLivraisonAPI\\wwwroot\\images\\7fad217f-d87d-412b-9e80-cade35d639a8.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2342654"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FrqnONj4XnJDTQVui22gDqRGg/2aOjRIoErLVmvoaBM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 11:18:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "umes14da17"
+        },
+        {
+          "Name": "label",
+          "Value": "images/7fad217f-d87d-412b-9e80-cade35d639a8.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-FrqnONj4XnJDTQVui22gDqRGg/2aOjRIoErLVmvoaBM="
+        }
+      ]
+    },
+    {
+      "Route": "images/88283923-7d5b-4e4f-9ae8-caec47aa7c41.jpg",
+      "AssetFile": "E:\\PFE\\Test\\Solution1\\AxiaLivraisonAPI\\wwwroot\\images\\88283923-7d5b-4e4f-9ae8-caec47aa7c41.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "294092"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Nh8VmTOKvjBLfiQMV8dj8fcsV4P7dkbegPBRCBv2H/o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 16 Mar 2025 19:34:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Nh8VmTOKvjBLfiQMV8dj8fcsV4P7dkbegPBRCBv2H/o="
+        }
+      ]
+    },
+    {
+      "Route": "images/88283923-7d5b-4e4f-9ae8-caec47aa7c41.qnm2sdhxlw.jpg",
+      "AssetFile": "E:\\PFE\\Test\\Solution1\\AxiaLivraisonAPI\\wwwroot\\images\\88283923-7d5b-4e4f-9ae8-caec47aa7c41.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "294092"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Nh8VmTOKvjBLfiQMV8dj8fcsV4P7dkbegPBRCBv2H/o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 16 Mar 2025 19:34:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qnm2sdhxlw"
+        },
+        {
+          "Name": "label",
+          "Value": "images/88283923-7d5b-4e4f-9ae8-caec47aa7c41.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Nh8VmTOKvjBLfiQMV8dj8fcsV4P7dkbegPBRCBv2H/o="
+        }
+      ]
+    },
+    {
+      "Route": "images/9bcd17a4-e657-40b8-a588-2ecc0b8fcf12.iipnr8wwz7.jpg",
+      "AssetFile": "E:\\PFE\\Test\\Solution1\\AxiaLivraisonAPI\\wwwroot\\images\\9bcd17a4-e657-40b8-a588-2ecc0b8fcf12.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "710289"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6vtSRyDCvFs5BGjxCbZA414TvqtCD+hD3AJKxcisegs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 16 Mar 2025 22:06:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "iipnr8wwz7"
+        },
+        {
+          "Name": "label",
+          "Value": "images/9bcd17a4-e657-40b8-a588-2ecc0b8fcf12.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-6vtSRyDCvFs5BGjxCbZA414TvqtCD+hD3AJKxcisegs="
+        }
+      ]
+    },
+    {
+      "Route": "images/9bcd17a4-e657-40b8-a588-2ecc0b8fcf12.jpg",
+      "AssetFile": "E:\\PFE\\Test\\Solution1\\AxiaLivraisonAPI\\wwwroot\\images\\9bcd17a4-e657-40b8-a588-2ecc0b8fcf12.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "710289"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6vtSRyDCvFs5BGjxCbZA414TvqtCD+hD3AJKxcisegs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 16 Mar 2025 22:06:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-6vtSRyDCvFs5BGjxCbZA414TvqtCD+hD3AJKxcisegs="
+        }
+      ]
+    },
+    {
+      "Route": "images/a205a330-1d05-4b34-bff5-fc1ea560b66d.3517qrawef.jpg",
+      "AssetFile": "E:\\PFE\\Test\\Solution1\\AxiaLivraisonAPI\\wwwroot\\images\\a205a330-1d05-4b34-bff5-fc1ea560b66d.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1845070"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"h0fXlbQdu/l1Hd//CBo25CU3ycgNsaLk2IRqIHtxKL0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Mar 2025 05:20:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3517qrawef"
+        },
+        {
+          "Name": "label",
+          "Value": "images/a205a330-1d05-4b34-bff5-fc1ea560b66d.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-h0fXlbQdu/l1Hd//CBo25CU3ycgNsaLk2IRqIHtxKL0="
+        }
+      ]
+    },
+    {
+      "Route": "images/a205a330-1d05-4b34-bff5-fc1ea560b66d.jpg",
+      "AssetFile": "E:\\PFE\\Test\\Solution1\\AxiaLivraisonAPI\\wwwroot\\images\\a205a330-1d05-4b34-bff5-fc1ea560b66d.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1845070"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"h0fXlbQdu/l1Hd//CBo25CU3ycgNsaLk2IRqIHtxKL0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Mar 2025 05:20:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-h0fXlbQdu/l1Hd//CBo25CU3ycgNsaLk2IRqIHtxKL0="
+        }
+      ]
+    },
+    {
+      "Route": "images/a43abb09-ce57-4753-af6a-c35200cc9a89.jpg",
+      "AssetFile": "E:\\PFE\\Test\\Solution1\\AxiaLivraisonAPI\\wwwroot\\images\\a43abb09-ce57-4753-af6a-c35200cc9a89.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1393731"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"D9zEY864E68vOpG4strTGEcI88FCfUUEUIpWuR60L6M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 16 Mar 2025 23:27:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-D9zEY864E68vOpG4strTGEcI88FCfUUEUIpWuR60L6M="
+        }
+      ]
+    },
+    {
+      "Route": "images/a43abb09-ce57-4753-af6a-c35200cc9a89.r50pjbt1wt.jpg",
+      "AssetFile": "E:\\PFE\\Test\\Solution1\\AxiaLivraisonAPI\\wwwroot\\images\\a43abb09-ce57-4753-af6a-c35200cc9a89.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1393731"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"D9zEY864E68vOpG4strTGEcI88FCfUUEUIpWuR60L6M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 16 Mar 2025 23:27:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "r50pjbt1wt"
+        },
+        {
+          "Name": "label",
+          "Value": "images/a43abb09-ce57-4753-af6a-c35200cc9a89.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-D9zEY864E68vOpG4strTGEcI88FCfUUEUIpWuR60L6M="
+        }
+      ]
+    },
+    {
+      "Route": "images/b7f2d119-349b-4656-951e-abc0efc30ce4.jpg",
+      "AssetFile": "E:\\PFE\\Test\\Solution1\\AxiaLivraisonAPI\\wwwroot\\images\\b7f2d119-349b-4656-951e-abc0efc30ce4.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3543829"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FUsBpailVUiFcTcorxfUkr+rqn/hlqxvMFrDL66Ti2o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Mar 2025 05:21:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-FUsBpailVUiFcTcorxfUkr+rqn/hlqxvMFrDL66Ti2o="
+        }
+      ]
+    },
+    {
+      "Route": "images/b7f2d119-349b-4656-951e-abc0efc30ce4.v79tpejokb.jpg",
+      "AssetFile": "E:\\PFE\\Test\\Solution1\\AxiaLivraisonAPI\\wwwroot\\images\\b7f2d119-349b-4656-951e-abc0efc30ce4.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3543829"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FUsBpailVUiFcTcorxfUkr+rqn/hlqxvMFrDL66Ti2o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Mar 2025 05:21:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "v79tpejokb"
+        },
+        {
+          "Name": "label",
+          "Value": "images/b7f2d119-349b-4656-951e-abc0efc30ce4.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-FUsBpailVUiFcTcorxfUkr+rqn/hlqxvMFrDL66Ti2o="
+        }
+      ]
+    },
+    {
+      "Route": "images/baa10373-2532-48b9-b4aa-31941d477813.jpg",
+      "AssetFile": "E:\\PFE\\Test\\Solution1\\AxiaLivraisonAPI\\wwwroot\\images\\baa10373-2532-48b9-b4aa-31941d477813.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1393731"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"D9zEY864E68vOpG4strTGEcI88FCfUUEUIpWuR60L6M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 19 Mar 2025 03:28:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-D9zEY864E68vOpG4strTGEcI88FCfUUEUIpWuR60L6M="
+        }
+      ]
+    },
+    {
+      "Route": "images/baa10373-2532-48b9-b4aa-31941d477813.r50pjbt1wt.jpg",
+      "AssetFile": "E:\\PFE\\Test\\Solution1\\AxiaLivraisonAPI\\wwwroot\\images\\baa10373-2532-48b9-b4aa-31941d477813.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1393731"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"D9zEY864E68vOpG4strTGEcI88FCfUUEUIpWuR60L6M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 19 Mar 2025 03:28:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "r50pjbt1wt"
+        },
+        {
+          "Name": "label",
+          "Value": "images/baa10373-2532-48b9-b4aa-31941d477813.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-D9zEY864E68vOpG4strTGEcI88FCfUUEUIpWuR60L6M="
+        }
+      ]
+    },
+    {
+      "Route": "images/cb3a3616-5d73-4018-afd7-3e465e11e182.eo3mxj5mxn.jpg",
+      "AssetFile": "E:\\PFE\\Test\\Solution1\\AxiaLivraisonAPI\\wwwroot\\images\\cb3a3616-5d73-4018-afd7-3e465e11e182.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1711930"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HnnJxEAnl0I0MUYdcfQyWLfUH9kgWPLdCotDkJvC9Ps=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 15 Apr 2025 00:10:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "eo3mxj5mxn"
+        },
+        {
+          "Name": "label",
+          "Value": "images/cb3a3616-5d73-4018-afd7-3e465e11e182.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-HnnJxEAnl0I0MUYdcfQyWLfUH9kgWPLdCotDkJvC9Ps="
+        }
+      ]
+    },
+    {
+      "Route": "images/cb3a3616-5d73-4018-afd7-3e465e11e182.jpg",
+      "AssetFile": "E:\\PFE\\Test\\Solution1\\AxiaLivraisonAPI\\wwwroot\\images\\cb3a3616-5d73-4018-afd7-3e465e11e182.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1711930"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HnnJxEAnl0I0MUYdcfQyWLfUH9kgWPLdCotDkJvC9Ps=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 15 Apr 2025 00:10:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-HnnJxEAnl0I0MUYdcfQyWLfUH9kgWPLdCotDkJvC9Ps="
+        }
+      ]
+    },
+    {
+      "Route": "images/da31aaa6-2097-4f41-ae69-0e4a459829ac.4d7105xi7w.jpg",
+      "AssetFile": "E:\\PFE\\Test\\Solution1\\AxiaLivraisonAPI\\wwwroot\\images\\da31aaa6-2097-4f41-ae69-0e4a459829ac.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2907208"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"eGBxAn1BxKCJ5IvYPhE8/m65l2kvXGz4sEenQXjC0J8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 19 Mar 2025 03:34:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4d7105xi7w"
+        },
+        {
+          "Name": "label",
+          "Value": "images/da31aaa6-2097-4f41-ae69-0e4a459829ac.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-eGBxAn1BxKCJ5IvYPhE8/m65l2kvXGz4sEenQXjC0J8="
+        }
+      ]
+    },
+    {
+      "Route": "images/da31aaa6-2097-4f41-ae69-0e4a459829ac.jpg",
+      "AssetFile": "E:\\PFE\\Test\\Solution1\\AxiaLivraisonAPI\\wwwroot\\images\\da31aaa6-2097-4f41-ae69-0e4a459829ac.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2907208"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"eGBxAn1BxKCJ5IvYPhE8/m65l2kvXGz4sEenQXjC0J8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 19 Mar 2025 03:34:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-eGBxAn1BxKCJ5IvYPhE8/m65l2kvXGz4sEenQXjC0J8="
+        }
+      ]
+    },
+    {
+      "Route": "images/f36dae9d-c214-46ca-a6a0-5b0d8cea7ce7.4d7105xi7w.jpg",
+      "AssetFile": "E:\\PFE\\Test\\Solution1\\AxiaLivraisonAPI\\wwwroot\\images\\f36dae9d-c214-46ca-a6a0-5b0d8cea7ce7.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2907208"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"eGBxAn1BxKCJ5IvYPhE8/m65l2kvXGz4sEenQXjC0J8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 11:17:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4d7105xi7w"
+        },
+        {
+          "Name": "label",
+          "Value": "images/f36dae9d-c214-46ca-a6a0-5b0d8cea7ce7.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-eGBxAn1BxKCJ5IvYPhE8/m65l2kvXGz4sEenQXjC0J8="
+        }
+      ]
+    },
+    {
+      "Route": "images/f36dae9d-c214-46ca-a6a0-5b0d8cea7ce7.jpg",
+      "AssetFile": "E:\\PFE\\Test\\Solution1\\AxiaLivraisonAPI\\wwwroot\\images\\f36dae9d-c214-46ca-a6a0-5b0d8cea7ce7.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2907208"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"eGBxAn1BxKCJ5IvYPhE8/m65l2kvXGz4sEenQXjC0J8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 11:17:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-eGBxAn1BxKCJ5IvYPhE8/m65l2kvXGz4sEenQXjC0J8="
+        }
+      ]
+    },
+    {
+      "Route": "images/f3bca1f9-438c-4e34-8b3c-1f9a1671fd83.jpg",
+      "AssetFile": "E:\\PFE\\Test\\Solution1\\AxiaLivraisonAPI\\wwwroot\\images\\f3bca1f9-438c-4e34-8b3c-1f9a1671fd83.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1393731"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"D9zEY864E68vOpG4strTGEcI88FCfUUEUIpWuR60L6M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Mar 2025 00:33:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-D9zEY864E68vOpG4strTGEcI88FCfUUEUIpWuR60L6M="
+        }
+      ]
+    },
+    {
+      "Route": "images/f3bca1f9-438c-4e34-8b3c-1f9a1671fd83.r50pjbt1wt.jpg",
+      "AssetFile": "E:\\PFE\\Test\\Solution1\\AxiaLivraisonAPI\\wwwroot\\images\\f3bca1f9-438c-4e34-8b3c-1f9a1671fd83.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1393731"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"D9zEY864E68vOpG4strTGEcI88FCfUUEUIpWuR60L6M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Mar 2025 00:33:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "r50pjbt1wt"
+        },
+        {
+          "Name": "label",
+          "Value": "images/f3bca1f9-438c-4e34-8b3c-1f9a1671fd83.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-D9zEY864E68vOpG4strTGEcI88FCfUUEUIpWuR60L6M="
+        }
+      ]
+    },
+    {
+      "Route": "images/f624a313-a4c5-4aab-a12e-b7418d1f7909.jpg",
+      "AssetFile": "E:\\PFE\\Test\\Solution1\\AxiaLivraisonAPI\\wwwroot\\images\\f624a313-a4c5-4aab-a12e-b7418d1f7909.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1393731"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"D9zEY864E68vOpG4strTGEcI88FCfUUEUIpWuR60L6M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 19 Mar 2025 03:29:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-D9zEY864E68vOpG4strTGEcI88FCfUUEUIpWuR60L6M="
+        }
+      ]
+    },
+    {
+      "Route": "images/f624a313-a4c5-4aab-a12e-b7418d1f7909.r50pjbt1wt.jpg",
+      "AssetFile": "E:\\PFE\\Test\\Solution1\\AxiaLivraisonAPI\\wwwroot\\images\\f624a313-a4c5-4aab-a12e-b7418d1f7909.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1393731"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"D9zEY864E68vOpG4strTGEcI88FCfUUEUIpWuR60L6M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 19 Mar 2025 03:29:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "r50pjbt1wt"
+        },
+        {
+          "Name": "label",
+          "Value": "images/f624a313-a4c5-4aab-a12e-b7418d1f7909.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-D9zEY864E68vOpG4strTGEcI88FCfUUEUIpWuR60L6M="
+        }
+      ]
+    }
+  ]
+}

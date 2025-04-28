@@ -1,0 +1,332 @@
+:root {
+  --primary-color: #FF6B2B;
+  --primary-light: #FFE4D9;
+  --accent-color: #2B4EFF;
+  --accent-light: #D9E4FF;
+  --text-color: #1A202C;
+  --text-secondary: #4A5568;
+  --background-color: #F8F9FA;
+  --border-radius: 16px;
+  --box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  --transition: all 0.3s ease;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--background-color);
+  padding: 2rem;
+  width: 100%;
+}
+
+.hero-section {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 4rem 0;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: var(--text-color);
+  line-height: 1.2;
+}
+
+.hero-title span {
+  color: var(--primary-color);
+  display: block;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+  margin-bottom: 3rem;
+  line-height: 1.5;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo-large {
+  width: 120px;
+  height: auto;
+  margin-bottom: 2rem;
+}
+
+/* Features Section */
+.features-section {
+  width: 100%;
+  max-width: 1200px;
+  padding: 4rem 0;
+  background-color: white;
+  border-radius: 20px;
+  margin: 2rem 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.features-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--text-color);
+  margin-bottom: 3rem;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 0 2rem;
+}
+
+.feature-card {
+  text-align: center;
+  padding: 2rem;
+  border-radius: 12px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  background-color: #FFF5E4;
+}
+
+.feature-card:nth-child(1):hover {
+  background-color: #FFF5E4;
+}
+
+.feature-card:nth-child(2):hover {
+  background-color: #FFF5E4;
+}
+
+.feature-card:nth-child(3):hover {
+  background-color: #FFF5E4;
+}
+
+.feature-card:nth-child(4):hover {
+  background-color: #FFF5E4;
+}
+
+/* Couleur par défaut pour toutes les icônes */
+.feature-icon {
+  font-size: 3rem !important;
+  color: var(--primary-color) !important; /* #FF6B2B */
+  margin-bottom: 1rem;
+}
+
+/* Modification des couleurs d'icônes spécifiques */
+.feature-card:nth-child(1) .feature-icon {
+  color: var(--primary-color) !important; /* #FF6B2B */
+}
+
+.feature-card:nth-child(2) .feature-icon {
+  color: var(--primary-color) !important; /* #FF6B2B */
+}
+
+.feature-card:nth-child(3) .feature-icon {
+  color: var(--primary-color) !important; /* #FF6B2B */
+}
+
+.feature-card:nth-child(4) .feature-icon {
+  color: var(--primary-color) !important; /* #FF6B2B */
+}
+
+.feature-card h3 {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+.feature-card p {
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* How it Works Section */
+.how-it-works {
+  width: 100%;
+  max-width: 1200px;
+  padding: 4rem 0;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--text-color);
+  margin-bottom: 3rem;
+}
+
+.steps-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  padding: 0 2rem;
+}
+
+.step {
+  text-align: center;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.step:hover {
+  transform: translateY(-5px);
+  background-color: #FFF5E4;
+}
+
+.step-number {
+  width: 40px;
+  height: 40px;
+  background-color: var(--accent-color);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0 auto 1rem;
+}
+
+.step:nth-child(odd):hover,
+.step:nth-child(even):hover {
+  background-color: #FFF5E4;
+}
+
+.step h3 {
+  font-size: 1.3rem;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+.step p {
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* Boutons et éléments interactifs */
+.MuiButton-root {
+  background-color: var(--primary-color) !important; /* Changé de accent-color */
+  color: white !important;
+  text-transform: none !important;
+  font-weight: 500 !important;
+  padding: 0.8rem 2rem !important;
+  border-radius: 8px !important;
+  transition: all 0.3s ease !important;
+}
+
+.MuiButton-root:hover {
+  background-color: var(--primary-dark) !important;
+  box-shadow: 0 4px 12px rgba(255, 107, 43, 0.2) !important; /* Ajusté pour l'orange */
+}
+
+.MuiButton-root.primary {
+  background-color: var(--primary-color) !important;
+}
+
+.MuiButton-root.primary:hover {
+  background-color: var(--primary-dark) !important;
+  box-shadow: 0 4px 12px rgba(255, 107, 43, 0.2) !important;
+}
+
+/* Style pour les montants */
+.amount {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 500;
+}
+
+/* Style spécifique pour les montants en Dinar Tunisien */
+.currency-tnd {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 500;
+  direction: ltr;
+}
+
+/* Style pour le conteneur du montant total */
+.total-amount-container {
+  background-color: var(--primary-light);
+  border-radius: 8px;
+  transition: var(--transition);
+  padding: 1rem;
+}
+
+.total-amount-container .amount {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.total-amount-container:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--box-shadow);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .features-grid,
+  .steps-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  min-width: 320px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  line-height: 1.1;
+}
+
+.MuiPaper-root {
+  transition: all 0.3s ease;
+}
+
+.MuiChip-root {
+  font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
