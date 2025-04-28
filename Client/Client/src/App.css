@@ -183,7 +183,7 @@
 
 .step:hover {
   transform: translateY(-5px);
-  background-color: #FFF5E4;
+  background-color: var(--accent-light);
 }
 
 .step-number {
@@ -202,7 +202,7 @@
 
 .step:nth-child(odd):hover,
 .step:nth-child(even):hover {
-  background-color: #FFF5E4;
+  background-color: var(--accent-light);
 }
 
 .step h3 {
@@ -303,6 +303,7 @@ h1 {
 .MuiChip-root {
   font-weight: 500;
 }
+
 
 
 
