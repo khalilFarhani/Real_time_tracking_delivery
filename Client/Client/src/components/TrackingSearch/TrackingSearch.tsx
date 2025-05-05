@@ -26,7 +26,10 @@ export function TrackingSearch() {
       }
 
       const data = await response.json();
-      navigate(`/commande/${trackingNumber}`, { state: { commandeDetails: data } });
+      // Store the commandeId in the state when navigating
+      navigate(`/commande/${trackingNumber}`, { 
+        state: { commandeDetails: data } 
+      });
       setError(null);
       setTrackingNumber('');
     } catch (err) {
@@ -58,6 +61,8 @@ export function TrackingSearch() {
     </div>
   );
 }
+
+
 
 
 

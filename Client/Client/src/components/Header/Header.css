@@ -126,4 +126,34 @@
   }
 }
 
+/* Styles pour les notifications */
+.MuiMenu-paper {
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.MuiMenuItem-root {
+  transition: background-color 0.2s ease;
+}
+
+.MuiMenuItem-root:hover {
+  background-color: rgba(255, 107, 43, 0.05);
+}
+
+/* Style pour les puces de code de suivi */
+.MuiChip-root {
+  background-color: #FFF3CD;
+  color: #856404;
+  font-weight: 500;
+  font-family: 'Roboto Mono', monospace;
+}
+
+/* Style pour le badge de notification */
+.MuiBadge-badge {
+  background-color: #FF6B2B;
+  color: white;
+  font-weight: bold;
+}
+
+
 

@@ -4,6 +4,8 @@ import { Header } from './components/Header/Header';
 import { TrackingSearch } from './components/TrackingSearch/TrackingSearch';
 import { Footer } from './components/Footer/Footer';
 import { CommandeDetails } from './pages/commande/CommandeDetails';
+import { CommandeLocation } from './pages/commande/CommandeLocation';
+import { NotificationDetail } from './pages/notification/NotificationDetail';
 import logo from './assets/images/logo.png';
 import LocalShippingIcon from '@mui/icons-material/LocalShipping';
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
@@ -94,6 +96,24 @@ function App() {
               <Footer />
             </>
           } />
+          <Route path="/commande/:id/location" element={
+            <>
+              <Header />
+              <main className="main-content">
+                <CommandeLocation />
+              </main>
+              <Footer />
+            </>
+          } />
+          <Route path="/notification/:id" element={
+            <>
+              <Header />
+              <main className="main-content">
+                <NotificationDetail />
+              </main>
+              <Footer />
+            </>
+          } />
         </Routes>
       </div>
     </Router>
@@ -101,6 +121,9 @@ function App() {
 }
 
 export default App;
+
+
+
 
 
 

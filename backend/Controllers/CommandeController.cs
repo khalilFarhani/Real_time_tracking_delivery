@@ -3,9 +3,8 @@ using Microsoft.EntityFrameworkCore;
 using AxiaLivraisonAPI.Data;
 using AxiaLivraisonAPI.DTO;
 using AxiaLivraisonAPI.Models;
-using QRCoder;
-using System.Text.Json;
-
+using AxiaLivraisonAPI.Services;
+using Microsoft.Extensions.Logging;
 
 namespace AxiaLivraisonAPI.Controllers
 {
@@ -13,14 +12,20 @@ namespace AxiaLivraisonAPI.Controllers
     [ApiController]
     public class CommandeController : ControllerBase
     {
+        private readonly ILogger<CommandeController> _logger;
         private readonly ApplicationDbContext _context;
+        private readonly IEmailService _emailService;
 
-        public CommandeController(ApplicationDbContext context)
+        public CommandeController(
+            ApplicationDbContext context,
+            IEmailService emailService,
+            ILogger<CommandeController> logger)
         {
             _context = context;
+            _logger = logger;
+            _emailService = emailService;
         }
 
-        // GET: api/Commandes/liste
         [HttpGet("liste")]
         public async Task<ActionResult<IEnumerable<CommandeDTO>>> GetAllCommandes()
         {
@@ -53,7 +58,6 @@ namespace AxiaLivraisonAPI.Controllers
             return Ok(commandes);
         }
 
-        // GET: api/Commandes/details/{id}
         [HttpGet("details/{id:int}")]
         public async Task<ActionResult<CommandeDetailsDTO>> GetCommandeById(int id)
         {
@@ -87,26 +91,25 @@ namespace AxiaLivraisonAPI.Controllers
                 MontantHorsTax = commande.MontantHorsTax,
                 Tva = commande.Tva,
                 EmailClient = commande.EmailClient,
-                Fournisseur = new FournisseurDTO
+                Fournisseur = fournisseur != null ? new FournisseurDTO
                 {
-                    Nom = fournisseur?.Nom,
-                    Adresse = fournisseur?.Adresse,
-                    Telephone = fournisseur?.Telephone,
-                    Identifiant = fournisseur?.Identifiant
-                },
-                Utilisateur = new UtilisateurDTO
+                    Nom = fournisseur.Nom,
+                    Adresse = fournisseur.Adresse,
+                    Telephone = fournisseur.Telephone,
+                    Identifiant = fournisseur.Identifiant
+                } : null,
+                Utilisateur = utilisateur != null ? new UtilisateurDTO
                 {
-                    Nom = utilisateur?.Nom,
-                    Email = utilisateur?.Email,
-                    Telephone = utilisateur?.Telephone,
-                    Identifiant = utilisateur?.Identifiant
-                }
+                    Nom = utilisateur.Nom,
+                    Email = utilisateur.Email,
+                    Telephone = utilisateur.Telephone,
+                    Identifiant = utilisateur.Identifiant
+                } : null
             };
 
             return Ok(commandeDetails);
         }
 
-        // POST: api/Commandes/ajouter
         [HttpPost("ajouter")]
         public async Task<IActionResult> CreateCommande([FromBody] CommandeDTO commandeDTO)
         {
@@ -116,7 +119,7 @@ namespace AxiaLivraisonAPI.Controllers
             }
 
             var utilisateur = await _context.Utilisateurs
-                .FirstOrDefaultAsync(u => u.Identifiant == commandeDTO.UtilisateurIdentifiant&& u.EstLivreur);
+                .FirstOrDefaultAsync(u => u.Identifiant == commandeDTO.UtilisateurIdentifiant && u.EstLivreur);
             var fournisseur = await _context.Fournisseurs
                 .FirstOrDefaultAsync(f => f.Identifiant == commandeDTO.FournisseurIdentifiant);
 
@@ -124,6 +127,7 @@ namespace AxiaLivraisonAPI.Controllers
             {
                 return BadRequest("Livreur ou fournisseur non trouvé.");
             }
+
             decimal montantHorsTax = commandeDTO.PrixUnitaire * commandeDTO.Quantite;
             decimal montantTVA = montantHorsTax * (commandeDTO.Tva / 100);
             decimal montantTotal = montantHorsTax + montantTVA;
@@ -131,7 +135,7 @@ namespace AxiaLivraisonAPI.Controllers
             var commande = new Commande
             {
                 CodeSuivi = Guid.NewGuid().ToString(),
-                Statut = "en préparation", // Statut par défaut
+                Statut = "en préparation",
                 UtilisateurId = utilisateur.Id,
                 FournisseurId = fournisseur.Id,
                 PrixUnitaire = commandeDTO.PrixUnitaire,
@@ -145,16 +149,60 @@ namespace AxiaLivraisonAPI.Controllers
                 EmailClient = commandeDTO.EmailClient,
                 Description = commandeDTO.Description,
                 Latitude = 0,
-                Longitude = 0
+                Longitude = 0,
+                DateCreation = DateTime.UtcNow
             };
 
             _context.Commandes.Add(commande);
             await _context.SaveChangesAsync();
 
-            return Ok(commande);
+            try
+            {
+                string emailBody = $@"
+<html>
+<body>
+    <h2>Confirmation de commande</h2>
+    <p>Bonjour {commande.NomClient},</p>
+    <p>Votre commande a été enregistrée avec succès.</p>
+    
+    <h3>Détails de la commande:</h3>
+    <ul>
+        <li><strong>Code de suivi:</strong> {commande.CodeSuivi}</li>
+        <li><strong>Statut:</strong> {commande.Statut}</li>
+        <li><strong>Date:</strong> {commande.DateCreation:dd/MM/yyyy HH:mm}</li>
+        <li><strong>Adresse:</strong> {commande.AdressClient}</li>
+        <li><strong>Montant total:</strong> {commande.MontantTotale:C}</li>
+    </ul>
+    
+    <p>Merci pour votre confiance!</p>
+    <p>L'équipe Axia Livraison</p>
+</body>
+</html>";
+
+                await _emailService.SendEmailAsync(
+                    commande.EmailClient,
+                    commande.NomClient,
+                    $"Confirmation de commande #{commande.CodeSuivi}",
+                    emailBody,
+                    commande.Id); // Pass the command ID here
+
+                return Ok(new
+                {
+                    message = "Commande créée et email envoyé avec succès",
+                    commande = commande
+                });
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Commande créée mais échec d'envoi d'email");
+                return Ok(new
+                {
+                    message = "Commande créée mais l'email n'a pas pu être envoyé",
+                    commande = commande
+                });
+            }
         }
 
-        // PUT: api/Commandes/modifier/{id}
         [HttpPut("modifier/{id:int}")]
         public async Task<IActionResult> UpdateCommande(int id, [FromBody] CommandeDTO commandeDTO)
         {
@@ -170,7 +218,7 @@ namespace AxiaLivraisonAPI.Controllers
             }
 
             var utilisateur = await _context.Utilisateurs
-                .FirstOrDefaultAsync(u => u.Identifiant == commandeDTO.UtilisateurIdentifiant&&u.EstLivreur);
+                .FirstOrDefaultAsync(u => u.Identifiant == commandeDTO.UtilisateurIdentifiant && u.EstLivreur);
             var fournisseur = await _context.Fournisseurs
                 .FirstOrDefaultAsync(f => f.Identifiant == commandeDTO.FournisseurIdentifiant);
 
@@ -178,10 +226,11 @@ namespace AxiaLivraisonAPI.Controllers
             {
                 return BadRequest("Livreur ou fournisseur non trouvé.");
             }
+
             decimal montantHorsTax = commandeDTO.PrixUnitaire * commandeDTO.Quantite;
             decimal montantTVA = montantHorsTax * (commandeDTO.Tva / 100);
             decimal montantTotal = montantHorsTax + montantTVA;
-            // Mettre à jour les champs de la commande
+
             commande.Statut = commandeDTO.Statut;
             commande.UtilisateurId = utilisateur.Id;
             commande.FournisseurId = fournisseur.Id;
@@ -195,14 +244,11 @@ namespace AxiaLivraisonAPI.Controllers
             commande.TelephoneClient = commandeDTO.TelephoneClient;
             commande.EmailClient = commandeDTO.EmailClient;
             commande.Description = commandeDTO.Description;
-            commande.Latitude = 0;
-            commande.Longitude = 0;
-
-            _context.Entry(commande).State = EntityState.Modified;
 
             try
             {
                 await _context.SaveChangesAsync();
+                return NoContent();
             }
             catch (DbUpdateConcurrencyException)
             {
@@ -210,16 +256,10 @@ namespace AxiaLivraisonAPI.Controllers
                 {
                     return NotFound(new { message = "Commande non trouvée." });
                 }
-                else
-                {
-                    throw;
-                }
+                throw;
             }
-
-            return NoContent();
         }
 
-        // PUT: api/Commandes/modifier-statut/{id}
         [HttpPut("modifier-statut/{id:int}")]
         public async Task<IActionResult> UpdateCommandeStatut(int id, [FromBody] UpdateStatutDTO updateDto)
         {
@@ -234,42 +274,79 @@ namespace AxiaLivraisonAPI.Controllers
                 return NotFound(new { message = "Commande non trouvée." });
             }
 
-            // Validation supplémentaire si nécessaire
             if (string.IsNullOrWhiteSpace(updateDto.Statut))
             {
                 return BadRequest("Le statut ne peut pas être vide");
             }
 
-            // Liste des statuts valides
             var statutsValides = new[] { "en préparation", "en transit", "livré" };
             if (!statutsValides.Contains(updateDto.Statut.ToLower()))
             {
                 return BadRequest("Statut invalide");
             }
 
-            // Mise à jour du statut seulement
+            var ancienStatut = commande.Statut;
             commande.Statut = updateDto.Statut;
 
             try
             {
                 await _context.SaveChangesAsync();
-                return Ok(new { message = "Statut mis à jour avec succès" });
+
+                if (ancienStatut != commande.Statut)
+                {
+                    try
+                    {
+                        string emailBody = $@"
+                                                <html>
+                                                    <body>
+                                                        <h2>Mise à jour du statut de votre commande</h2>
+                                                        <p>Bonjour {commande.NomClient},</p>
+                                                        <p>Le statut de votre commande a été mis à jour.</p>
+    
+                                                        <h3>Détails :</h3>
+                                                        <ul>
+                                                            <li><strong>Code de suivi :</strong> {commande.CodeSuivi}</li>
+                                                            <li><strong>Nouveau statut :</strong> {commande.Statut}</li>
+                                                            <li><strong>Date de mise à jour :</strong> {DateTime.Now:dd/MM/yyyy HH:mm}</li>
+                                                        </ul>
+    
+                                                        <p>Merci pour votre confiance,<br>L'équipe Axia Livraison</p>
+                                                    </body>
+                                                    </html>";
+
+                        await _emailService.SendEmailAsync(
+                            commande.EmailClient,
+                            commande.NomClient,
+                            $"Mise à jour de votre commande #{commande.CodeSuivi}",
+                            emailBody,
+                            commande.Id);
+
+                        _logger.LogInformation($"Email de mise à jour envoyé à {commande.EmailClient}");
+                    }
+                    catch (Exception ex)
+                    {
+                        _logger.LogError(ex, "Erreur lors de l'envoi de l'email");
+                    }
+                }
+
+                return Ok(new
+                {
+                    message = "Statut mis à jour avec succès",
+                    ancienStatut = ancienStatut,
+                    nouveauStatut = commande.Statut
+                });
             }
-            catch (DbUpdateConcurrencyException)
+            catch (DbUpdateConcurrencyException ex)
             {
+                _logger.LogError(ex, "Erreur de concurrence lors de la mise à jour du statut");
                 if (!CommandeExists(id))
                 {
                     return NotFound(new { message = "Commande non trouvée." });
                 }
-                else
-                {
-                    throw;
-                }
+                throw;
             }
         }
 
-
-        // DELETE: api/Commandes/supprimer/{id}
         [HttpDelete("supprimer/{id:int}")]
         public async Task<IActionResult> DeleteCommande(int id)
         {
@@ -285,12 +362,6 @@ namespace AxiaLivraisonAPI.Controllers
             return NoContent();
         }
 
-        private bool CommandeExists(int id)
-        {
-            return _context.Commandes.Any(e => e.Id == id);
-        }
-
-        // GET: api/commandes/details/code/{codeSuivi}
         [HttpGet("details/code/{codeSuivi}")]
         public async Task<ActionResult<CommandeDetailsDTO>> GetCommandeByCodeSuivi(string codeSuivi)
         {
@@ -344,11 +415,9 @@ namespace AxiaLivraisonAPI.Controllers
             return Ok(commandeDetails);
         }
 
-        // GET: api/Commandes/livreur/{userId}
         [HttpGet("livreur/{userId:int}")]
         public async Task<ActionResult<IEnumerable<CommandeDTO>>> GetCommandesByLivreurId(int userId)
         {
-            // Vérifier si l'utilisateur existe et est un livreur
             var livreur = await _context.Utilisateurs
                 .FirstOrDefaultAsync(u => u.Id == userId && u.EstLivreur);
 
@@ -357,7 +426,6 @@ namespace AxiaLivraisonAPI.Controllers
                 return NotFound(new { message = "Livreur non trouvé ou l'utilisateur n'est pas un livreur." });
             }
 
-            // Récupérer les commandes assignées à ce livreur
             var commandes = await _context.Commandes
                 .Where(c => c.UtilisateurId == userId)
                 .Select(c => new CommandeDetailsDTO
@@ -388,13 +456,11 @@ namespace AxiaLivraisonAPI.Controllers
             return Ok(commandes);
         }
 
-        // POST: api/commandes/position
         [HttpPost("position")]
         public async Task<IActionResult> UpdateLocation([FromBody] LocationUpdateDTO locationUpdate)
         {
             try
             {
-              
                 var livreur = await _context.Utilisateurs
                     .FirstOrDefaultAsync(u => u.Id == locationUpdate.LivreurId && u.EstLivreur);
 
@@ -403,7 +469,6 @@ namespace AxiaLivraisonAPI.Controllers
                     return NotFound(new { message = "Livreur non trouvé" });
                 }
 
-                // Get active deliveries for this driver
                 var activeDeliveries = await _context.Commandes
                     .Where(c => c.UtilisateurId == locationUpdate.LivreurId
                            && (c.Statut == "en transit" || c.Statut == "en préparation"))
@@ -436,7 +501,6 @@ namespace AxiaLivraisonAPI.Controllers
             }
         }
 
-        // GET: api/commandes/position/{commandeId}
         [HttpGet("position/{commandeId:int}")]
         public async Task<ActionResult<object>> GetDeliveryLocation(int commandeId)
         {
@@ -453,7 +517,25 @@ namespace AxiaLivraisonAPI.Controllers
             return Ok(commande);
         }
 
-    }
+        [HttpGet("position/code/{codeSuivi}")]
+        public async Task<ActionResult<object>> GetDeliveryLocationByCode(string codeSuivi)
+        {
+            var commande = await _context.Commandes
+                .Where(c => c.CodeSuivi == codeSuivi)
+                .Select(c => new { c.Latitude, c.Longitude, c.Statut })
+                .FirstOrDefaultAsync();
 
+            if (commande == null)
+            {
+                return NotFound(new { message = "Commande non trouvée" });
+            }
 
+            return Ok(commande);
+        }
+
+        private bool CommandeExists(int id)
+        {
+            return _context.Commandes.Any(e => e.Id == id);
+        }
     }
+}

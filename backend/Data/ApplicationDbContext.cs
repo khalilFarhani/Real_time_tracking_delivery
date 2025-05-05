@@ -15,7 +15,8 @@ namespace AxiaLivraisonAPI.Data
         public DbSet<Rapport> Rapports { get; set; }
         public DbSet<Permission> Permissions { get; set; }
         public DbSet<UtilisateurPermission> UtilisateurPermissions { get; set; }
-
+        // Data/ApplicationDbContext.cs
+        public DbSet<Notification> Notifications { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             // Configuration de la table de jointure
@@ -37,6 +38,7 @@ namespace AxiaLivraisonAPI.Data
             // Nom des tables
             modelBuilder.Entity<Fournisseur>().ToTable("Fournisseur");
             modelBuilder.Entity<Utilisateur>().ToTable("Utilisateur");
+            modelBuilder.Entity<Notification>().ToTable("Notification");
             modelBuilder.Entity<Commande>().ToTable("Commande");
             modelBuilder.Entity<Permission>().ToTable("Permission");
             modelBuilder.Entity<UtilisateurPermission>().ToTable("UtilisateurPermission");

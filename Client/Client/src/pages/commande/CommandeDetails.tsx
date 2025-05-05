@@ -75,6 +75,38 @@ export const CommandeDetails = () => {
   const [livreurDetails, setLivreurDetails] = useState<LivreurDetails | null>(null);
   const [error, setError] = useState<string | null>(null);
 
+  const handleLocateClick = () => {
+    navigate(`/commande/${commandeDetails.codeSuivi}/location`);
+  };
+
+  useEffect(() => {
+    console.log("CommandeDetails mounted with:", commandeDetails);
+    
+    // Si nous avons un code de suivi mais pas d'ID, récupérer les détails
+    if (!commandeDetails.id && commandeDetails.codeSuivi) {
+      const fetchCommandeDetails = async () => {
+        try {
+          const response = await fetch(
+            `http://localhost:5283/api/commandes/details/code/${commandeDetails.codeSuivi}`
+          );
+          if (!response.ok) throw new Error("Impossible de récupérer les détails de la commande");
+          const data = await response.json();
+          
+          // Mettre à jour l'état avec les détails complets
+          // Cela va déclencher un re-render avec l'ID disponible
+          navigate(`/commande/${commandeDetails.codeSuivi}`, { 
+            state: { commandeDetails: data },
+            replace: true // Remplacer l'entrée actuelle dans l'historique
+          });
+        } catch (err) {
+          setError(err instanceof Error ? err.message : "Erreur lors de la récupération des détails");
+        }
+      };
+      
+      fetchCommandeDetails();
+    }
+  }, []);
+
   useEffect(() => {
     const fetchLivreurDetails = async () => {
       try {
@@ -109,7 +141,7 @@ export const CommandeDetails = () => {
 
         <button 
           className="locate-button"
-          onClick={() => {/* Ajouter la logique de localisation ici */}}
+          onClick={handleLocateClick}
         >
           <LocationOnIcon />
           <span>Localisez colis</span>
@@ -360,6 +392,9 @@ const InfoRow = ({
     </Typography>
   </Box>
 );
+
+
+
 
 
 

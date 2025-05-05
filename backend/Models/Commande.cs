@@ -62,5 +62,6 @@ namespace AxiaLivraisonAPI.Models
         public double Longitude { get; set; }
 
         public ICollection<Rapport> Rapports { get; set; }
+    
     }
 }

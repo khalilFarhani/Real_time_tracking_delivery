@@ -120,13 +120,169 @@ const GestionCommande: React.FC = () => {
     }
   };
 
+  const handlePrint = () => {
+    if (!selectedCommande) return;
+
+    // Create a new window for printing
+    const printWindow = window.open('', '_blank');
+    if (!printWindow) return;
+
+    // Format currency for display
+    const formatCurrency = (value: number) => {
+      return new Intl.NumberFormat('fr-FR', {
+        style: 'currency',
+        currency: 'TND',
+        minimumFractionDigits: 3,
+      }).format(value);
+    };
+
+    // Get the content from the specific sections
+    const infoCommande = document.getElementById('info-commande');
+    const detailsFinanciers = document.getElementById('details-financiers');
+    const infoClient = document.getElementById('info-client');
+    const qrCodeSection = document.getElementById('qr-code-section');
+
+    // Write the HTML content to the new window
+    printWindow.document.write(`
+      <html>
+        <head>
+          <title>Bon Commande ${selectedCommande.id}</title>
+          <style>
+            body { 
+              font-family: Arial, sans-serif; 
+              padding: 20px; 
+              color: #333; 
+              margin: 0;
+            }
+            .print-container {
+              max-width: 800px;
+              margin: 0 auto;
+              padding: 20px;
+              border: 1px solid #ddd;
+              border-radius: 8px;
+            }
+            h1 {
+              text-align: center;
+              color: #303f9f;
+              margin-bottom: 20px;
+              font-size: 1.8rem;
+            }
+            .section-title {
+              font-weight: 600;
+              color: #303f9f;
+              margin: 20px 0 10px 0;
+              font-size: 1.3rem;
+            }
+            table {
+              width: 100%;
+              border-collapse: collapse;
+              margin-bottom: 20px;
+            }
+            td {
+              padding: 8px;
+              vertical-align: top;
+              border-bottom: 1px solid #e0e0e0;
+            }
+            .label {
+              font-weight: 600;
+              width: 40%;
+              color: #000;
+            }
+            .value { color: #666; }
+            .status {
+              padding: 4px 12px;
+              border-radius: 12px;
+              color: white;
+              font-weight: 500;
+              display: inline-block;
+              font-size: 0.8rem;
+            }
+            .total { 
+              font-weight: 600; 
+              color: #2e7d32; 
+            }
+            .footer { 
+              text-align: center; 
+              margin-top: 30px; 
+              color: #666; 
+              font-size: 0.9rem; 
+            }
+            .qr-code-container {
+              text-align: center;
+              margin: 20px auto;
+              display: flex;
+              justify-content: center;
+            }
+            .qr-code {
+              margin: 0 auto;
+              padding: 10px;
+              border: 1px solid #ddd;
+              display: inline-block;
+            }
+            .section {
+              
+              padding: 15px;
+              background-color: #f8f9fa;
+              border-radius: 8px;
+            }
+            /* Adjust size of section titles */
+            .MuiTypography-h6 {
+              font-size: 1.3rem !important;
+              font-weight: 600 !important;
+              color: #303f9f !important;
+            }
+          </style>
+        </head>
+        <body>
+          <div class="print-container">
+            <h1>Bon Commande #${selectedCommande.id}</h1>
+            
+            <div class="section">
+              <h2>Montant Total: ${formatCurrency(selectedCommande.montantTotale)}</h2>
+            </div>
+            
+            <div class="section">
+              ${infoCommande?.innerHTML || ''}
+            </div>
+            
+            <div class="section">
+              ${detailsFinanciers?.innerHTML || ''}
+            </div>
+            
+            <div class="section">
+              ${infoClient?.innerHTML || ''}
+            </div>
+            
+            <div class="section qr-code-container">
+              <div class="qr-code">
+                ${qrCodeSection ? qrCodeSection.querySelector('.MuiBox-root svg')?.outerHTML || '' : ''}
+              </div>
+            </div>
+            
+            <div class="footer">
+              Document généré le ${new Date().toLocaleDateString()}
+            </div>
+          </div>
+          <script>
+            setTimeout(() => {
+              window.print();
+              window.close();
+            }, 500);
+          </script>
+        </body>
+      </html>
+    `);
+
+    printWindow.document.close();
+  };
+
   return (
     <>
       {selectedCommande ? (
         <CommandeDetails
           commande={selectedCommande}
           onBack={() => setSelectedCommande(null)}
-          onPrint={() => window.print()}
+          onPrint={handlePrint}
         />
       ) : (
         <CommandeList

@@ -20,115 +20,10 @@ import QRCode from 'react-qr-code';
 interface CommandeDetailsProps {
   commande: CommandeDetailsDTO;
   onBack: () => void;
-  onPrint?: () => void;
+  onPrint: () => void;
 }
 
-const CommandeDetails: React.FC<CommandeDetailsProps> = ({
-  commande,
-  onBack,
-  onPrint = () => {
-    const printContent = document.getElementById('commande-details-content');
-    if (!printContent) return;
-
-    const printWindow = window.open('', '_blank');
-    if (printWindow) {
-      printWindow.document.write(`
-        <html>
-          <head>
-            <title>Détails Commande ${commande.id}</title>
-            <style>
-              body { 
-                font-family: Arial, sans-serif; 
-                padding: 20px; 
-                color: #333; 
-                margin: 0;
-              }
-              .print-container {
-                max-width: 100%;
-              }
-              .section-title {
-                font-weight: 600;
-                color: #303f9f;
-                margin: 20px 0 10px 0;
-                border-bottom: 2px solid #303f9f;
-                display: inline-block;
-              }
-              table {
-                width: 100%;
-                border-collapse: collapse;
-                margin-bottom: 20px;
-              }
-              td {
-                padding: 8px;
-                vertical-align: top;
-                border-bottom: 1px solid #e0e0e0;
-              }
-              .label {
-                font-weight: 600;
-                width: 40%;
-                color: #000;
-              }
-              .value { color: #666; }
-              .status {
-                padding: 4px 12px;
-                border-radius: 12px;
-                color: white;
-                font-weight: 500;
-                display: inline-block;
-                font-size: 0.8rem;
-                background-color: ${
-                  commande.statut === 'Terminée'
-                    ? '#66bb6a'
-                    : commande.statut === 'En cours'
-                      ? '#ffa726'
-                      : '#ef5350'
-                };
-              }
-              .total { 
-                font-weight: 600; 
-                color: #2e7d32; 
-              }
-              .footer { 
-                text-align: center; 
-                margin-top: 30px; 
-                color: #666; 
-                font-size: 0.9rem; 
-              }
-              .qr-code-container {
-                text-align: center;
-                margin: 20px 0;
-              }
-              .qr-code {
-                margin: 0 auto;
-                padding: 10px;
-                border: 1px solid #ddd;
-                display: inline-block;
-              }
-              @media print {
-                body { padding: 0; }
-              }
-            </style>
-          </head>
-          <body>
-            <div class="print-container">
-              ${printContent.innerHTML}
-              <div class="footer">
-                Document généré le ${new Date().toLocaleDateString()}
-              </div>
-            </div>
-            <script>
-              setTimeout(() => {
-                window.print();
-                window.close();
-              }, 200);
-            </script>
-          </body>
-        </html>
-      `);
-      printWindow.document.close();
-    }
-  },
-}) => {
+const CommandeDetails: React.FC<CommandeDetailsProps> = ({ commande, onBack, onPrint }) => {
   const formatCurrency = (value: number) => {
     return new Intl.NumberFormat('fr-FR', {
       style: 'currency',
@@ -199,7 +94,7 @@ const CommandeDetails: React.FC<CommandeDetailsProps> = ({
         >
           <Grid container spacing={4}>
             {/* Commande Information */}
-            <Grid item xs={12} md={6}>
+            <Grid item xs={12} md={6} id="info-commande">
               <Typography
                 variant="h6"
                 sx={{
@@ -275,7 +170,7 @@ const CommandeDetails: React.FC<CommandeDetailsProps> = ({
             </Grid>
 
             {/* Financial Details */}
-            <Grid item xs={12} md={6}>
+            <Grid item xs={12} md={6} id="details-financiers">
               <Typography
                 variant="h6"
                 sx={{
@@ -339,7 +234,7 @@ const CommandeDetails: React.FC<CommandeDetailsProps> = ({
             </Grid>
 
             {/* Client Information */}
-            <Grid item xs={12} md={6}>
+            <Grid item xs={12} md={6} id="info-client">
               <Typography
                 variant="h6"
                 sx={{
@@ -493,8 +388,8 @@ const CommandeDetails: React.FC<CommandeDetailsProps> = ({
             )}
           </Grid>
         </Paper>
-        {/* QR Code Section - Ajouté ici sous les informations de commande */}
-        <Box sx={{ mt: 4, textAlign: 'center' }}>
+        {/* QR Code Section */}
+        <Box sx={{ mt: 4, textAlign: 'center' }} id="qr-code-section">
           <Typography variant="subtitle1" sx={{ mb: 2, fontWeight: '500' }}>
             QR Code de la commande
           </Typography>
