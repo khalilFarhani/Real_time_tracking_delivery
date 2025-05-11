@@ -64,7 +64,8 @@ namespace AxiaLivraisonAPI.Controllers
                 Nom = fournisseurDTO.Nom,
                 Adresse = fournisseurDTO.Adresse,
                 Telephone = fournisseurDTO.Telephone,
-                Identifiant = fournisseurDTO.Identifiant // Ensure this is mapped
+                Identifiant = fournisseurDTO.Identifiant,
+                DateCreation = DateTime.UtcNow // Ajout automatique de la date actuelle
             };
 
             _context.Fournisseurs.Add(fournisseur);

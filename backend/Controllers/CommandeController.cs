@@ -51,7 +51,8 @@ namespace AxiaLivraisonAPI.Controllers
                     Description = c.Description,
                     PrixUnitaire = c.PrixUnitaire,
                     MontantHorsTax = c.MontantHorsTax,
-                    Tva = c.Tva
+                    Tva = c.Tva,
+                    DateCreation = c.DateCreation
                 })
                 .ToListAsync();
 
@@ -132,6 +133,8 @@ namespace AxiaLivraisonAPI.Controllers
             decimal montantTVA = montantHorsTax * (commandeDTO.Tva / 100);
             decimal montantTotal = montantHorsTax + montantTVA;
 
+
+
             var commande = new Commande
             {
                 CodeSuivi = Guid.NewGuid().ToString(),
@@ -150,7 +153,8 @@ namespace AxiaLivraisonAPI.Controllers
                 Description = commandeDTO.Description,
                 Latitude = 0,
                 Longitude = 0,
-                DateCreation = DateTime.UtcNow
+                DateCreation = DateTime.UtcNow,
+                DateReception = null
             };
 
             _context.Commandes.Add(commande);
@@ -231,6 +235,15 @@ namespace AxiaLivraisonAPI.Controllers
             decimal montantTVA = montantHorsTax * (commandeDTO.Tva / 100);
             decimal montantTotal = montantHorsTax + montantTVA;
 
+            if (commande.Statut != "livré" && commandeDTO.Statut.ToLower() == "livré")
+            {
+                commande.DateReception = DateTime.UtcNow;
+            }
+            else if (commandeDTO.Statut.ToLower() != "livré")
+            {
+                commande.DateReception = null;
+            }
+
             commande.Statut = commandeDTO.Statut;
             commande.UtilisateurId = utilisateur.Id;
             commande.FournisseurId = fournisseur.Id;
@@ -286,6 +299,17 @@ namespace AxiaLivraisonAPI.Controllers
             }
 
             var ancienStatut = commande.Statut;
+
+            // Update DateReception based on status change
+            if (ancienStatut != "livré" && updateDto.Statut.ToLower() == "livré")
+            {
+                commande.DateReception = DateTime.UtcNow;
+            }
+            else if (updateDto.Statut.ToLower() != "livré")
+            {
+                commande.DateReception = null;
+            }
+
             commande.Statut = updateDto.Statut;
 
             try
@@ -297,22 +321,23 @@ namespace AxiaLivraisonAPI.Controllers
                     try
                     {
                         string emailBody = $@"
-                                                <html>
-                                                    <body>
-                                                        <h2>Mise à jour du statut de votre commande</h2>
-                                                        <p>Bonjour {commande.NomClient},</p>
-                                                        <p>Le statut de votre commande a été mis à jour.</p>
-    
-                                                        <h3>Détails :</h3>
-                                                        <ul>
-                                                            <li><strong>Code de suivi :</strong> {commande.CodeSuivi}</li>
-                                                            <li><strong>Nouveau statut :</strong> {commande.Statut}</li>
-                                                            <li><strong>Date de mise à jour :</strong> {DateTime.Now:dd/MM/yyyy HH:mm}</li>
-                                                        </ul>
-    
-                                                        <p>Merci pour votre confiance,<br>L'équipe Axia Livraison</p>
-                                                    </body>
-                                                    </html>";
+<html>
+<body>
+    <h2>Mise à jour du statut de votre commande</h2>
+    <p>Bonjour {commande.NomClient},</p>
+    <p>Le statut de votre commande a été mis à jour.</p>
+
+    <h3>Détails :</h3>
+    <ul>
+        <li><strong>Code de suivi :</strong> {commande.CodeSuivi}</li>
+        <li><strong>Nouveau statut :</strong> {commande.Statut}</li>
+        <li><strong>Date de mise à jour :</strong> {DateTime.Now:dd/MM/yyyy HH:mm}</li>
+        {(commande.Statut == "livré" ? $"<li><strong>Date de réception :</strong> {commande.DateReception?.ToString("dd/MM/yyyy HH:mm")}</li>" : "")}
+    </ul>
+
+    <p>Merci pour votre confiance,<br>L'équipe Axia Livraison</p>
+</body>
+</html>";
 
                         await _emailService.SendEmailAsync(
                             commande.EmailClient,
@@ -333,7 +358,8 @@ namespace AxiaLivraisonAPI.Controllers
                 {
                     message = "Statut mis à jour avec succès",
                     ancienStatut = ancienStatut,
-                    nouveauStatut = commande.Statut
+                    nouveauStatut = commande.Statut,
+                    dateReception = commande.DateReception
                 });
             }
             catch (DbUpdateConcurrencyException ex)

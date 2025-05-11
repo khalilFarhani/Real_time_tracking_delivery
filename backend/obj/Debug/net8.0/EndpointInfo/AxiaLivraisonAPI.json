@@ -1081,6 +1081,244 @@
         }
       }
     },
+    "/api/Statistiques/commandes-par-statut": {
+      "get": {
+        "tags": [
+          "Statistiques"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Statistiques/commandes-par-statut-semaine": {
+      "get": {
+        "tags": [
+          "Statistiques"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Statistiques/total-commandes": {
+      "get": {
+        "tags": [
+          "Statistiques"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Statistiques/montant-total": {
+      "get": {
+        "tags": [
+          "Statistiques"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Statistiques/commandes-par-jour": {
+      "get": {
+        "tags": [
+          "Statistiques"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Statistiques/commandes-par-fournisseur": {
+      "get": {
+        "tags": [
+          "Statistiques"
+        ],
+        "parameters": [
+          {
+            "name": "periode",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": "all"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Statistiques/commandes-par-utilisateur": {
+      "get": {
+        "tags": [
+          "Statistiques"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Statistiques/performance-mensuelle": {
+      "get": {
+        "tags": [
+          "Statistiques"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Statistiques/top-clients": {
+      "get": {
+        "tags": [
+          "Statistiques"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Statistiques/taux-conversion": {
+      "get": {
+        "tags": [
+          "Statistiques"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Statistiques/commandes-fournisseurs-mensuels": {
+      "get": {
+        "tags": [
+          "Statistiques"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Statistiques/livreurs-actifs": {
+      "get": {
+        "tags": [
+          "Statistiques"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Statistiques/revenus-mois": {
+      "get": {
+        "tags": [
+          "Statistiques"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Statistiques/commandes-aujourdhui": {
+      "get": {
+        "tags": [
+          "Statistiques"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Statistiques/top-livreur": {
+      "get": {
+        "tags": [
+          "Statistiques"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Statistiques/top-fournisseur": {
+      "get": {
+        "tags": [
+          "Statistiques"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Statistiques/livreurs-disponibles": {
+      "get": {
+        "tags": [
+          "Statistiques"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Statistiques/livreurs-commandes-mois": {
+      "get": {
+        "tags": [
+          "Statistiques"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Statistiques/commandes-creees-par-jour": {
+      "get": {
+        "tags": [
+          "Statistiques"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/utilisateurs/identifiants": {
       "get": {
         "tags": [
@@ -1622,6 +1860,11 @@
             "type": "string",
             "format": "date-time"
           },
+          "dateReception": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
           "statut": {
             "maxLength": 100,
             "minLength": 1,
@@ -1754,6 +1997,10 @@
           "emailClient": {
             "type": "string",
             "nullable": true
+          },
+          "dateCreation": {
+            "type": "string",
+            "format": "date-time"
           }
         },
         "additionalProperties": false
@@ -1865,6 +2112,10 @@
             "maxLength": 50,
             "minLength": 1,
             "type": "string"
+          },
+          "dateCreation": {
+            "type": "string",
+            "format": "date-time"
           },
           "commandes": {
             "type": "array",

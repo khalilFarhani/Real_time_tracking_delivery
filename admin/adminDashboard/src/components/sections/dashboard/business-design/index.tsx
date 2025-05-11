@@ -37,10 +37,10 @@ const BusinessDesign = () => {
 
         <Box mt={-0.5}>
           <Typography variant="caption" color="text.disabled">
-            Business Design
+            Design d'Entreprise
           </Typography>
           <Typography mt={-0.35} variant="body1" fontWeight={700} noWrap>
-            New lession is available
+            Nouvelle leçon disponible
           </Typography>
         </Box>
       </Stack>
@@ -72,7 +72,7 @@ const BusinessDesign = () => {
               fontSize="h4.fontSize"
             />
             <Typography variant="body2" fontWeight={700}>
-              Video format
+              Format vidéo
             </Typography>
           </Stack>
         </Stack>

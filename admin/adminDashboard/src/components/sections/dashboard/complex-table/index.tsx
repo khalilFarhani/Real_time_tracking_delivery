@@ -1,53 +1,144 @@
-import { useState, ChangeEvent } from 'react';
-import Box from '@mui/material/Box';
-import Stack from '@mui/material/Stack';
-import Paper from '@mui/material/Paper';
-import TextField from '@mui/material/TextField';
-import Typography from '@mui/material/Typography';
-import InputAdornment from '@mui/material/InputAdornment';
+import React, { useState, useEffect, ChangeEvent } from 'react';
+import {
+  Paper,
+  Stack,
+  Typography,
+  TextField,
+  InputAdornment,
+  Box,
+  Pagination,
+  CircularProgress,
+} from '@mui/material';
 import IconifyIcon from 'components/base/IconifyIcon';
-import DataTable from './DataTable';
+import TableContent from './TableContent';
+import axios from 'axios';
+import { Commande } from 'types/commande';
 
 const ComplexTable = () => {
-  const [searchText, setSearchText] = useState('');
+  const [searchText, setSearchText] = useState<string>('');
+  const [commandes, setCommandes] = useState<Commande[]>([]);
+  const [filteredCommandes, setFilteredCommandes] = useState<Commande[]>([]);
+  const [page, setPage] = useState<number>(1);
+  const [loading, setLoading] = useState<boolean>(true);
+  const itemsPerPage = 4;
 
-  const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {
-    setSearchText(e.target.value);
+  useEffect(() => {
+    fetchCommandes();
+  }, []);
+
+  const fetchCommandes = async () => {
+    try {
+      setLoading(true);
+      const response = await axios.get<Commande[]>('http://localhost:5283/api/commandes/liste');
+      setCommandes(response.data);
+      setFilteredCommandes(response.data);
+      setLoading(false);
+    } catch (error) {
+      console.error('Erreur lors de la récupération des commandes:', error);
+      setLoading(false);
+    }
   };
 
+  const handleInputChange = (event: ChangeEvent<HTMLInputElement>) => {
+    const value = event.target.value.toLowerCase();
+    setSearchText(value);
+
+    if (value) {
+      const filtered = commandes.filter((commande) => {
+        return (
+          commande.nomClient?.toLowerCase().includes(value) ||
+          commande.statut?.toLowerCase().includes(value) ||
+          commande.id.toString().includes(value)
+        );
+      });
+      setFilteredCommandes(filtered);
+    } else {
+      setFilteredCommandes(commandes);
+    }
+    setPage(1);
+  };
+
+  const handlePageChange = (_event: React.ChangeEvent<unknown>, value: number) => {
+    setPage(value);
+  };
+
+  const paginatedData = filteredCommandes.slice((page - 1) * itemsPerPage, page * itemsPerPage);
+
   return (
-    <Box component={Paper} px={0} height={{ xs: 435, sm: 390 }}>
+    <Paper
+      sx={{
+        p: 3,
+        height: '100%',
+        boxShadow: '0px 3px 14px rgba(0, 0, 0, 0.1)',
+        borderRadius: '12px',
+      }}
+    >
       <Stack
-        px={3.5}
+        px={2}
+        pb={2}
         spacing={{ xs: 2, sm: 0 }}
         direction={{ xs: 'column', sm: 'row' }}
         justifyContent="space-between"
+        alignItems="center"
       >
-        <Typography variant="h4" textAlign={{ xs: 'center', sm: 'left' }}>
-          Complex Table
+        <Typography
+          variant="h5"
+          textAlign={{ xs: 'center', sm: 'left' }}
+          fontWeight="600"
+          color="#333"
+        >
+          Commandes Récentes
         </Typography>
 
         <TextField
-          variant="filled"
+          variant="outlined"
           size="small"
-          placeholder="Search here"
+          placeholder="Rechercher..."
           value={searchText}
           onChange={handleInputChange}
-          sx={{ mx: { xs: 'auto', sm: 'initial' }, width: 1, maxWidth: { xs: 300, sm: 220 } }}
+          sx={{
+            mx: { xs: 'auto', sm: 'initial' },
+            width: 1,
+            maxWidth: { xs: 300, sm: 220 },
+            '& .MuiOutlinedInput-root': {
+              borderRadius: '8px',
+              '&:hover .MuiOutlinedInput-notchedOutline': {
+                borderColor: '#1976d2',
+              },
+            },
+          }}
           InputProps={{
             endAdornment: (
               <InputAdornment position="end">
-                <IconifyIcon icon="eva:search-fill" />
+                <IconifyIcon icon="eva:search-fill" color="#666" />
               </InputAdornment>
             ),
           }}
         />
       </Stack>
 
-      <Box mt={{ xs: 1.25, sm: 1 }} height={313}>
-        <DataTable searchText={searchText} />
+      <Box sx={{ mt: 1, px: 1 }}>
+        {loading ? (
+          <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', py: 4 }}>
+            <CircularProgress size={40} />
+          </Box>
+        ) : (
+          <>
+            <TableContent data={paginatedData} />
+            <Box sx={{ display: 'flex', justifyContent: 'center', mt: 3, mb: 1 }}>
+              <Pagination
+                count={Math.ceil(filteredCommandes.length / itemsPerPage)}
+                page={page}
+                onChange={handlePageChange}
+                color="primary"
+                shape="rounded"
+                size="medium"
+              />
+            </Box>
+          </>
+        )}
       </Box>
-    </Box>
+    </Paper>
   );
 };
 

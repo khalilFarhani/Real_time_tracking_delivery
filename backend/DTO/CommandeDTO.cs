@@ -16,7 +16,8 @@
         public string NomClient { get; set; }
         public string TelephoneClient { get; set; }
         public string EmailClient { get; set; }
-      
+        public DateTime DateCreation { get; set; } = DateTime.UtcNow;
+
 
     }
 }

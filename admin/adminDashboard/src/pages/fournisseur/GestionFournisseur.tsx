@@ -9,7 +9,7 @@ const GestionFournisseur: React.FC = () => {
   const [openDialog, setOpenDialog] = useState<boolean>(false);
   const [currentFournisseur, setCurrentFournisseur] = useState<Fournisseur | null>(null);
 
-  const API_URL = 'http://localhost:5283'; // Backend URL
+  const API_URL = 'http://localhost:5283';
 
   useEffect(() => {
     fetchFournisseurs();
@@ -18,7 +18,12 @@ const GestionFournisseur: React.FC = () => {
   const fetchFournisseurs = async () => {
     try {
       const response = await axios.get(`${API_URL}/api/fournisseurs/liste`);
-      setFournisseurs(response.data);
+      // Ajout du tri par date de création (du plus récent au plus ancien)
+      const sortedFournisseurs = response.data.sort(
+        (a: Fournisseur, b: Fournisseur) =>
+          new Date(b.dateCreation).getTime() - new Date(a.dateCreation).getTime(),
+      );
+      setFournisseurs(sortedFournisseurs);
     } catch (error) {
       console.error('Erreur lors de la récupération des fournisseurs :', error);
     }
@@ -32,14 +37,17 @@ const GestionFournisseur: React.FC = () => {
   }) => {
     try {
       if (currentFournisseur) {
+        // Mise à jour - on conserve la date de création originale
         await axios.put(
           `${API_URL}/api/fournisseurs/modifier/${currentFournisseur.id}`,
           fournisseurData,
         );
       } else {
+        // Création - on ajoute la date actuelle côté serveur
         await axios.post(`${API_URL}/api/fournisseurs/ajouter`, fournisseurData);
       }
-      fetchFournisseurs(); // Refresh the list
+      fetchFournisseurs();
+      setOpenDialog(false);
     } catch (error) {
       console.error('Erreur lors de la sauvegarde du fournisseur :', error);
     }
@@ -48,7 +56,7 @@ const GestionFournisseur: React.FC = () => {
   const handleDelete = async (id: number) => {
     try {
       await axios.delete(`${API_URL}/api/fournisseurs/supprimer/${id}`);
-      fetchFournisseurs(); // Refresh the list
+      fetchFournisseurs();
     } catch (error) {
       console.error('Erreur lors de la suppression du fournisseur :', error);
     }
@@ -59,11 +67,11 @@ const GestionFournisseur: React.FC = () => {
       <FournisseurList
         fournisseurs={fournisseurs}
         onAddFournisseur={() => {
-          setCurrentFournisseur(null); // Reset for adding
+          setCurrentFournisseur(null);
           setOpenDialog(true);
         }}
         onEditFournisseur={(fournisseur: Fournisseur) => {
-          setCurrentFournisseur(fournisseur); // Set fournisseur to edit
+          setCurrentFournisseur(fournisseur);
           setOpenDialog(true);
         }}
         onDeleteFournisseur={handleDelete}

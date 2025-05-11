@@ -13,6 +13,9 @@ namespace AxiaLivraisonAPI.Models
 
         public DateTime DateCreation { get; set; } = DateTime.UtcNow;
 
+        // Add this new property
+        public DateTime? DateReception { get; set; }  // Nullable to allow for cases where reception hasn't happened yet
+
         [Required]
         [MaxLength(100)]
         public string Statut { get; set; }
@@ -62,6 +65,5 @@ namespace AxiaLivraisonAPI.Models
         public double Longitude { get; set; }
 
         public ICollection<Rapport> Rapports { get; set; }
-    
     }
 }

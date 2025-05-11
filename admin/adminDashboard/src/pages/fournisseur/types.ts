@@ -4,4 +4,5 @@ export interface Fournisseur {
   adresse: string;
   telephone: string;
   identifiant: string;
+  dateCreation: string; // Ajout de la date de création
 }

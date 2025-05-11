@@ -15,6 +15,7 @@ const GestionPermission = lazy(() => import('pages/permission/GestionPermission'
 const GestionCommande = lazy(() => import('pages/commande/GestionCommande'));
 const GestionLivreur = lazy(() => import('pages/livreur/GestionLivreur'));
 const GestionFournisseur = lazy(() => import('pages/fournisseur/GestionFournisseur'));
+const CommandeDetailsPage = lazy(() => import('pages/commande/CommandeDetailsPage'));
 
 import PageLoader from 'components/loading/PageLoader';
 import Progress from 'components/loading/Progress';
@@ -72,6 +73,10 @@ export const routes = [
           {
             path: paths.commande,
             element: <GestionCommande />,
+          },
+          {
+            path: paths.commande + '/details/:id',
+            element: <CommandeDetailsPage />,
           },
           {
             path: paths.livreur,

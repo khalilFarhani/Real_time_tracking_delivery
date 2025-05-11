@@ -23,35 +23,23 @@ export interface CommandeDTO {
   statut: string;
   utilisateurIdentifiant: string;
   fournisseurIdentifiant: string;
-  description: string;
-  prixUnitaire: number;
   quantite: number;
-  tva: number;
   montantTotale: number;
   adressClient: string;
   nomClient: string;
   telephoneClient: string;
   emailClient: string;
-}
-
-export interface CommandeDetailsDTO {
-  id: number;
-  statut: string;
-  utilisateurIdentifiant: string;
-  fournisseurIdentifiant: string;
-  quantite: number;
-  montantTotale: number;
-  adressClient: string;
-  nomClient: string;
-  telephoneClient: string;
-  dateCreation: Date;
   description: string;
   prixUnitaire: number;
   montantHorsTax: number;
   tva: number;
-  emailClient: string;
-  fournisseur: FournisseurDTO;
-  utilisateur: UtilisateurDTO;
+  dateCreation?: string;
+}
+
+export interface CommandeDetailsDTO extends CommandeDTO {
+  codeSuivi?: string;
+  fournisseur?: FournisseurDTO;
+  utilisateur?: UtilisateurDTO;
 }
 
 export interface FournisseurDTO {

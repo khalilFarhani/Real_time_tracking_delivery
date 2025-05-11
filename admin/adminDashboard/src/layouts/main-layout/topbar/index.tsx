@@ -77,7 +77,7 @@ const Topbar = ({ isClosing, mobileOpen, setMobileOpen }: TopbarProps) => {
 
         <TextField
           variant="filled"
-          placeholder="Search"
+          placeholder="Rechercher"
           sx={{ width: 320, display: { xs: 'none', md: 'flex' } }}
           InputProps={{
             endAdornment: (

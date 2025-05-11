@@ -153,7 +153,9 @@ const CommandeDetails: React.FC<CommandeDetailsProps> = ({ commande, onBack, onP
                         Date de Création
                       </TableCell>
                       <TableCell sx={{ py: 1.5, color: '#888' }}>
-                        {new Date(commande.dateCreation).toLocaleString()}
+                        {commande.dateCreation
+                          ? new Date(commande.dateCreation).toLocaleString()
+                          : '-'}
                       </TableCell>
                     </TableRow>
                     <TableRow>
@@ -311,7 +313,7 @@ const CommandeDetails: React.FC<CommandeDetailsProps> = ({ commande, onBack, onP
                         Nom
                       </TableCell>
                       <TableCell sx={{ py: 1.5, color: '#888' }}>
-                        {commande.fournisseur.nom}
+                        {commande.fournisseur?.nom || '-'}
                       </TableCell>
                     </TableRow>
                     <TableRow>
@@ -319,7 +321,7 @@ const CommandeDetails: React.FC<CommandeDetailsProps> = ({ commande, onBack, onP
                         Adresse
                       </TableCell>
                       <TableCell sx={{ py: 1.5, color: '#888' }}>
-                        {commande.fournisseur.adresse}
+                        {commande.fournisseur?.adresse || '-'}
                       </TableCell>
                     </TableRow>
                     <TableRow>
@@ -327,7 +329,7 @@ const CommandeDetails: React.FC<CommandeDetailsProps> = ({ commande, onBack, onP
                         Téléphone
                       </TableCell>
                       <TableCell sx={{ py: 1.5, color: '#888' }}>
-                        {commande.fournisseur.telephone}
+                        {commande.fournisseur?.telephone || '-'}
                       </TableCell>
                     </TableRow>
                   </TableBody>

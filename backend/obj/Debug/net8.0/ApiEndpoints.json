@@ -628,6 +628,202 @@
     ]
   },
   {
+    "ContainingType": "AxiaLivraisonAPI.Controllers.StatistiquesController",
+    "Method": "GetCommandesAujourdhui",
+    "RelativePath": "api/Statistiques/commandes-aujourdhui",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AxiaLivraisonAPI.Controllers.StatistiquesController",
+    "Method": "GetCommandesCreesParJour",
+    "RelativePath": "api/Statistiques/commandes-creees-par-jour",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AxiaLivraisonAPI.Controllers.StatistiquesController",
+    "Method": "GetCommandesFournisseursMensuels",
+    "RelativePath": "api/Statistiques/commandes-fournisseurs-mensuels",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AxiaLivraisonAPI.Controllers.StatistiquesController",
+    "Method": "GetCommandesParFournisseur",
+    "RelativePath": "api/Statistiques/commandes-par-fournisseur",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "periode",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AxiaLivraisonAPI.Controllers.StatistiquesController",
+    "Method": "GetCommandesParJour",
+    "RelativePath": "api/Statistiques/commandes-par-jour",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AxiaLivraisonAPI.Controllers.StatistiquesController",
+    "Method": "GetCommandesParStatut",
+    "RelativePath": "api/Statistiques/commandes-par-statut",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AxiaLivraisonAPI.Controllers.StatistiquesController",
+    "Method": "GetCommandesParStatutSemaine",
+    "RelativePath": "api/Statistiques/commandes-par-statut-semaine",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AxiaLivraisonAPI.Controllers.StatistiquesController",
+    "Method": "GetCommandesParUtilisateur",
+    "RelativePath": "api/Statistiques/commandes-par-utilisateur",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AxiaLivraisonAPI.Controllers.StatistiquesController",
+    "Method": "GetLivreursActifs",
+    "RelativePath": "api/Statistiques/livreurs-actifs",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AxiaLivraisonAPI.Controllers.StatistiquesController",
+    "Method": "GetLivreursCommandesMois",
+    "RelativePath": "api/Statistiques/livreurs-commandes-mois",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AxiaLivraisonAPI.Controllers.StatistiquesController",
+    "Method": "GetLivreursDisponibles",
+    "RelativePath": "api/Statistiques/livreurs-disponibles",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AxiaLivraisonAPI.Controllers.StatistiquesController",
+    "Method": "GetMontantTotal",
+    "RelativePath": "api/Statistiques/montant-total",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AxiaLivraisonAPI.Controllers.StatistiquesController",
+    "Method": "GetPerformanceMensuelle",
+    "RelativePath": "api/Statistiques/performance-mensuelle",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AxiaLivraisonAPI.Controllers.StatistiquesController",
+    "Method": "GetRevenusMois",
+    "RelativePath": "api/Statistiques/revenus-mois",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AxiaLivraisonAPI.Controllers.StatistiquesController",
+    "Method": "GetTauxConversion",
+    "RelativePath": "api/Statistiques/taux-conversion",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AxiaLivraisonAPI.Controllers.StatistiquesController",
+    "Method": "GetTopClients",
+    "RelativePath": "api/Statistiques/top-clients",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AxiaLivraisonAPI.Controllers.StatistiquesController",
+    "Method": "GetTopFournisseur",
+    "RelativePath": "api/Statistiques/top-fournisseur",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AxiaLivraisonAPI.Controllers.StatistiquesController",
+    "Method": "GetTopLivreur",
+    "RelativePath": "api/Statistiques/top-livreur",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AxiaLivraisonAPI.Controllers.StatistiquesController",
+    "Method": "GetTotalCommandes",
+    "RelativePath": "api/Statistiques/total-commandes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "AxiaLivraisonAPI.Controllers.UtilisateurController",
     "Method": "CreateUtilisateur",
     "RelativePath": "api/utilisateurs/ajouter",
