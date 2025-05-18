@@ -12,6 +12,7 @@ import { TooltipComponent, GridComponent, LegendComponent } from 'echarts/compon
 import { CanvasRenderer } from 'echarts/renderers';
 import ButtonBase from '@mui/material/ButtonBase';
 import IconifyIcon from 'components/base/IconifyIcon';
+import { SxProps } from '@mui/material';
 
 echarts.use([BarChart, TooltipComponent, GridComponent, LegendComponent, CanvasRenderer]);
 
@@ -33,7 +34,11 @@ interface EChartsTooltipParam {
   dataIndex: number;
 }
 
-const StatistiqueLivreur = () => {
+interface StatistiqueLivreurProps {
+  sx?: SxProps;
+}
+
+const StatistiqueLivreur = ({ sx }: StatistiqueLivreurProps) => {
   const theme = useTheme();
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -194,7 +199,7 @@ const StatistiqueLivreur = () => {
   }, [livreursStats, theme]);
 
   return (
-    <Box component={Card} height={350}>
+    <Box component={Card} height={350} sx={{ ...sx }}>
       <Stack direction="row" justifyContent="space-between" alignItems="center" p={2.5} pb={0}>
         <Typography variant="h4">Statistiques Livreurs - Mois en cours</Typography>
         <Stack

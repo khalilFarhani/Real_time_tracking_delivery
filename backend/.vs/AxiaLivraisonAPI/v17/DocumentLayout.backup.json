@@ -3,24 +3,52 @@
   "WorkspaceRootPath": "E:\\PFE\\Test\\AxiaLivraison2\\backend\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{2CFF250A-B8FC-494D-8F97-0B33439DD30D}|AxiaLivraisonAPI.csproj|e:\\pfe\\test\\axialivraison2\\backend\\controllers\\authentificationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CFF250A-B8FC-494D-8F97-0B33439DD30D}|AxiaLivraisonAPI.csproj|solutionrelative:controllers\\authentificationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CFF250A-B8FC-494D-8F97-0B33439DD30D}|AxiaLivraisonAPI.csproj|e:\\pfe\\test\\axialivraison2\\backend\\controllers\\utilisateurcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CFF250A-B8FC-494D-8F97-0B33439DD30D}|AxiaLivraisonAPI.csproj|solutionrelative:controllers\\utilisateurcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2CFF250A-B8FC-494D-8F97-0B33439DD30D}|AxiaLivraisonAPI.csproj|e:\\pfe\\test\\axialivraison2\\backend\\controllers\\statistiquescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2CFF250A-B8FC-494D-8F97-0B33439DD30D}|AxiaLivraisonAPI.csproj|solutionrelative:controllers\\statistiquescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2CFF250A-B8FC-494D-8F97-0B33439DD30D}|AxiaLivraisonAPI.csproj|e:\\pfe\\test\\axialivraison2\\backend\\models\\commande.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2CFF250A-B8FC-494D-8F97-0B33439DD30D}|AxiaLivraisonAPI.csproj|solutionrelative:models\\commande.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2CFF250A-B8FC-494D-8F97-0B33439DD30D}|AxiaLivraisonAPI.csproj|e:\\pfe\\test\\axialivraison2\\backend\\controllers\\commandecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CFF250A-B8FC-494D-8F97-0B33439DD30D}|AxiaLivraisonAPI.csproj|solutionrelative:controllers\\commandecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2CFF250A-B8FC-494D-8F97-0B33439DD30D}|AxiaLivraisonAPI.csproj|e:\\pfe\\test\\axialivraison2\\backend\\controllers\\fournisseurcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2CFF250A-B8FC-494D-8F97-0B33439DD30D}|AxiaLivraisonAPI.csproj|solutionrelative:controllers\\fournisseurcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{2CFF250A-B8FC-494D-8F97-0B33439DD30D}|AxiaLivraisonAPI.csproj|e:\\pfe\\test\\axialivraison2\\backend\\controllers\\permissioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CFF250A-B8FC-494D-8F97-0B33439DD30D}|AxiaLivraisonAPI.csproj|solutionrelative:controllers\\permissioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CFF250A-B8FC-494D-8F97-0B33439DD30D}|AxiaLivraisonAPI.csproj|e:\\pfe\\test\\axialivraison2\\backend\\models\\utilisateurpermission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CFF250A-B8FC-494D-8F97-0B33439DD30D}|AxiaLivraisonAPI.csproj|solutionrelative:models\\utilisateurpermission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2CFF250A-B8FC-494D-8F97-0B33439DD30D}|AxiaLivraisonAPI.csproj|e:\\pfe\\test\\axialivraison2\\backend\\models\\utilisateur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2CFF250A-B8FC-494D-8F97-0B33439DD30D}|AxiaLivraisonAPI.csproj|solutionrelative:models\\utilisateur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2CFF250A-B8FC-494D-8F97-0B33439DD30D}|AxiaLivraisonAPI.csproj|e:\\pfe\\test\\axialivraison2\\backend\\controllers\\commandecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2CFF250A-B8FC-494D-8F97-0B33439DD30D}|AxiaLivraisonAPI.csproj|solutionrelative:controllers\\commandecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2CFF250A-B8FC-494D-8F97-0B33439DD30D}|AxiaLivraisonAPI.csproj|e:\\pfe\\test\\axialivraison2\\backend\\models\\permission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CFF250A-B8FC-494D-8F97-0B33439DD30D}|AxiaLivraisonAPI.csproj|solutionrelative:models\\permission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CFF250A-B8FC-494D-8F97-0B33439DD30D}|AxiaLivraisonAPI.csproj|e:\\pfe\\test\\axialivraison2\\backend\\models\\commande.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CFF250A-B8FC-494D-8F97-0B33439DD30D}|AxiaLivraisonAPI.csproj|solutionrelative:models\\commande.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CFF250A-B8FC-494D-8F97-0B33439DD30D}|AxiaLivraisonAPI.csproj|e:\\pfe\\test\\axialivraison2\\backend\\models\\rapport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CFF250A-B8FC-494D-8F97-0B33439DD30D}|AxiaLivraisonAPI.csproj|solutionrelative:models\\rapport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CFF250A-B8FC-494D-8F97-0B33439DD30D}|AxiaLivraisonAPI.csproj|e:\\pfe\\test\\axialivraison2\\backend\\dto\\locationupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CFF250A-B8FC-494D-8F97-0B33439DD30D}|AxiaLivraisonAPI.csproj|solutionrelative:dto\\locationupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2CFF250A-B8FC-494D-8F97-0B33439DD30D}|AxiaLivraisonAPI.csproj|e:\\pfe\\test\\axialivraison2\\backend\\dto\\commandedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -35,40 +63,12 @@
       "RelativeMoniker": "D:0:0:{2CFF250A-B8FC-494D-8F97-0B33439DD30D}|AxiaLivraisonAPI.csproj|solutionrelative:dto\\fournisseurdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2CFF250A-B8FC-494D-8F97-0B33439DD30D}|AxiaLivraisonAPI.csproj|e:\\pfe\\test\\axialivraison2\\backend\\controllers\\utilisateurcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2CFF250A-B8FC-494D-8F97-0B33439DD30D}|AxiaLivraisonAPI.csproj|solutionrelative:controllers\\utilisateurcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2CFF250A-B8FC-494D-8F97-0B33439DD30D}|AxiaLivraisonAPI.csproj|e:\\pfe\\test\\axialivraison2\\backend\\models\\rapport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2CFF250A-B8FC-494D-8F97-0B33439DD30D}|AxiaLivraisonAPI.csproj|solutionrelative:models\\rapport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2CFF250A-B8FC-494D-8F97-0B33439DD30D}|AxiaLivraisonAPI.csproj|e:\\pfe\\test\\axialivraison2\\backend\\models\\utilisateurpermission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2CFF250A-B8FC-494D-8F97-0B33439DD30D}|AxiaLivraisonAPI.csproj|solutionrelative:models\\utilisateurpermission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2CFF250A-B8FC-494D-8F97-0B33439DD30D}|AxiaLivraisonAPI.csproj|e:\\pfe\\test\\axialivraison2\\backend\\models\\permission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2CFF250A-B8FC-494D-8F97-0B33439DD30D}|AxiaLivraisonAPI.csproj|solutionrelative:models\\permission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2CFF250A-B8FC-494D-8F97-0B33439DD30D}|AxiaLivraisonAPI.csproj|e:\\pfe\\test\\axialivraison2\\backend\\models\\notification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2CFF250A-B8FC-494D-8F97-0B33439DD30D}|AxiaLivraisonAPI.csproj|solutionrelative:models\\notification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2CFF250A-B8FC-494D-8F97-0B33439DD30D}|AxiaLivraisonAPI.csproj|e:\\pfe\\test\\axialivraison2\\backend\\controllers\\permissioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2CFF250A-B8FC-494D-8F97-0B33439DD30D}|AxiaLivraisonAPI.csproj|solutionrelative:controllers\\permissioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2CFF250A-B8FC-494D-8F97-0B33439DD30D}|AxiaLivraisonAPI.csproj|e:\\pfe\\test\\axialivraison2\\backend\\controllers\\notificationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2CFF250A-B8FC-494D-8F97-0B33439DD30D}|AxiaLivraisonAPI.csproj|solutionrelative:controllers\\notificationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2CFF250A-B8FC-494D-8F97-0B33439DD30D}|AxiaLivraisonAPI.csproj|e:\\pfe\\test\\axialivraison2\\backend\\controllers\\authentificationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2CFF250A-B8FC-494D-8F97-0B33439DD30D}|AxiaLivraisonAPI.csproj|solutionrelative:controllers\\authentificationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2CFF250A-B8FC-494D-8F97-0B33439DD30D}|AxiaLivraisonAPI.csproj|e:\\pfe\\test\\axialivraison2\\backend\\dto\\locationupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2CFF250A-B8FC-494D-8F97-0B33439DD30D}|AxiaLivraisonAPI.csproj|solutionrelative:dto\\locationupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2CFF250A-B8FC-494D-8F97-0B33439DD30D}|AxiaLivraisonAPI.csproj|e:\\pfe\\test\\axialivraison2\\backend\\dto\\updatestatutdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -142,8 +142,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 22,
@@ -158,74 +162,162 @@
               "IsPinned": true
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UtilisateurController.cs",
+              "DocumentMoniker": "E:\\PFE\\Test\\AxiaLivraison2\\backend\\Controllers\\UtilisateurController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UtilisateurController.cs",
+              "ToolTip": "E:\\PFE\\Test\\AxiaLivraison2\\backend\\Controllers\\UtilisateurController.cs",
+              "RelativeToolTip": "Controllers\\UtilisateurController.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAQwDoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T22:44:45.217Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "AuthentificationController.cs",
+              "DocumentMoniker": "E:\\PFE\\Test\\AxiaLivraison2\\backend\\Controllers\\AuthentificationController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AuthentificationController.cs",
+              "ToolTip": "E:\\PFE\\Test\\AxiaLivraison2\\backend\\Controllers\\AuthentificationController.cs*",
+              "RelativeToolTip": "Controllers\\AuthentificationController.cs*",
+              "ViewState": "AgIAACMAAAAAAAAAAAAAwDkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T11:53:42.834Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "StatistiquesController.cs",
               "DocumentMoniker": "E:\\PFE\\Test\\AxiaLivraison2\\backend\\Controllers\\StatistiquesController.cs",
               "RelativeDocumentMoniker": "Controllers\\StatistiquesController.cs",
-              "ToolTip": "E:\\PFE\\Test\\AxiaLivraison2\\backend\\Controllers\\StatistiquesController.cs*",
-              "RelativeToolTip": "Controllers\\StatistiquesController.cs*",
-              "ViewState": "AgIAALcCAAAAAAAAAAAgwMcCAAAPAAAAAAAAAA==",
+              "ToolTip": "E:\\PFE\\Test\\AxiaLivraison2\\backend\\Controllers\\StatistiquesController.cs",
+              "RelativeToolTip": "Controllers\\StatistiquesController.cs",
+              "ViewState": "AgIAAK8DAAAAAAAAAAAgwNcDAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-07T10:50:11.176Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
+              "Title": "CommandeController.cs",
+              "DocumentMoniker": "E:\\PFE\\Test\\AxiaLivraison2\\backend\\Controllers\\CommandeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CommandeController.cs",
+              "ToolTip": "E:\\PFE\\Test\\AxiaLivraison2\\backend\\Controllers\\CommandeController.cs",
+              "RelativeToolTip": "Controllers\\CommandeController.cs",
+              "ViewState": "AgIAAIYBAAAAAAAAAAAAwJ0BAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T23:29:37.161Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FournisseurController.cs",
+              "DocumentMoniker": "E:\\PFE\\Test\\AxiaLivraison2\\backend\\Controllers\\FournisseurController.cs",
+              "RelativeDocumentMoniker": "Controllers\\FournisseurController.cs",
+              "ToolTip": "E:\\PFE\\Test\\AxiaLivraison2\\backend\\Controllers\\FournisseurController.cs",
+              "RelativeToolTip": "Controllers\\FournisseurController.cs",
+              "ViewState": "AgIAALwAAAAAAAAAAAAAwNQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-22T00:37:25.381Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PermissionController.cs",
+              "DocumentMoniker": "E:\\PFE\\Test\\AxiaLivraison2\\backend\\Controllers\\PermissionController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PermissionController.cs",
+              "ToolTip": "E:\\PFE\\Test\\AxiaLivraison2\\backend\\Controllers\\PermissionController.cs",
+              "RelativeToolTip": "Controllers\\PermissionController.cs",
+              "ViewState": "AgIAAHcAAAAAAAAAAAAAwIMAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T01:06:38.577Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UtilisateurPermission.cs",
+              "DocumentMoniker": "E:\\PFE\\Test\\AxiaLivraison2\\backend\\Models\\UtilisateurPermission.cs",
+              "RelativeDocumentMoniker": "Models\\UtilisateurPermission.cs",
+              "ToolTip": "E:\\PFE\\Test\\AxiaLivraison2\\backend\\Models\\UtilisateurPermission.cs",
+              "RelativeToolTip": "Models\\UtilisateurPermission.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAiwBQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T23:48:05.739Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Utilisateur.cs",
+              "DocumentMoniker": "E:\\PFE\\Test\\AxiaLivraison2\\backend\\Models\\Utilisateur.cs",
+              "RelativeDocumentMoniker": "Models\\Utilisateur.cs",
+              "ToolTip": "E:\\PFE\\Test\\AxiaLivraison2\\backend\\Models\\Utilisateur.cs",
+              "RelativeToolTip": "Models\\Utilisateur.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAUwCYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T00:22:58.349Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Permission.cs",
+              "DocumentMoniker": "E:\\PFE\\Test\\AxiaLivraison2\\backend\\Models\\Permission.cs",
+              "RelativeDocumentMoniker": "Models\\Permission.cs",
+              "ToolTip": "E:\\PFE\\Test\\AxiaLivraison2\\backend\\Models\\Permission.cs",
+              "RelativeToolTip": "Models\\Permission.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAiwBIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T03:06:50.079Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "Commande.cs",
               "DocumentMoniker": "E:\\PFE\\Test\\AxiaLivraison2\\backend\\Models\\Commande.cs",
               "RelativeDocumentMoniker": "Models\\Commande.cs",
               "ToolTip": "E:\\PFE\\Test\\AxiaLivraison2\\backend\\Models\\Commande.cs",
               "RelativeToolTip": "Models\\Commande.cs",
-              "ViewState": "AgIAADcAAAAAAAAAAAAmwEQAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAADUAAAAAAAAAAAAuwEQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-05T23:27:59.351Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FournisseurController.cs",
-              "DocumentMoniker": "E:\\PFE\\Test\\AxiaLivraison2\\backend\\Controllers\\FournisseurController.cs",
-              "RelativeDocumentMoniker": "Controllers\\FournisseurController.cs",
-              "ToolTip": "E:\\PFE\\Test\\AxiaLivraison2\\backend\\Controllers\\FournisseurController.cs",
-              "RelativeToolTip": "Controllers\\FournisseurController.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAmwCoAAAAaAAAAAAAAAA==",
+              "DocumentIndex": 10,
+              "Title": "Rapport.cs",
+              "DocumentMoniker": "E:\\PFE\\Test\\AxiaLivraison2\\backend\\Models\\Rapport.cs",
+              "RelativeDocumentMoniker": "Models\\Rapport.cs",
+              "ToolTip": "E:\\PFE\\Test\\AxiaLivraison2\\backend\\Models\\Rapport.cs",
+              "RelativeToolTip": "Models\\Rapport.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAuwBAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-22T00:37:25.381Z"
+              "WhenOpened": "2025-03-06T19:03:26.358Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Utilisateur.cs",
-              "DocumentMoniker": "E:\\PFE\\Test\\AxiaLivraison2\\backend\\Models\\Utilisateur.cs",
-              "RelativeDocumentMoniker": "Models\\Utilisateur.cs",
-              "ToolTip": "E:\\PFE\\Test\\AxiaLivraison2\\backend\\Models\\Utilisateur.cs",
-              "RelativeToolTip": "Models\\Utilisateur.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAA9wCUAAAAFAAAAAAAAAA==",
+              "DocumentIndex": 11,
+              "Title": "LocationUpdateDTO.cs",
+              "DocumentMoniker": "E:\\PFE\\Test\\AxiaLivraison2\\backend\\DTO\\LocationUpdateDTO.cs",
+              "RelativeDocumentMoniker": "DTO\\LocationUpdateDTO.cs",
+              "ToolTip": "E:\\PFE\\Test\\AxiaLivraison2\\backend\\DTO\\LocationUpdateDTO.cs",
+              "RelativeToolTip": "DTO\\LocationUpdateDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-06T00:22:58.349Z"
+              "WhenOpened": "2025-04-28T13:53:08.601Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CommandeController.cs",
-              "DocumentMoniker": "E:\\PFE\\Test\\AxiaLivraison2\\backend\\Controllers\\CommandeController.cs",
-              "RelativeDocumentMoniker": "Controllers\\CommandeController.cs",
-              "ToolTip": "E:\\PFE\\Test\\AxiaLivraison2\\backend\\Controllers\\CommandeController.cs",
-              "RelativeToolTip": "Controllers\\CommandeController.cs",
-              "ViewState": "AgIAAGIBAAAAAAAAAAAgwHUBAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-07T23:29:37.161Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 12,
               "Title": "CommandeDTO.cs",
               "DocumentMoniker": "E:\\PFE\\Test\\AxiaLivraison2\\backend\\DTO\\CommandeDTO.cs",
               "RelativeDocumentMoniker": "DTO\\CommandeDTO.cs",
@@ -237,7 +329,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 13,
               "Title": "Fournisseur.cs",
               "DocumentMoniker": "E:\\PFE\\Test\\AxiaLivraison2\\backend\\Models\\Fournisseur.cs",
               "RelativeDocumentMoniker": "Models\\Fournisseur.cs",
@@ -249,7 +341,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 14,
               "Title": "FournisseurDTO.cs",
               "DocumentMoniker": "E:\\PFE\\Test\\AxiaLivraison2\\backend\\DTO\\FournisseurDTO.cs",
               "RelativeDocumentMoniker": "DTO\\FournisseurDTO.cs",
@@ -261,55 +353,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "UtilisateurController.cs",
-              "DocumentMoniker": "E:\\PFE\\Test\\AxiaLivraison2\\backend\\Controllers\\UtilisateurController.cs",
-              "RelativeDocumentMoniker": "Controllers\\UtilisateurController.cs",
-              "ToolTip": "E:\\PFE\\Test\\AxiaLivraison2\\backend\\Controllers\\UtilisateurController.cs",
-              "RelativeToolTip": "Controllers\\UtilisateurController.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAA1wDoAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T22:44:45.217Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Rapport.cs",
-              "DocumentMoniker": "E:\\PFE\\Test\\AxiaLivraison2\\backend\\Models\\Rapport.cs",
-              "RelativeDocumentMoniker": "Models\\Rapport.cs",
-              "ToolTip": "E:\\PFE\\Test\\AxiaLivraison2\\backend\\Models\\Rapport.cs",
-              "RelativeToolTip": "Models\\Rapport.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-06T19:03:26.358Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "UtilisateurPermission.cs",
-              "DocumentMoniker": "E:\\PFE\\Test\\AxiaLivraison2\\backend\\Models\\UtilisateurPermission.cs",
-              "RelativeDocumentMoniker": "Models\\UtilisateurPermission.cs",
-              "ToolTip": "E:\\PFE\\Test\\AxiaLivraison2\\backend\\Models\\UtilisateurPermission.cs",
-              "RelativeToolTip": "Models\\UtilisateurPermission.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T23:48:05.739Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Permission.cs",
-              "DocumentMoniker": "E:\\PFE\\Test\\AxiaLivraison2\\backend\\Models\\Permission.cs",
-              "RelativeDocumentMoniker": "Models\\Permission.cs",
-              "ToolTip": "E:\\PFE\\Test\\AxiaLivraison2\\backend\\Models\\Permission.cs",
-              "RelativeToolTip": "Models\\Permission.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T03:06:50.079Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "Notification.cs",
               "DocumentMoniker": "E:\\PFE\\Test\\AxiaLivraison2\\backend\\Models\\Notification.cs",
               "RelativeDocumentMoniker": "Models\\Notification.cs",
@@ -321,19 +365,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "PermissionController.cs",
-              "DocumentMoniker": "E:\\PFE\\Test\\AxiaLivraison2\\backend\\Controllers\\PermissionController.cs",
-              "RelativeDocumentMoniker": "Controllers\\PermissionController.cs",
-              "ToolTip": "E:\\PFE\\Test\\AxiaLivraison2\\backend\\Controllers\\PermissionController.cs",
-              "RelativeToolTip": "Controllers\\PermissionController.cs",
-              "ViewState": "AgIAAJsAAAAAAAAAAAAYwLYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T01:06:38.577Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "NotificationController.cs",
               "DocumentMoniker": "E:\\PFE\\Test\\AxiaLivraison2\\backend\\Controllers\\NotificationController.cs",
               "RelativeDocumentMoniker": "Controllers\\NotificationController.cs",
@@ -342,30 +374,6 @@
               "ViewState": "AgIAAHEAAAAAAAAAAAAQwIsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-02T09:12:51.827Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "AuthentificationController.cs",
-              "DocumentMoniker": "E:\\PFE\\Test\\AxiaLivraison2\\backend\\Controllers\\AuthentificationController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AuthentificationController.cs",
-              "ToolTip": "E:\\PFE\\Test\\AxiaLivraison2\\backend\\Controllers\\AuthentificationController.cs",
-              "RelativeToolTip": "Controllers\\AuthentificationController.cs",
-              "ViewState": "AgIAADYAAAAAAAAAAAAIwGAAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T11:53:42.834Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "LocationUpdateDTO.cs",
-              "DocumentMoniker": "E:\\PFE\\Test\\AxiaLivraison2\\backend\\DTO\\LocationUpdateDTO.cs",
-              "RelativeDocumentMoniker": "DTO\\LocationUpdateDTO.cs",
-              "ToolTip": "E:\\PFE\\Test\\AxiaLivraison2\\backend\\DTO\\LocationUpdateDTO.cs",
-              "RelativeToolTip": "DTO\\LocationUpdateDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-28T13:53:08.601Z"
             },
             {
               "$type": "Document",

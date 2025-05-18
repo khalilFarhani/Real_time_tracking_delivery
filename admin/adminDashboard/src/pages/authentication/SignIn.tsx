@@ -14,6 +14,13 @@ import VisibilityOff from '@mui/icons-material/VisibilityOff';
 import { styled } from '@mui/material/styles';
 import paths from 'routes/paths';
 import logo from 'assets/images/logo.png';
+import {
+  Dialog,
+  DialogTitle,
+  DialogContent,
+  DialogContentText,
+  DialogActions,
+} from '@mui/material';
 
 interface User {
   identifiant: string;
@@ -60,6 +67,8 @@ const SignIn = () => {
   const [btnPosition, setBtnPosition] = useState({ x: 0, y: 0 });
   const [preventClick, setPreventClick] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
+  const [dialogOpen, setDialogOpen] = useState(false);
+  const [errorMessage, setErrorMessage] = useState('');
   const navigate = useNavigate();
 
   const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {
@@ -89,6 +98,15 @@ const SignIn = () => {
       const data = await response.json();
 
       if (response.ok) {
+        // Check if user is a livreur
+        if (data.estLivreur) {
+          setErrorMessage(
+            "Les livreurs ne peuvent pas accéder à cette application. Veuillez utiliser l'application dédiée aux livreurs.",
+          );
+          setDialogOpen(true);
+          return;
+        }
+
         localStorage.setItem(
           'user',
           JSON.stringify({
@@ -97,16 +115,19 @@ const SignIn = () => {
             Email: data.email,
             ImagePath: data.imagePath,
             EstAdmin: data.estAdmin,
+            EstLivreur: data.estLivreur,
             Permissions: data.permissions,
           }),
         );
         navigate(paths.dashboard);
       } else {
-        alert(data.message || 'Erreur de connexion');
+        setErrorMessage(data.message || 'Erreur de connexion');
+        setDialogOpen(true);
       }
     } catch (error) {
       console.error('Erreur lors de la connexion:', error);
-      alert('Erreur lors de la connexion');
+      setErrorMessage('Erreur lors de la connexion');
+      setDialogOpen(true);
     }
   };
 
@@ -128,6 +149,10 @@ const SignIn = () => {
 
   const handleClickShowPassword = () => {
     setShowPassword(!showPassword);
+  };
+
+  const handleCloseDialog = () => {
+    setDialogOpen(false);
   };
 
   return (
@@ -243,6 +268,23 @@ const SignIn = () => {
       <Typography variant="body2" color="text.secondary">
         © {new Date().getFullYear()} Tous droits réservés
       </Typography>
+
+      <Dialog
+        open={dialogOpen}
+        onClose={handleCloseDialog}
+        aria-labelledby="alert-dialog-title"
+        aria-describedby="alert-dialog-description"
+      >
+        <DialogTitle id="alert-dialog-title">{'Accès refusé'}</DialogTitle>
+        <DialogContent>
+          <DialogContentText id="alert-dialog-description">{errorMessage}</DialogContentText>
+        </DialogContent>
+        <DialogActions>
+          <Button onClick={handleCloseDialog} color="primary" autoFocus>
+            OK
+          </Button>
+        </DialogActions>
+      </Dialog>
     </Stack>
   );
 };

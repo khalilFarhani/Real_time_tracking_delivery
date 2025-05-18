@@ -16,10 +16,15 @@ import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
 import Button from '@mui/material/Button';
+import { SxProps } from '@mui/material';
 
 const API_URL = 'http://localhost:5283';
 
-const Livreur = () => {
+interface LivreurProps {
+  sx?: SxProps;
+}
+
+const Livreur = ({ sx }: LivreurProps) => {
   const [livreurs, setLivreurs] = useState<Utilisateur[]>([]);
   const [page, setPage] = useState(1);
   const [loading, setLoading] = useState(true);
@@ -149,7 +154,7 @@ const Livreur = () => {
   const pageCount = Math.max(1, Math.ceil(livreurs.length / itemsPerPage));
 
   return (
-    <Box component={Paper} p={3} height="auto" minHeight={390}>
+    <Box component={Paper} p={3} sx={{ height: 350, ...sx }}>
       <Stack direction="row" alignItems="center" justifyContent="space-between">
         <Typography variant="h5">Livreurs</Typography>
         <ButtonBase
@@ -180,7 +185,7 @@ const Livreur = () => {
           <Typography>Aucun livreur trouvé</Typography>
         ) : (
           <>
-            <Box sx={{ flexGrow: 1 }}>
+            <Box sx={{ flexGrow: 1, marginTop: -2 }}>
               {displayedLivreurs.map((item) => (
                 <MemberCard
                   key={item.id}

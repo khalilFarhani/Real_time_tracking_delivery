@@ -9,6 +9,12 @@ import {
   UtilisateurIdentifiant,
   FournisseurIdentifiant,
 } from './types';
+import Dialog from '@mui/material/Dialog';
+import DialogTitle from '@mui/material/DialogTitle';
+import DialogContent from '@mui/material/DialogContent';
+import DialogActions from '@mui/material/DialogActions';
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
 
 const GestionCommande: React.FC = () => {
   const [commandes, setCommandes] = useState<CommandeDTO[]>([]);
@@ -17,6 +23,10 @@ const GestionCommande: React.FC = () => {
   const [openDialog, setOpenDialog] = useState<boolean>(false);
   const [currentCommande, setCurrentCommande] = useState<CommandeDTO | null>(null);
   const [selectedCommande, setSelectedCommande] = useState<CommandeDetailsDTO | null>(null);
+  const [deleteError, setDeleteError] = useState<string>('');
+  const [deleteErrorOpen, setDeleteErrorOpen] = useState<boolean>(false);
+  const [deleteConfirmOpen, setDeleteConfirmOpen] = useState<boolean>(false);
+  const [commandeToDelete, setCommandeToDelete] = useState<number | null>(null);
 
   const API_URL = 'http://localhost:5283';
 
@@ -108,7 +118,35 @@ const GestionCommande: React.FC = () => {
       fetchCommandes();
     } catch (error) {
       console.error('Erreur lors de la suppression de la commande :', error);
+
+      // Show error dialog with details
+      if (axios.isAxiosError(error) && error.response) {
+        let errorMsg = 'Une erreur est survenue lors de la suppression de la commande.';
+
+        // If there's a specific error message from the server
+        if (error.response.data && typeof error.response.data === 'string') {
+          errorMsg = error.response.data;
+        } else if (error.response.data && error.response.data.message) {
+          errorMsg = error.response.data.message;
+        }
+
+        setDeleteError(errorMsg);
+        setDeleteErrorOpen(true);
+      }
     }
+  };
+
+  const confirmDelete = (id: number) => {
+    setCommandeToDelete(id);
+    setDeleteConfirmOpen(true);
+  };
+
+  const handleDeleteConfirmed = async () => {
+    if (commandeToDelete) {
+      await handleDelete(commandeToDelete);
+      setCommandeToDelete(null);
+    }
+    setDeleteConfirmOpen(false);
   };
 
   const handleViewDetails = async (id: number) => {
@@ -295,7 +333,7 @@ const GestionCommande: React.FC = () => {
             setCurrentCommande(commande);
             setOpenDialog(true);
           }}
-          onDeleteCommande={handleDelete}
+          onDeleteCommande={confirmDelete}
           onViewDetails={handleViewDetails}
         />
       )}
@@ -307,6 +345,32 @@ const GestionCommande: React.FC = () => {
         utilisateurs={utilisateurs}
         fournisseurs={fournisseurs}
       />
+      <Dialog open={deleteErrorOpen} onClose={() => setDeleteErrorOpen(false)}>
+        <DialogTitle>Erreur de suppression</DialogTitle>
+        <DialogContent>
+          <Typography>{deleteError}</Typography>
+        </DialogContent>
+        <DialogActions>
+          <Button onClick={() => setDeleteErrorOpen(false)} color="primary" variant="contained">
+            Fermer
+          </Button>
+        </DialogActions>
+      </Dialog>
+      <Dialog open={deleteConfirmOpen} onClose={() => setDeleteConfirmOpen(false)}>
+        <DialogTitle>Confirmer la suppression</DialogTitle>
+        <DialogContent>
+          <Typography>Êtes-vous sûr de vouloir supprimer cette commande ?</Typography>
+          <Typography sx={{ mt: 2, color: 'warning.main' }}>
+            Cette action est irréversible.
+          </Typography>
+        </DialogContent>
+        <DialogActions>
+          <Button onClick={() => setDeleteConfirmOpen(false)}>Annuler</Button>
+          <Button onClick={handleDeleteConfirmed} color="error" variant="contained">
+            Supprimer
+          </Button>
+        </DialogActions>
+      </Dialog>
     </>
   );
 };

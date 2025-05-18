@@ -671,6 +671,29 @@
         }
       }
     },
+    "/api/fournisseurs/supprimer-avec-commandes/{id}": {
+      "delete": {
+        "tags": [
+          "Fournisseur"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Notification/by-commande/{commandeId}": {
       "get": {
         "tags": [
@@ -1308,6 +1331,52 @@
       }
     },
     "/api/Statistiques/commandes-creees-par-jour": {
+      "get": {
+        "tags": [
+          "Statistiques"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Statistiques/locations": {
+      "get": {
+        "tags": [
+          "Statistiques"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Statistiques/profits": {
+      "get": {
+        "tags": [
+          "Statistiques"
+        ],
+        "parameters": [
+          {
+            "name": "periode",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": "semaine"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Statistiques/temps-traitement": {
       "get": {
         "tags": [
           "Statistiques"

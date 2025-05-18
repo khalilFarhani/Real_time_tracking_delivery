@@ -80,31 +80,6 @@ const ProfileMenu = () => {
   const menuItems: MenuItems[] = [
     {
       id: 1,
-      title: 'View Profile',
-      icon: 'material-symbols:account-circle-outline',
-    },
-    {
-      id: 2,
-      title: 'Account Settings',
-      icon: 'material-symbols:settings-account-box-outline-rounded',
-    },
-    {
-      id: 3,
-      title: 'Notifications',
-      icon: 'ic:outline-notifications-none',
-    },
-    {
-      id: 4,
-      title: 'Switch Account',
-      icon: 'material-symbols:switch-account-outline',
-    },
-    {
-      id: 5,
-      title: 'Help Center',
-      icon: 'material-symbols:help-outline',
-    },
-    {
-      id: 6,
       title: 'Logout',
       icon: 'material-symbols:logout',
       action: handleLogout,

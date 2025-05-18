@@ -1,10 +1,8 @@
 import Link from '@mui/material/Link';
 import Stack from '@mui/material/Stack';
 import Toolbar from '@mui/material/Toolbar';
-import TextField from '@mui/material/TextField';
 import ButtonBase from '@mui/material/ButtonBase';
 import IconButton from '@mui/material/IconButton';
-import InputAdornment from '@mui/material/InputAdornment';
 import IconifyIcon from 'components/base/IconifyIcon';
 import Logo from 'assets/images/logo.png';
 import Image from 'components/base/Image';
@@ -69,24 +67,8 @@ const Topbar = ({ isClosing, mobileOpen, setMobileOpen }: TopbarProps) => {
           </IconButton>
         </Toolbar>
 
-        <Toolbar sx={{ display: { xm: 'block', md: 'none' } }}>
-          <IconButton size="large" edge="start" color="inherit" aria-label="search">
-            <IconifyIcon icon="bx:search" />
-          </IconButton>
-        </Toolbar>
-
-        <TextField
-          variant="filled"
-          placeholder="Rechercher"
-          sx={{ width: 320, display: { xs: 'none', md: 'flex' } }}
-          InputProps={{
-            endAdornment: (
-              <InputAdornment position="end">
-                <IconifyIcon icon="bx:search" />
-              </InputAdornment>
-            ),
-          }}
-        />
+        {/* Suppression du bouton de recherche mobile */}
+        {/* Suppression du champ de recherche */}
       </Stack>
 
       <Stack spacing={{ xs: 1.5, sm: 2 }} alignItems="center">

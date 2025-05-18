@@ -115,7 +115,6 @@ namespace AxiaLivraisonAPI.Controllers
 
             return NoContent();
         }
-
         // DELETE: api/fournisseurs/supprimer/{id}
         [HttpDelete("supprimer/{id:int}")]
         public async Task<IActionResult> DeleteFournisseur(int id)
@@ -126,10 +125,90 @@ namespace AxiaLivraisonAPI.Controllers
                 return NotFound(new { message = "Fournisseur non trouvé." });
             }
 
-            _context.Fournisseurs.Remove(fournisseur);
-            await _context.SaveChangesAsync();
+            try
+            {
+                // Check if there are any commandes associated with this fournisseur
+                var hasCommandes = await _context.Commandes
+                    .AnyAsync(c => c.FournisseurId == id);
 
-            return NoContent();
+                if (hasCommandes)
+                {
+                    return BadRequest(new
+                    {
+                        message = "Impossible de supprimer ce fournisseur",
+                        details = "Ce fournisseur est associé à une ou plusieurs commandes. Veuillez d'abord supprimer ces commandes."
+                    });
+                }
+
+                // If no commandes, it's safe to delete
+                _context.Fournisseurs.Remove(fournisseur);
+                await _context.SaveChangesAsync();
+
+                return NoContent();
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new
+                {
+                    message = "Erreur lors de la suppression du fournisseur",
+                    details = "Ce fournisseur ne peut pas être supprimé car il est référencé par d'autres éléments du système."
+                });
+            }
+        }
+        // DELETE: api/fournisseurs/supprimer-avec-commandes/{id}
+        [HttpDelete("supprimer-avec-commandes/{id:int}")]
+        public async Task<IActionResult> DeleteFournisseurWithCommandes(int id)
+        {
+            var fournisseur = await _context.Fournisseurs.FindAsync(id);
+            if (fournisseur == null)
+            {
+                return NotFound(new { message = "Fournisseur non trouvé." });
+            }
+
+            try
+            {
+                // Trouver toutes les commandes associées à ce fournisseur
+                var commandes = await _context.Commandes
+                    .Where(c => c.FournisseurId == id)
+                    .ToListAsync();
+
+                // Supprimer d'abord les notifications liées aux commandes
+                foreach (var commande in commandes)
+                {
+                    var notifications = await _context.Notifications
+                        .Where(n => n.CommandeId == commande.Id)
+                        .ToListAsync();
+
+                    if (notifications.Any())
+                    {
+                        _context.Notifications.RemoveRange(notifications);
+                    }
+                }
+
+                // Ensuite supprimer les commandes
+                if (commandes.Any())
+                {
+                    _context.Commandes.RemoveRange(commandes);
+                }
+
+                // Enfin, supprimer le fournisseur
+                _context.Fournisseurs.Remove(fournisseur);
+                await _context.SaveChangesAsync();
+
+                return Ok(new
+                {
+                    message = "Fournisseur et ses commandes supprimés avec succès",
+                    commandesCount = commandes.Count
+                });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new
+                {
+                    message = "Erreur lors de la suppression du fournisseur et de ses commandes",
+                    details = ex.Message
+                });
+            }
         }
 
         private bool FournisseurExists(int id)

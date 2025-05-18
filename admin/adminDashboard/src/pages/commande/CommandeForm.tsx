@@ -341,17 +341,27 @@ const CommandeForm: React.FC<CommandeFormProps> = ({
             <SectionHeader>Statut de la Commande</SectionHeader>
             <FormFieldContainer>
               <FieldLabel>Statut </FieldLabel>
-              <CompactSelect
+              <TextField
                 select
                 fullWidth
                 size="small"
                 value={formData.statut}
-                onChange={(e) => handleChange('statut', e.target.value)}
+                disabled={true}
+                InputProps={{
+                  readOnly: true,
+                  sx: {
+                    bgcolor: 'rgba(0, 0, 0, 0.04)',
+                    '& .MuiInputBase-input.Mui-disabled': {
+                      WebkitTextFillColor: '#000000',
+                      opacity: 0.7,
+                    },
+                  },
+                }}
               >
                 <MenuItem value="en préparation">En préparation</MenuItem>
                 <MenuItem value="en transit">En transit</MenuItem>
                 <MenuItem value="livré">Livré</MenuItem>
-              </CompactSelect>
+              </TextField>
             </FormFieldContainer>
           </SectionBox>
         )}

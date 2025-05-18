@@ -11,7 +11,7 @@ import Paper from '@mui/material/Paper';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import IconifyIcon from 'components/base/IconifyIcon';
-import { Typography, Box, CircularProgress, useTheme } from '@mui/material';
+import { Typography, Box, CircularProgress, useTheme, SxProps } from '@mui/material';
 
 interface CalendarHeaderProps {
   currentMonth: Dayjs;
@@ -129,7 +129,11 @@ const CalendarHeader = ({ currentMonth, onMonthChange, onYearChange }: CalendarH
   );
 };
 
-const CommandeCalendar = () => {
+interface CommandeCalendarProps {
+  sx?: SxProps;
+}
+
+const CommandeCalendar = ({ sx }: CommandeCalendarProps) => {
   const [currentDate, setCurrentDate] = useState<Dayjs>(dayjs());
   const [commandesCreees, setCommandesCreees] = useState<CommandeCreee[]>([]);
   const [isLoading, setIsLoading] = useState<boolean>(true);
@@ -212,7 +216,7 @@ const CommandeCalendar = () => {
   };
 
   return (
-    <Paper sx={{ p: 2, height: 350 }}>
+    <Box component={Paper} sx={{ p: 3, ...sx }}>
       {isLoading && (
         <Box
           sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '80%' }}
@@ -256,7 +260,7 @@ const CommandeCalendar = () => {
                     fontWeight: 'bold',
                     color:
                       count > 0
-                        ? '#000000' // Noir pour les jours avec commandes
+                        ? '#ffffff' // Noir pour les jours avec commandes
                         : isOutsideCurrentMonth
                           ? theme.palette.text.secondary
                           : theme.palette.text.primary,
@@ -288,7 +292,7 @@ const CommandeCalendar = () => {
           fixedWeekNumber={6}
         />
       </LocalizationProvider>
-    </Paper>
+    </Box>
   );
 };
 

@@ -711,5 +711,276 @@ namespace AxiaLivraisonAPI.Controllers
                 return StatusCode(500, "Erreur lors du traitement des données");
             }
         }
+
+
+        [HttpGet("locations")]
+        public async Task<IActionResult> GetCommandeLocations()
+        {
+            try
+            {
+                var locations = await _context.Commandes
+                    .GroupBy(c => new { c.Latitude, c.Longitude, c.NomClient, c.AdressClient })
+                    .Select(g => new
+                    {
+                        Id = g.Min(c => c.Id),
+                        Name = g.Key.NomClient,
+                        Address = g.Key.AdressClient,
+                        Latitude = g.Key.Latitude,
+                        Longitude = g.Key.Longitude,
+                        CommandeCount = g.Count()
+                    })
+                    .ToListAsync();
+
+                return Ok(locations);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, "Erreur lors de la récupération des emplacements");
+            }
+        }
+
+        [HttpGet("profits")]
+        public async Task<IActionResult> GetProfits([FromQuery] string periode = "semaine")
+        {
+            try
+            {
+                List<object> donneesPeriode = new List<object>();
+                decimal profitTotal = 0;
+                decimal profitPeriodePrecedente = 0;
+
+                // Déterminer la période
+                switch (periode.ToLower())
+                {
+                    case "semaine":
+                        // Jour actuel
+                        var jourActuel = DateTime.UtcNow.Date;
+
+                        // Jour précédent
+                        var jourPrecedent = jourActuel.AddDays(-1);
+
+                        // Profit du jour actuel
+                        profitTotal = await _context.Commandes
+                            .Where(c => c.DateReception.HasValue &&
+                                    c.DateReception.Value.Date == jourActuel &&
+                                    c.Statut.ToLower() == "livré")
+                            .SumAsync(c => c.MontantTotale);
+
+                        // Profit du jour précédent
+                        profitPeriodePrecedente = await _context.Commandes
+                            .Where(c => c.DateReception.HasValue &&
+                                    c.DateReception.Value.Date == jourPrecedent &&
+                                    c.Statut.ToLower() == "livré")
+                            .SumAsync(c => c.MontantTotale);
+
+                        // Les 7 derniers jours (aujourd'hui et les 6 jours précédents)
+                        for (int i = 6; i >= 0; i--)
+                        {
+                            var jour = jourActuel.AddDays(-i);
+
+                            var profit = await _context.Commandes
+                                .Where(c => c.DateReception.HasValue &&
+                                        c.DateReception.Value.Date == jour.Date &&
+                                        c.Statut.ToLower() == "livré")
+                                .SumAsync(c => c.MontantTotale);
+
+                            donneesPeriode.Add(new
+                            {
+                                jour = jour.ToString("ddd"),
+                                date = jour.ToString("yyyy-MM-dd"),
+                                profit = profit
+                            });
+                        }
+                        break;
+
+                    case "mois":
+                        // Mois actuel
+                        var moisActuel = new DateTime(DateTime.UtcNow.Year, DateTime.UtcNow.Month, 1);
+                        var finMoisActuel = moisActuel.AddMonths(1).AddDays(-1);
+
+                        // Mois précédent
+                        var moisPrecedent = moisActuel.AddMonths(-1);
+                        var finMoisPrecedent = moisActuel.AddDays(-1);
+
+                        // Profit du mois actuel
+                        profitTotal = await _context.Commandes
+                            .Where(c => c.DateReception.HasValue &&
+                                    c.DateReception.Value >= moisActuel &&
+                                    c.DateReception.Value <= finMoisActuel &&
+                                    c.Statut.ToLower() == "livré")
+                            .SumAsync(c => c.MontantTotale);
+
+                        // Profit du mois précédent
+                        profitPeriodePrecedente = await _context.Commandes
+                            .Where(c => c.DateReception.HasValue &&
+                                    c.DateReception.Value >= moisPrecedent &&
+                                    c.DateReception.Value <= finMoisPrecedent &&
+                                    c.Statut.ToLower() == "livré")
+                            .SumAsync(c => c.MontantTotale);
+
+                        // Année en cours pour les données mensuelles
+                        int anneeEnCours = DateTime.UtcNow.Year;
+
+                        // Récupérer les profits par mois pour l'année en cours
+                        for (int mois = 1; mois <= 12; mois++)
+                        {
+                            var debutMois = new DateTime(anneeEnCours, mois, 1);
+                            var finMois = debutMois.AddMonths(1).AddDays(-1);
+
+                            var profit = await _context.Commandes
+                                .Where(c => c.DateReception.HasValue &&
+                                        c.DateReception.Value >= debutMois &&
+                                        c.DateReception.Value <= finMois &&
+                                        c.Statut.ToLower() == "livré")
+                                .SumAsync(c => c.MontantTotale);
+
+                            donneesPeriode.Add(new
+                            {
+                                mois = debutMois.ToString("MMM"),
+                                date = debutMois.ToString("yyyy-MM"),
+                                profit = mois <= DateTime.UtcNow.Month ? profit : 0
+                            });
+                        }
+                        break;
+
+                    case "annee":
+                        // Année actuelle et précédente
+                        int anneeActuelle = DateTime.UtcNow.Year;
+                        int anneePrecedente = anneeActuelle - 1;
+
+                        var debutAnneeActuelle = new DateTime(anneeActuelle, 1, 1);
+                        var finAnneeActuelle = new DateTime(anneeActuelle, 12, 31);
+
+                        var debutAnneePrecedente = new DateTime(anneePrecedente, 1, 1);
+                        var finAnneePrecedente = new DateTime(anneePrecedente, 12, 31);
+
+                        // Profit de l'année actuelle
+                        profitTotal = await _context.Commandes
+                            .Where(c => c.DateReception.HasValue &&
+                                    c.DateReception.Value >= debutAnneeActuelle &&
+                                    c.DateReception.Value <= finAnneeActuelle &&
+                                    c.Statut.ToLower() == "livré")
+                            .SumAsync(c => c.MontantTotale);
+
+                        // Profit de l'année précédente
+                        profitPeriodePrecedente = await _context.Commandes
+                            .Where(c => c.DateReception.HasValue &&
+                                    c.DateReception.Value >= debutAnneePrecedente &&
+                                    c.DateReception.Value <= finAnneePrecedente &&
+                                    c.Statut.ToLower() == "livré")
+                            .SumAsync(c => c.MontantTotale);
+
+                        // Récupérer les profits par année pour les 10 dernières années
+                        int anneeFinale = DateTime.UtcNow.Year;
+                        int anneeInitiale = anneeFinale - 9;
+
+                        for (int annee = anneeInitiale; annee <= anneeFinale; annee++)
+                        {
+                            var debutAnnee = new DateTime(annee, 1, 1);
+                            var finAnnee = new DateTime(annee, 12, 31);
+
+                            var profit = await _context.Commandes
+                                .Where(c => c.DateReception.HasValue &&
+                                        c.DateReception.Value >= debutAnnee &&
+                                        c.DateReception.Value <= finAnnee &&
+                                        c.Statut.ToLower() == "livré")
+                                .SumAsync(c => c.MontantTotale);
+
+                            donneesPeriode.Add(new
+                            {
+                                annee = annee.ToString(),
+                                date = annee.ToString(),
+                                profit = profit
+                            });
+                        }
+                        break;
+
+                    default:
+                        return BadRequest("Période non valide. Utilisez 'semaine', 'mois' ou 'annee'.");
+                }
+
+                // Calculer le pourcentage de changement (simplement pour déterminer si c'est en hausse, en baisse ou stable)
+                double pourcentageChangement = 0;
+                if (profitPeriodePrecedente > 0)
+                {
+                    pourcentageChangement = (double)((profitTotal - profitPeriodePrecedente) / profitPeriodePrecedente) * 100;
+                }
+                else if (profitTotal > 0 && profitPeriodePrecedente == 0)
+                {
+                    // Si la période précédente était à 0 mais qu'on a des profits maintenant, c'est une hausse
+                    pourcentageChangement = 1; // Valeur positive pour indiquer une hausse
+                }
+                else if (profitTotal < profitPeriodePrecedente)
+                {
+                    // Si le profit actuel est inférieur au précédent, c'est une baisse
+                    pourcentageChangement = -1; // Valeur négative pour indiquer une baisse
+                }
+                // Si les deux sont à 0 ou égaux, pourcentageChangement reste à 0 (stable)
+
+                return Ok(new
+                {
+                    profitTotal,
+                    pourcentageChangement = Math.Round(pourcentageChangement, 2),
+                    donneesPeriode,
+                    periode = periode.ToLower()
+                });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Erreur lors de la récupération des profits: {ex.Message}");
+            }
+        }
+
+        [HttpGet("temps-traitement")]
+        public async Task<IActionResult> GetTempsTraitement()
+        {
+            try
+            {
+                // Obtenir le premier jour du mois actuel
+                var premierJourMois = new DateTime(DateTime.UtcNow.Year, DateTime.UtcNow.Month, 1);
+                // Obtenir le premier jour du mois suivant
+                var premierJourMoisSuivant = premierJourMois.AddMonths(1);
+
+                // Récupérer uniquement les commandes livrées du mois actuel
+                var commandes = await _context.Commandes
+                    .Where(c => c.DateCreation >= premierJourMois &&
+                           c.DateCreation < premierJourMoisSuivant &&
+                           c.DateReception.HasValue &&
+                           c.Statut.ToLower() == "livré") // Filtrer uniquement les commandes livrées
+                    .OrderBy(c => c.DateCreation)
+                    .Select(c => new
+                    {
+                        CommandeId = c.Id,
+                        UtilisateurId = c.UtilisateurId,
+                        TempsTraitement = c.DateReception.HasValue
+                            ? (c.DateReception.Value - c.DateCreation).TotalHours
+                            : 0
+                    })
+                    .ToListAsync();
+
+                // Limiter à 15 commandes maximum pour la lisibilité du graphique
+                var commandesLimitees = commandes.Take(15).ToList();
+
+                // Récupérer tous les utilisateurs livreurs concernés en une seule requête
+                var utilisateurIds = commandesLimitees.Select(c => c.UtilisateurId).Distinct().ToList();
+                var livreurs = await _context.Utilisateurs
+                    .Where(u => utilisateurIds.Contains(u.Id) && u.EstLivreur)
+                    .Select(u => new { u.Id, u.Nom })
+                    .ToDictionaryAsync(u => u.Id, u => u.Nom);
+
+                // Construire le résultat final
+                var result = commandesLimitees.Select(c => new
+                {
+                    c.CommandeId,
+                    c.TempsTraitement,
+                    NomLivreur = livreurs.TryGetValue(c.UtilisateurId, out var nom) ? nom : "Non assigné"
+                }).ToList();
+
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Erreur interne: {ex.Message}");
+            }
+        }
     }
 }

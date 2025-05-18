@@ -366,6 +366,22 @@
   },
   {
     "ContainingType": "AxiaLivraisonAPI.Controllers.FournisseurController",
+    "Method": "DeleteFournisseurWithCommandes",
+    "RelativePath": "api/fournisseurs/supprimer-avec-commandes/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AxiaLivraisonAPI.Controllers.FournisseurController",
     "Method": "DeleteFournisseur",
     "RelativePath": "api/fournisseurs/supprimer/{id}",
     "HttpMethod": "DELETE",
@@ -745,6 +761,16 @@
   },
   {
     "ContainingType": "AxiaLivraisonAPI.Controllers.StatistiquesController",
+    "Method": "GetCommandeLocations",
+    "RelativePath": "api/Statistiques/locations",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AxiaLivraisonAPI.Controllers.StatistiquesController",
     "Method": "GetMontantTotal",
     "RelativePath": "api/Statistiques/montant-total",
     "HttpMethod": "GET",
@@ -765,6 +791,22 @@
   },
   {
     "ContainingType": "AxiaLivraisonAPI.Controllers.StatistiquesController",
+    "Method": "GetProfits",
+    "RelativePath": "api/Statistiques/profits",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "periode",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AxiaLivraisonAPI.Controllers.StatistiquesController",
     "Method": "GetRevenusMois",
     "RelativePath": "api/Statistiques/revenus-mois",
     "HttpMethod": "GET",
@@ -777,6 +819,16 @@
     "ContainingType": "AxiaLivraisonAPI.Controllers.StatistiquesController",
     "Method": "GetTauxConversion",
     "RelativePath": "api/Statistiques/taux-conversion",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AxiaLivraisonAPI.Controllers.StatistiquesController",
+    "Method": "GetTempsTraitement",
+    "RelativePath": "api/Statistiques/temps-traitement",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,

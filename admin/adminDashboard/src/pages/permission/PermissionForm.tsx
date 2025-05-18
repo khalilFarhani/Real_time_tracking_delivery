@@ -184,7 +184,7 @@ const PermissionForm: React.FC<PermissionFormProps> = ({
         ) : (
           <>
             <FormFieldContainer>
-              <FieldLabel>Nom de Permission *</FieldLabel>
+              <FieldLabel>Nom de Permission </FieldLabel>
               <FormControl fullWidth>
                 <CompactSelect
                   value={permissionName}
@@ -252,7 +252,7 @@ const PermissionForm: React.FC<PermissionFormProps> = ({
           color="primary"
           variant="contained"
           size="small"
-          disabled={loading || noAvailablePermissions || !permissionName}
+          disabled={loading || (!initialData && noAvailablePermissions) || !permissionName}
         >
           {initialData ? 'Mettre à jour' : 'Enregistrer'}
         </Button>

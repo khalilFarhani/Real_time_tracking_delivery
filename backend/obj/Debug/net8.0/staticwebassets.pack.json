@@ -37,10 +37,6 @@
       "PackagePath": "staticwebassets\\images\\1b7c5726-0410-4815-8246-f473e12b367e.jpg"
     },
     {
-      "Id": "E:\\PFE\\Test\\AxiaLivraison2\\backend\\wwwroot\\images\\1d14e71d-d32e-47ed-bde1-f87b1dc49b24.jpg",
-      "PackagePath": "staticwebassets\\images\\1d14e71d-d32e-47ed-bde1-f87b1dc49b24.jpg"
-    },
-    {
       "Id": "E:\\PFE\\Test\\AxiaLivraison2\\backend\\wwwroot\\images\\2186cdac-2a4d-4d47-b471-9f4e05ec67f6.jpg",
       "PackagePath": "staticwebassets\\images\\2186cdac-2a4d-4d47-b471-9f4e05ec67f6.jpg"
     },
@@ -137,6 +133,10 @@
       "PackagePath": "staticwebassets\\images\\9cd6e244-498a-427f-9f34-f6bb65ac836a.jpg"
     },
     {
+      "Id": "E:\\PFE\\Test\\AxiaLivraison2\\backend\\wwwroot\\images\\9daa176f-a15b-4645-bfdb-9161022a0357.jpg",
+      "PackagePath": "staticwebassets\\images\\9daa176f-a15b-4645-bfdb-9161022a0357.jpg"
+    },
+    {
       "Id": "E:\\PFE\\Test\\AxiaLivraison2\\backend\\wwwroot\\images\\a205a330-1d05-4b34-bff5-fc1ea560b66d.jpg",
       "PackagePath": "staticwebassets\\images\\a205a330-1d05-4b34-bff5-fc1ea560b66d.jpg"
     },
@@ -167,6 +167,10 @@
     {
       "Id": "E:\\PFE\\Test\\AxiaLivraison2\\backend\\wwwroot\\images\\baa10373-2532-48b9-b4aa-31941d477813.jpg",
       "PackagePath": "staticwebassets\\images\\baa10373-2532-48b9-b4aa-31941d477813.jpg"
+    },
+    {
+      "Id": "E:\\PFE\\Test\\AxiaLivraison2\\backend\\wwwroot\\images\\ceb7ab8b-6dd3-475c-90bc-f1409b4dcba5.jpg",
+      "PackagePath": "staticwebassets\\images\\ceb7ab8b-6dd3-475c-90bc-f1409b4dcba5.jpg"
     },
     {
       "Id": "E:\\PFE\\Test\\AxiaLivraison2\\backend\\wwwroot\\images\\d512463f-5bf5-4c63-a059-e50be78a053e.jpg",

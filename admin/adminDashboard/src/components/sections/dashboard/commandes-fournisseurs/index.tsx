@@ -6,6 +6,7 @@ import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
 import IconifyIcon from 'components/base/IconifyIcon';
 import CommandesFournisseursChart from './CommandesFournisseursChart';
+import { SxProps } from '@mui/material';
 
 interface DonneesMensuelles {
   mois: string;
@@ -21,7 +22,11 @@ interface StatistiquesData {
   pourcentageChangementFournisseurs?: number;
 }
 
-const CommandesFournisseurs = () => {
+interface CommandesFournisseursProps {
+  sx?: SxProps;
+}
+
+const CommandesFournisseurs = ({ sx }: CommandesFournisseursProps) => {
   const [data, setData] = useState<StatistiquesData | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -100,7 +105,7 @@ const CommandesFournisseurs = () => {
     : { labels: [], commandes: [], fournisseurs: [] };
 
   return (
-    <Box component={Paper} height={{ xs: 450, sm: 350 }} p={3}>
+    <Box component={Paper} height={{ xs: 450, sm: 350 }} p={3} sx={{ ...sx }}>
       <Stack direction="row" justifyContent="space-between" alignItems="center" mb={4}>
         <Typography variant="body1" color="text.secondary" sx={{ fontSize: '1rem' }}>
           {new Date().toLocaleDateString('fr-FR', { year: 'numeric', month: 'long' })}

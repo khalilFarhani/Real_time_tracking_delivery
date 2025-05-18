@@ -45,10 +45,16 @@ const GestionPermission: React.FC = () => {
 
   const handleDeletePermission = async (id: number) => {
     try {
+      console.log('Deleting permission with ID:', id);
       await axios.delete(`${API_URL}/api/permissions/supprimer/${id}`);
+      console.log('Permission deleted successfully');
       fetchPermissions();
     } catch (error) {
       console.error('Erreur lors de la suppression de la permission :', error);
+      if (axios.isAxiosError(error)) {
+        console.error('Response data:', error.response?.data);
+        console.error('Status:', error.response?.status);
+      }
     }
   };
 

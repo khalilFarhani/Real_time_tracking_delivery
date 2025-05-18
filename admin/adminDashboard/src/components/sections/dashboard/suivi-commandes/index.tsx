@@ -5,6 +5,7 @@ import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 import IconifyIcon from 'components/base/IconifyIcon';
 import SuiviCommandesChart from './SuiviCommandesChart';
+import { SxProps } from '@mui/material';
 
 interface StatutCommande {
   statut: string;
@@ -17,7 +18,11 @@ interface TotalCommandes {
   pourcentageChangement: number;
 }
 
-const SuiviCommandes = () => {
+interface SuiviCommandesProps {
+  sx?: SxProps;
+}
+
+const SuiviCommandes = ({ sx }: SuiviCommandesProps) => {
   const [statutsCommandes, setStatutsCommandes] = useState<StatutCommande[]>([]);
   const [totalCommandes, setTotalCommandes] = useState<TotalCommandes | null>(null);
   const [loading, setLoading] = useState(true);
@@ -54,7 +59,7 @@ const SuiviCommandes = () => {
   const chartLabels = statutsCommandes.map((item) => item.statut);
 
   return (
-    <Paper sx={{ height: 350 }}>
+    <Paper sx={{ height: 350, ...sx }}>
       <Stack alignItems="flex-start" justifyContent="space-between">
         <div>
           <Typography variant="body2" color="text.disabled" fontWeight={500}>
