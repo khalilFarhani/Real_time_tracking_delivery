@@ -79,6 +79,25 @@
         }
       }
     },
+    "/": {
+      "get": {
+        "tags": [
+          "AxiaLivraisonAPI"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/commandes/liste": {
       "get": {
         "tags": [

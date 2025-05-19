@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\PFE\\Test\\AxiaLivraison2\\backend\\AxiaLivraisonAPI.csproj": {}
+    "E:\\PFE\\Test\\pf4\\backend\\AxiaLivraisonAPI.csproj": {}
   },
   "projects": {
-    "E:\\PFE\\Test\\AxiaLivraison2\\backend\\AxiaLivraisonAPI.csproj": {
+    "E:\\PFE\\Test\\pf4\\backend\\AxiaLivraisonAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\PFE\\Test\\AxiaLivraison2\\backend\\AxiaLivraisonAPI.csproj",
+        "projectUniqueName": "E:\\PFE\\Test\\pf4\\backend\\AxiaLivraisonAPI.csproj",
         "projectName": "AxiaLivraisonAPI",
-        "projectPath": "E:\\PFE\\Test\\AxiaLivraison2\\backend\\AxiaLivraisonAPI.csproj",
+        "projectPath": "E:\\PFE\\Test\\pf4\\backend\\AxiaLivraisonAPI.csproj",
         "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "E:\\PFE\\Test\\AxiaLivraison2\\backend\\obj\\",
+        "outputPath": "E:\\PFE\\Test\\pf4\\backend\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

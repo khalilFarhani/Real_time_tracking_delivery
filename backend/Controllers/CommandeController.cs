@@ -522,7 +522,7 @@ namespace AxiaLivraisonAPI.Controllers
 
                 var activeDeliveries = await _context.Commandes
                     .Where(c => c.UtilisateurId == locationUpdate.LivreurId
-                           && (c.Statut == "en transit" || c.Statut == "en préparation"))
+                           && (c.Statut == "en transit"))
                     .ToListAsync();
 
                 if (activeDeliveries.Any())

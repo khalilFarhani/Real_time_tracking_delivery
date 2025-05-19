@@ -12,6 +12,9 @@ using AxiaLivraisonAPI.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Configure Kestrel to listen on all interfaces
+builder.WebHost.UseUrls("http://0.0.0.0:5283");
+
 // Add services to the container.
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
@@ -47,7 +50,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
+// Disable HTTPS redirection for mobile app connectivity
+// app.UseHttpsRedirection();
 
 // Enable CORS
 app.UseCors("AllowAllOrigins");
@@ -69,5 +73,8 @@ app.UseStaticFiles(new StaticFileOptions
 app.UseAuthorization();
 
 app.MapControllers();
+
+// Add a default route for testing connectivity
+app.MapGet("/", () => "Axia Livraison API is running!");
 
 app.Run();
