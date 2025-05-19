@@ -133,6 +133,11 @@ interface CommandeCalendarProps {
   sx?: SxProps;
 }
 
+// Ajouter cette interface pour étendre HTMLDivElement
+interface DivWithTooltip extends HTMLDivElement {
+  _tooltipRef?: HTMLDivElement;
+}
+
 const CommandeCalendar = ({ sx }: CommandeCalendarProps) => {
   const [currentDate, setCurrentDate] = useState<Dayjs>(dayjs());
   const [commandesCreees, setCommandesCreees] = useState<CommandeCreee[]>([]);
@@ -260,13 +265,70 @@ const CommandeCalendar = ({ sx }: CommandeCalendarProps) => {
                     fontWeight: 'bold',
                     color:
                       count > 0
-                        ? '#ffffff' // Noir pour les jours avec commandes
+                        ? '#ffffff' // Blanc pour les jours avec commandes
                         : isOutsideCurrentMonth
                           ? theme.palette.text.secondary
                           : theme.palette.text.primary,
                     transition: 'background-color 0.3s ease',
-                    fontSize: '0.70rem', // Revenir à la taille d'origine
+                    fontSize: '0.70rem',
                     fontFamily: theme.typography.fontFamily,
+                    position: 'relative',
+                  }}
+                  onMouseEnter={(e) => {
+                    if (count > 0) {
+                      // Créer un tooltip personnalisé
+                      const tooltip = document.createElement('div');
+                      tooltip.className = 'calendar-day-tooltip';
+                      tooltip.style.position = 'fixed';
+                      tooltip.style.zIndex = '9999';
+
+                      // Calculer la position du tooltip par rapport à l'élément survolé
+                      const rect = e.currentTarget.getBoundingClientRect();
+                      const tooltipX = rect.left + rect.width / 2;
+                      const tooltipY = rect.top - 10;
+
+                      tooltip.innerHTML = `
+                        <div style="
+                          background-color: ${theme.palette.background.paper};
+                          color: ${theme.palette.text.primary};
+                          padding: 8px 12px;
+                          border-radius: 4px;
+                          font-size: 12px;
+                          box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+                          position: absolute;
+                          bottom: 100%;
+                          left: 50%;
+                          transform: translateX(-50%);
+                          margin-bottom: 5px;
+                          white-space: nowrap;
+                          pointer-events: none;
+                          text-align: center;
+                          font-weight: 700;
+                        ">
+                          <strong>${count}</strong> commandes<br/>
+                          crées le ${props.day.format('DD/MM/YYYY')}
+                        </div>
+                      `;
+
+                      // Ajouter le tooltip au body
+                      document.body.appendChild(tooltip);
+
+                      // Positionner le tooltip
+                      tooltip.style.top = `${tooltipY}px`;
+                      tooltip.style.left = `${tooltipX}px`;
+
+                      // Stocker une référence au tooltip en utilisant un attribut de données
+                      const divElement = e.currentTarget as DivWithTooltip;
+                      divElement._tooltipRef = tooltip;
+                    }
+                  }}
+                  onMouseLeave={(e) => {
+                    // Supprimer le tooltip lors du mouseLeave
+                    const divElement = e.currentTarget as DivWithTooltip;
+                    if (divElement._tooltipRef) {
+                      document.body.removeChild(divElement._tooltipRef);
+                      divElement._tooltipRef = undefined;
+                    }
                   }}
                 >
                   {props.day.date()}

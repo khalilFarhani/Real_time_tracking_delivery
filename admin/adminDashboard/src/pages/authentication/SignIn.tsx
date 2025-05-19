@@ -13,18 +13,31 @@ import Visibility from '@mui/icons-material/Visibility';
 import VisibilityOff from '@mui/icons-material/VisibilityOff';
 import { styled } from '@mui/material/styles';
 import paths from 'routes/paths';
+import sitemap, { MenuItem } from 'routes/sitemap';
+import Dialog from '@mui/material/Dialog';
+import DialogActions from '@mui/material/DialogActions';
+import DialogContent from '@mui/material/DialogContent';
+import DialogContentText from '@mui/material/DialogContentText';
+import DialogTitle from '@mui/material/DialogTitle';
+// Import the logo
 import logo from 'assets/images/logo.png';
-import {
-  Dialog,
-  DialogTitle,
-  DialogContent,
-  DialogContentText,
-  DialogActions,
-} from '@mui/material';
 
 interface User {
   identifiant: string;
   password: string;
+}
+
+interface UserData {
+  Id: string;
+  Nom: string;
+  Email: string;
+  ImagePath: string;
+  EstAdmin: boolean;
+  EstLivreur: boolean;
+  Permissions?: {
+    permissionName: string;
+    description?: string;
+  }[];
 }
 
 const CompactTextField = styled(TextField)(({ theme }) => ({
@@ -107,19 +120,36 @@ const SignIn = () => {
           return;
         }
 
-        localStorage.setItem(
-          'user',
-          JSON.stringify({
-            Id: data.userId,
-            Nom: data.nom,
-            Email: data.email,
-            ImagePath: data.imagePath,
-            EstAdmin: data.estAdmin,
-            EstLivreur: data.estLivreur,
-            Permissions: data.permissions,
-          }),
-        );
-        navigate(paths.dashboard);
+        const userData: UserData = {
+          Id: data.userId,
+          Nom: data.nom,
+          Email: data.email,
+          ImagePath: data.imagePath,
+          EstAdmin: data.estAdmin,
+          EstLivreur: data.estLivreur,
+          Permissions: data.permissions,
+        };
+
+        localStorage.setItem('user', JSON.stringify(userData));
+
+        // Determine where to redirect based on permissions
+        if (userData.EstAdmin) {
+          navigate(paths.dashboard);
+        } else if (userData.Permissions && userData.Permissions.length > 0) {
+          // Find the first permission that matches a route
+          const availableRoutes = sitemap.filter((route: MenuItem) =>
+            userData.Permissions?.some((p) => p.permissionName === route.subheader),
+          );
+
+          if (availableRoutes.length > 0) {
+            navigate(availableRoutes[0].path || paths.tracking);
+          } else {
+            navigate(paths.tracking); // Fallback to tracking page
+          }
+        } else {
+          // No permissions, go to tracking page
+          navigate(paths.tracking);
+        }
       } else {
         setErrorMessage(data.message || 'Erreur de connexion');
         setDialogOpen(true);

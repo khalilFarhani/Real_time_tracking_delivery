@@ -9,6 +9,7 @@ const Dashboard = lazy(() => import('pages/dashboard/Dashboard'));
 const SignIn = lazy(() => import('pages/authentication/SignIn'));
 const Logout = lazy(() => import('pages/authentication/Logout'));
 const Page404 = lazy(() => import('pages/errors/Page404'));
+const TrackingPage = lazy(() => import('pages/tracking/TrackingPage'));
 
 const GestionUtilisateur = lazy(() => import('pages/utilisateur/GestionUtilisateur'));
 const GestionPermission = lazy(() => import('pages/permission/GestionPermission'));
@@ -85,6 +86,10 @@ export const routes = [
           {
             path: paths.fournisseur,
             element: <GestionFournisseur />,
+          },
+          {
+            path: 'tracking-page',
+            element: <TrackingPage />,
           },
         ],
       },

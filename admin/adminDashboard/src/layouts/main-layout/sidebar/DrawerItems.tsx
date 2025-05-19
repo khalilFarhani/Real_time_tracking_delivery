@@ -87,6 +87,8 @@ const DrawerItems = () => {
     ) {
       return false;
     }
+
+    // Always show Dashboard but disable it if no permission
     return true;
   };
 
@@ -175,7 +177,10 @@ const DrawerItems = () => {
               );
             }
 
-            const userHasAccess = hasPermission(route.subheader);
+            const userHasAccess =
+              route.subheader === 'Dashboard'
+                ? hasPermission('Dashboard')
+                : hasPermission(route.subheader);
 
             return (
               <Box

@@ -66,7 +66,7 @@ const Revenu = () => {
             {loading ? '...' : formatCurrency(revenusMois)}
           </Typography>
         </Stack>
-        {!loading && pourcentageChangement !== 0 && (
+        {!loading && (
           <Typography
             variant="caption"
             color={pourcentageChangement >= 0 ? 'success.main' : 'error.main'}
