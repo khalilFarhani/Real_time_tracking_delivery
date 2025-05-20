@@ -3801,3 +3801,8 @@ E:\PFE\Test\pf4\backend\obj\Debug\net8.0\refint\AxiaLivraisonAPI.dll
 E:\PFE\Test\pf4\backend\obj\Debug\net8.0\AxiaLivraisonAPI.pdb
 E:\PFE\Test\pf4\backend\obj\Debug\net8.0\AxiaLivraisonAPI.genruntimeconfig.cache
 E:\PFE\Test\pf4\backend\obj\Debug\net8.0\ref\AxiaLivraisonAPI.dll
+E:\PFE\Test\AxiaLivraison\backend\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+E:\PFE\Test\AxiaLivraison\backend\bin\Debug\net8.0\MailKit.dll
+E:\PFE\Test\AxiaLivraison\backend\bin\Debug\net8.0\MimeKit.dll
+E:\PFE\Test\AxiaLivraison\backend\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
+E:\PFE\Test\AxiaLivraison\backend\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll

@@ -779,6 +779,16 @@
   },
   {
     "ContainingType": "AxiaLivraisonAPI.Controllers.StatistiquesController",
+    "Method": "GetLivreursEnTransit",
+    "RelativePath": "api/Statistiques/livreurs-en-transit",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AxiaLivraisonAPI.Controllers.StatistiquesController",
     "Method": "GetCommandeLocations",
     "RelativePath": "api/Statistiques/locations",
     "HttpMethod": "GET",

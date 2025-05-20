@@ -16,6 +16,7 @@ interface CommandeTableProps {
   onEditCommande: (commande: CommandeDTO) => void;
   onDeleteCommande: (id: number) => void;
   onViewDetails: (id: number) => void;
+  onLocateCommande: (id: number) => void;
 }
 
 const CommandeTable: React.FC<CommandeTableProps> = ({
@@ -23,6 +24,7 @@ const CommandeTable: React.FC<CommandeTableProps> = ({
   onEditCommande,
   onDeleteCommande,
   onViewDetails,
+  onLocateCommande,
 }) => {
   const formatDinar = (value: number) => {
     return new Intl.NumberFormat('fr-FR', {
@@ -60,7 +62,7 @@ const CommandeTable: React.FC<CommandeTableProps> = ({
                 {formatDinar(commande.montantTotale)}
               </TableCell>
               <TableCell>
-                <Box sx={{ display: 'flex', gap: 1 }}>
+                <Box sx={{ display: 'flex', gap: 1, flexWrap: 'wrap' }}>
                   <Button
                     variant="contained"
                     color="primary"
@@ -90,6 +92,18 @@ const CommandeTable: React.FC<CommandeTableProps> = ({
                     }}
                   >
                     Détails
+                  </Button>
+                  <Button
+                    variant="contained"
+                    size="small"
+                    onClick={() => commande.id && onLocateCommande(commande.id)}
+                    sx={{
+                      backgroundColor: '#2196f3',
+                      '&:hover': { backgroundColor: '#1976d2' },
+                      textTransform: 'none',
+                    }}
+                  >
+                    Localiser
                   </Button>
                 </Box>
               </TableCell>

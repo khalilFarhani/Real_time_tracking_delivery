@@ -24,6 +24,7 @@ interface CommandeListProps {
   onEditCommande: (commande: CommandeDTO) => void;
   onDeleteCommande: (id: number) => void;
   onViewDetails: (id: number) => void;
+  onLocateCommande: (id: number) => void;
 }
 
 const CommandeList: React.FC<CommandeListProps> = ({
@@ -32,6 +33,7 @@ const CommandeList: React.FC<CommandeListProps> = ({
   onEditCommande,
   onDeleteCommande,
   onViewDetails,
+  onLocateCommande,
 }) => {
   const [searchTerm, setSearchTerm] = useState<string>('');
 
@@ -109,6 +111,7 @@ const CommandeList: React.FC<CommandeListProps> = ({
           onEditCommande={onEditCommande}
           onDeleteCommande={onDeleteCommande}
           onViewDetails={onViewDetails}
+          onLocateCommande={onLocateCommande}
         />
       </Paper>
     </Container>

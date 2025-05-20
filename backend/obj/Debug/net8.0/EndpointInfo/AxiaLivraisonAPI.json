@@ -1407,6 +1407,18 @@
         }
       }
     },
+    "/api/Statistiques/livreurs-en-transit": {
+      "get": {
+        "tags": [
+          "Statistiques"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/utilisateurs/identifiants": {
       "get": {
         "tags": [

@@ -3,6 +3,7 @@ import axios from 'axios';
 import CommandeList from './CommandeList';
 import CommandeForm from './CommandeForm';
 import CommandeDetails from './CommandeDetails';
+import CommandeMap from './CommandeMap';
 import {
   CommandeDTO,
   CommandeDetailsDTO,
@@ -23,6 +24,7 @@ const GestionCommande: React.FC = () => {
   const [openDialog, setOpenDialog] = useState<boolean>(false);
   const [currentCommande, setCurrentCommande] = useState<CommandeDTO | null>(null);
   const [selectedCommande, setSelectedCommande] = useState<CommandeDetailsDTO | null>(null);
+  const [commandeToLocate, setCommandeToLocate] = useState<number | null>(null);
   const [deleteError, setDeleteError] = useState<string>('');
   const [deleteErrorOpen, setDeleteErrorOpen] = useState<boolean>(false);
   const [deleteConfirmOpen, setDeleteConfirmOpen] = useState<boolean>(false);
@@ -158,6 +160,10 @@ const GestionCommande: React.FC = () => {
     }
   };
 
+  const handleLocateCommande = (id: number) => {
+    setCommandeToLocate(id);
+  };
+
   const handlePrint = () => {
     if (!selectedCommande) return;
 
@@ -186,10 +192,10 @@ const GestionCommande: React.FC = () => {
         <head>
           <title>Bon Commande ${selectedCommande.id}</title>
           <style>
-            body { 
-              font-family: Arial, sans-serif; 
-              padding: 20px; 
-              color: #333; 
+            body {
+              font-family: Arial, sans-serif;
+              padding: 20px;
+              color: #333;
               margin: 0;
             }
             .print-container {
@@ -235,15 +241,15 @@ const GestionCommande: React.FC = () => {
               display: inline-block;
               font-size: 0.8rem;
             }
-            .total { 
-              font-weight: 600; 
-              color: #2e7d32; 
+            .total {
+              font-weight: 600;
+              color: #2e7d32;
             }
-            .footer { 
-              text-align: center; 
-              margin-top: 30px; 
-              color: #666; 
-              font-size: 0.9rem; 
+            .footer {
+              text-align: center;
+              margin-top: 30px;
+              color: #666;
+              font-size: 0.9rem;
             }
             .qr-code-container {
               text-align: center;
@@ -258,7 +264,7 @@ const GestionCommande: React.FC = () => {
               display: inline-block;
             }
             .section {
-              
+
               padding: 15px;
               background-color: #f8f9fa;
               border-radius: 8px;
@@ -274,29 +280,29 @@ const GestionCommande: React.FC = () => {
         <body>
           <div class="print-container">
             <h1>Bon Commande #${selectedCommande.id}</h1>
-            
+
             <div class="section">
               <h2>Montant Total: ${formatCurrency(selectedCommande.montantTotale)}</h2>
             </div>
-            
+
             <div class="section">
               ${infoCommande?.innerHTML || ''}
             </div>
-            
+
             <div class="section">
               ${detailsFinanciers?.innerHTML || ''}
             </div>
-            
+
             <div class="section">
               ${infoClient?.innerHTML || ''}
             </div>
-            
+
             <div class="section qr-code-container">
               <div class="qr-code">
                 ${qrCodeSection ? qrCodeSection.querySelector('.MuiBox-root svg')?.outerHTML || '' : ''}
               </div>
             </div>
-            
+
             <div class="footer">
               Document généré le ${new Date().toLocaleDateString()}
             </div>
@@ -316,7 +322,9 @@ const GestionCommande: React.FC = () => {
 
   return (
     <>
-      {selectedCommande ? (
+      {commandeToLocate ? (
+        <CommandeMap commandeId={commandeToLocate} onBack={() => setCommandeToLocate(null)} />
+      ) : selectedCommande ? (
         <CommandeDetails
           commande={selectedCommande}
           onBack={() => setSelectedCommande(null)}
@@ -335,6 +343,7 @@ const GestionCommande: React.FC = () => {
           }}
           onDeleteCommande={confirmDelete}
           onViewDetails={handleViewDetails}
+          onLocateCommande={handleLocateCommande}
         />
       )}
       <CommandeForm

@@ -8,9 +8,11 @@ import {
   TableRow,
   Chip,
   Typography,
+  Button,
 } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 import { Commande } from 'types/commande';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
 
 interface TableContentProps {
   data: Commande[];
@@ -58,6 +60,11 @@ const TableContent: React.FC<TableContentProps> = ({ data }) => {
     navigate(`/app/commande/details/${id}`);
   };
 
+  const handleLocateCommande = (event: React.MouseEvent, id: number) => {
+    event.stopPropagation(); // Empêche le déclenchement du onClick de la ligne
+    navigate(`/app/commande/map/${id}`);
+  };
+
   return (
     <TableContainer>
       <Table>
@@ -96,6 +103,11 @@ const TableContent: React.FC<TableContentProps> = ({ data }) => {
             <TableCell>
               <Typography variant="subtitle2" color="text.secondary">
                 Montant
+              </Typography>
+            </TableCell>
+            <TableCell>
+              <Typography variant="subtitle2" color="text.secondary">
+                Actions
               </Typography>
             </TableCell>
           </TableRow>
@@ -153,6 +165,23 @@ const TableContent: React.FC<TableContentProps> = ({ data }) => {
                 <Typography variant="body2" fontWeight={600} sx={{ fontFamily: 'monospace' }}>
                   {formatCurrency(row.montantTotale)}
                 </Typography>
+              </TableCell>
+              <TableCell>
+                <Button
+                  size="small"
+                  variant="contained"
+                  color="primary"
+                  onClick={(e: React.MouseEvent) => handleLocateCommande(e, row.id)}
+                  startIcon={<LocationOnIcon />}
+                  sx={{
+                    textTransform: 'none',
+                    fontSize: '0.75rem',
+                    py: 0.5,
+                    px: 1,
+                  }}
+                >
+                  Localiser
+                </Button>
               </TableCell>
             </TableRow>
           ))}

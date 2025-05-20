@@ -982,5 +982,51 @@ namespace AxiaLivraisonAPI.Controllers
                 return StatusCode(500, $"Erreur interne: {ex.Message}");
             }
         }
+        [HttpGet("livreurs-en-transit")]
+        public async Task<IActionResult> GetLivreursEnTransit()
+        {
+            try
+            {
+                // Récupérer les livreurs qui ont des commandes en transit
+                var livreursEnTransit = await _context.Utilisateurs
+                    .Where(u => u.EstLivreur && _context.Commandes.Any(c => c.UtilisateurId == u.Id && c.Statut.ToLower() == "en transit"))
+                    .Select(u => new
+                    {
+                        LivreurId = u.Id,
+                        Nom = u.Nom,
+                        ImagePath = u.ImagePath,
+                        Commandes = _context.Commandes
+                            .Where(c => c.UtilisateurId == u.Id && c.Statut.ToLower() == "en transit")
+                            .Select(c => new
+                            {
+                                CommandeId = c.Id,
+                                CodeSuivi = c.CodeSuivi,
+                                NomClient = c.NomClient,
+                                AdresseClient = c.AdressClient,
+                                Latitude = c.Latitude,
+                                Longitude = c.Longitude
+                            })
+                            .ToList(),
+                        NombreCommandes = _context.Commandes.Count(c => c.UtilisateurId == u.Id && c.Statut.ToLower() == "en transit"),
+                        NombreCommandesLivrees = _context.Commandes.Count(c => c.UtilisateurId == u.Id && c.Statut.ToLower() == "livré"),
+                        // Prendre les coordonnées de la première commande en transit (toutes les commandes d'un livreur auront les mêmes coordonnées)
+                        Latitude = _context.Commandes
+                            .Where(c => c.UtilisateurId == u.Id && c.Statut.ToLower() == "en transit")
+                            .Select(c => c.Latitude)
+                            .FirstOrDefault(),
+                        Longitude = _context.Commandes
+                            .Where(c => c.UtilisateurId == u.Id && c.Statut.ToLower() == "en transit")
+                            .Select(c => c.Longitude)
+                            .FirstOrDefault()
+                    })
+                    .ToListAsync();
+
+                return Ok(livreursEnTransit);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Erreur lors de la récupération des livreurs en transit: {ex.Message}");
+            }
+        }
     }
 }

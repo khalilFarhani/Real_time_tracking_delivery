@@ -151,8 +151,8 @@ namespace AxiaLivraisonAPI.Controllers
                 TelephoneClient = commandeDTO.TelephoneClient,
                 EmailClient = commandeDTO.EmailClient,
                 Description = commandeDTO.Description,
-                Latitude = 0,
-                Longitude = 0,
+                Latitude = 35.72917,
+                Longitude = 10.58082,
                 DateCreation = DateTime.UtcNow,
                 DateReception = null
             };

@@ -6028,11 +6028,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\PFE\\Test\\AxiaLivraison\\backend\\AxiaLivraisonAPI.csproj",
+      "projectUniqueName": "E:\\PFE\\Test\\pfe\\backend\\AxiaLivraisonAPI.csproj",
       "projectName": "AxiaLivraisonAPI",
-      "projectPath": "E:\\PFE\\Test\\AxiaLivraison\\backend\\AxiaLivraisonAPI.csproj",
+      "projectPath": "E:\\PFE\\Test\\pfe\\backend\\AxiaLivraisonAPI.csproj",
       "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-      "outputPath": "E:\\PFE\\Test\\AxiaLivraison\\backend\\obj\\",
+      "outputPath": "E:\\PFE\\Test\\pfe\\backend\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
