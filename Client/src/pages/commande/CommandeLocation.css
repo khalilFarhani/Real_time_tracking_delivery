@@ -4,6 +4,19 @@
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
+/* Ensure the Leaflet map container takes full height */
+.leaflet-container {
+  width: 100%;
+  height: 400px;
+  z-index: 1;
+}
+
+/* Fix for Leaflet marker icon issues */
+.leaflet-marker-icon,
+.leaflet-marker-shadow {
+  filter: drop-shadow(0 2px 2px rgba(0,0,0,0.2));
+}
+
 .back-button {
   display: flex;
   align-items: center;

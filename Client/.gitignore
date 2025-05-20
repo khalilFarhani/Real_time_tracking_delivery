@@ -23,6 +23,7 @@ dist-ssr
 *.sln
 *.sw?
 
-# Google Maps API Key
+# Map configuration
 src/googleMapKey.ts
+src/leafletConfig.ts
 
