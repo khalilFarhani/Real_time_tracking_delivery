@@ -88,7 +88,7 @@ const UtilisateurForm: React.FC<UtilisateurFormProps> = ({
   const [email, setEmail] = useState(initialData?.email || '');
   const [telephone, setTelephone] = useState(initialData?.telephone || '');
   const [identifiant, setIdentifiant] = useState(initialData?.identifiant || '');
-  const [motDePasse, setMotDePasse] = useState(initialData?.motDePasse || '');
+  const [motDePasse, setMotDePasse] = useState(''); // Toujours vide pour l'édition
   const [showPassword, setShowPassword] = useState(false);
   const [imageFile, setImageFile] = useState<File | null>(null);
   const [errors, setErrors] = useState({
@@ -165,8 +165,12 @@ const UtilisateurForm: React.FC<UtilisateurFormProps> = ({
       validateEmail(email),
       validatePhone(telephone),
       validateRequiredField('identifiant', identifiant),
-      validateRequiredField('motDePasse', motDePasse),
     ];
+
+    // Le mot de passe n'est requis que lors de la création (pas d'initialData)
+    if (!initialData) {
+      validations.push(validateRequiredField('motDePasse', motDePasse));
+    }
 
     if (!validations.every((v) => v)) return;
 
@@ -272,18 +276,28 @@ const UtilisateurForm: React.FC<UtilisateurFormProps> = ({
         </FormFieldContainer>
 
         <FormFieldContainer>
-          <FieldLabel>Mot de passe *</FieldLabel>
+          <FieldLabel>Mot de passe {!initialData ? '*' : '(optionnel)'}</FieldLabel>
           <CompactTextField
             fullWidth
             size="small"
             type={showPassword ? 'text' : 'password'}
             value={motDePasse}
+            placeholder={
+              initialData
+                ? 'Laisser vide pour conserver le mot de passe actuel'
+                : 'Entrez le mot de passe'
+            }
             onChange={(e) => {
               setMotDePasse(e.target.value);
-              validateRequiredField('motDePasse', e.target.value);
+              if (!initialData) {
+                validateRequiredField('motDePasse', e.target.value);
+              }
             }}
             error={errors.motDePasse.isError}
-            helperText={errors.motDePasse.message}
+            helperText={
+              errors.motDePasse.message ||
+              (initialData ? 'Laisser vide pour conserver le mot de passe actuel' : '')
+            }
             InputProps={{
               endAdornment: (
                 <InputAdornment position="end">

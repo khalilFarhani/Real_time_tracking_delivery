@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using System.Collections.Generic;
 using System.Linq;
-using AxiaLivraisonAPI.Models;
+using BCrypt.Net;
 
 namespace AxiaLivraisonAPI.Controllers
 {
@@ -80,7 +80,7 @@ namespace AxiaLivraisonAPI.Controllers
                 Email = utilisateurDTO.Email,
                 Telephone = utilisateurDTO.Telephone,
                 Identifiant = utilisateurDTO.Identifiant,
-                MotDePasse = utilisateurDTO.MotDePasse,
+                MotDePasse = BCrypt.Net.BCrypt.HashPassword(utilisateurDTO.MotDePasse),
                 EstAdmin = false,
                 EstLivreur = false
             };
@@ -124,7 +124,7 @@ namespace AxiaLivraisonAPI.Controllers
                 Email = utilisateurDTO.Email,
                 Telephone = utilisateurDTO.Telephone,
                 Identifiant = utilisateurDTO.Identifiant,
-                MotDePasse = utilisateurDTO.MotDePasse,
+                MotDePasse = BCrypt.Net.BCrypt.HashPassword(utilisateurDTO.MotDePasse),
                 EstAdmin = false, // Automatically set to false
                 EstLivreur = true // Automatically set to true
             };
@@ -168,7 +168,12 @@ namespace AxiaLivraisonAPI.Controllers
             utilisateur.Email = utilisateurDTO.Email;
             utilisateur.Telephone = utilisateurDTO.Telephone;
             utilisateur.Identifiant = utilisateurDTO.Identifiant;
-            utilisateur.MotDePasse = utilisateurDTO.MotDePasse;
+
+            // Only hash password if it's provided and not empty
+            if (!string.IsNullOrEmpty(utilisateurDTO.MotDePasse))
+            {
+                utilisateur.MotDePasse = BCrypt.Net.BCrypt.HashPassword(utilisateurDTO.MotDePasse);
+            }
 
             // Handle image upload
             if (utilisateurDTO.ImageFile != null && utilisateurDTO.ImageFile.Length > 0)
@@ -283,7 +288,7 @@ namespace AxiaLivraisonAPI.Controllers
             return utilisateur;
         }
 
-      
+
         public class LivreurDetailsDTO
         {
             public string Nom { get; set; }
@@ -312,5 +317,44 @@ namespace AxiaLivraisonAPI.Controllers
 
             return Ok(utilisateurs);
         }
+
+        // Endpoint temporaire pour migrer les mots de passe existants
+        [HttpPost("migrer-mots-de-passe")]
+        public async Task<IActionResult> MigrerMotsDePasse()
+        {
+            try
+            {
+                var utilisateurs = await _context.Utilisateurs.ToListAsync();
+                int utilisateursMigres = 0;
+
+                foreach (var utilisateur in utilisateurs)
+                {
+                    // Vérifier si le mot de passe est déjà crypté (BCrypt hash commence par $2a$, $2b$, $2x$, ou $2y$)
+                    if (!utilisateur.MotDePasse.StartsWith("$2"))
+                    {
+                        // Le mot de passe n'est pas crypté, le crypter maintenant
+                        utilisateur.MotDePasse = BCrypt.Net.BCrypt.HashPassword(utilisateur.MotDePasse);
+                        utilisateursMigres++;
+                    }
+                }
+
+                if (utilisateursMigres > 0)
+                {
+                    await _context.SaveChangesAsync();
+                }
+
+                return Ok(new
+                {
+                    Message = $"Migration terminée avec succès. {utilisateursMigres} mots de passe ont été cryptés.",
+                    UtilisateursMigres = utilisateursMigres,
+                    TotalUtilisateurs = utilisateurs.Count
+                });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { Message = "Erreur lors de la migration", Error = ex.Message });
+            }
+        }
+
     }
 }

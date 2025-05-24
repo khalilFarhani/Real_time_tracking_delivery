@@ -2,6 +2,7 @@
 using AxiaLivraisonAPI.DTO;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using BCrypt.Net;
 
 namespace AxiaLivraisonAPI.Controllers
 {
@@ -27,7 +28,7 @@ namespace AxiaLivraisonAPI.Controllers
                 return Unauthorized("Identifiant incorrect.");
             }
 
-            if (utilisateur.MotDePasse != loginDTO.MotDePasse)
+            if (!BCrypt.Net.BCrypt.Verify(loginDTO.MotDePasse, utilisateur.MotDePasse))
             {
                 return Unauthorized("Mot de passe incorrect.");
             }
@@ -67,7 +68,7 @@ namespace AxiaLivraisonAPI.Controllers
                 return Unauthorized("Identifiant incorrect ou vous n'êtes pas un livreur.");
             }
 
-            if (livreur.MotDePasse != loginDTO.MotDePasse)
+            if (!BCrypt.Net.BCrypt.Verify(loginDTO.MotDePasse, livreur.MotDePasse))
             {
                 return Unauthorized("Mot de passe incorrect.");
             }
