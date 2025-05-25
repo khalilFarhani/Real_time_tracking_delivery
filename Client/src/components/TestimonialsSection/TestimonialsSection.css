@@ -1,0 +1,74 @@
+.testimonial-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.testimonial-card::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--gradient-primary);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover::after {
+  transform: scaleX(1);
+}
+
+.testimonial-card:nth-child(2)::after {
+  background: var(--gradient-secondary);
+}
+
+.testimonial-card:nth-child(3)::after {
+  background: linear-gradient(135deg, var(--purple-color) 0%, var(--red-color) 100%);
+}
+
+/* Animation d'apparition */
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.testimonial-card {
+  animation: slideInUp 0.8s ease forwards;
+}
+
+.testimonial-card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.testimonial-card:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+.testimonial-card:nth-child(3) {
+  animation-delay: 0.5s;
+}
+
+/* Effet de brillance sur hover */
+.testimonial-card:hover {
+  background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%);
+}
+
+/* Animation pour les avatars */
+.testimonial-card:hover .MuiAvatar-root {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .testimonial-card {
+    margin-bottom: 2rem;
+  }
+}

@@ -10,6 +10,7 @@ import {
   Button,
 } from '@mui/material';
 import { rootPaths } from 'routes/paths';
+import { authService } from 'services/authService';
 
 interface AuthLayoutProps {
   children?: ReactNode;
@@ -21,20 +22,28 @@ const AuthLayout = ({ children }: AuthLayoutProps) => {
   const [errorMessage, setErrorMessage] = useState('');
 
   useEffect(() => {
-    const userStr = localStorage.getItem('user');
-    if (userStr) {
-      const user = JSON.parse(userStr);
-      // If user is a livreur, log them out
-      if (user.EstLivreur) {
-        localStorage.removeItem('user');
-        setErrorMessage(
-          "Les livreurs ne peuvent pas accéder à cette application. Veuillez utiliser l'application dédiée aux livreurs.",
-        );
-        setDialogOpen(true);
-      } else {
-        navigate(rootPaths.appRoot); // Redirect to app if user is not a livreur
+    const checkAuth = async () => {
+      if (authService.isAuthenticated()) {
+        const userStr = localStorage.getItem('user');
+        if (userStr) {
+          const user = JSON.parse(userStr);
+          // If user is a livreur, log them out
+          if (user.EstLivreur) {
+            await authService.logout();
+            setErrorMessage(
+              "Les livreurs ne peuvent pas accéder à cette application. Veuillez utiliser l'application dédiée aux livreurs.",
+            );
+            setDialogOpen(true);
+          } else {
+            navigate(rootPaths.appRoot); // Redirect to app if user is not a livreur
+          }
+        } else {
+          navigate(rootPaths.appRoot);
+        }
       }
-    }
+    };
+
+    checkAuth();
   }, [navigate]);
 
   const handleCloseDialog = () => {

@@ -72,7 +72,7 @@ const ProfileMenu = () => {
     setAnchorEl(null);
   };
 
-  const handleLogout = () => {
+  const handleLogout = async () => {
     handleProfileMenuClose();
     navigate(paths.logout);
   };

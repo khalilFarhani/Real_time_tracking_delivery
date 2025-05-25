@@ -2,16 +2,17 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import { Header } from './components/Header/Header';
 import { TrackingSearch } from './components/TrackingSearch/TrackingSearch';
+
 import { Footer } from './components/Footer/Footer';
 import { CommandeDetails } from './pages/commande/CommandeDetails';
 import { CommandeLocation } from './pages/commande/CommandeLocation';
 import { NotificationDetail } from './pages/notification/NotificationDetail';
-import logo from './assets/images/logo.png';
+import logo from './assets/icons/logo.png';
 import LocalShippingIcon from '@mui/icons-material/LocalShipping';
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import SecurityIcon from '@mui/icons-material/Security';
 import SupportAgentIcon from '@mui/icons-material/SupportAgent';
-import InventoryIcon from '@mui/icons-material/Inventory';
+
 
 function App() {
   return (
@@ -24,7 +25,7 @@ function App() {
                 <div className="hero-section">
                   <img src={logo} alt="Logo" className="logo-large" />
                   <h1 className="hero-title">
-                    Suivez votre colis <span>en temps réel</span>
+                    Suivez votre colis <span className="temps-reel-hero">en temps réel</span>
                   </h1>
                   <p className="hero-subtitle">
                     Entrez votre numéro de suivi pour obtenir instantanément des informations détaillées sur l'état de votre livraison.
@@ -83,6 +84,8 @@ function App() {
                     </div>
                   </div>
                 </section>
+
+
               </main>
               <Footer />
             </>

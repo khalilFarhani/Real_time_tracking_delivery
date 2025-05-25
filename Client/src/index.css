@@ -11,6 +11,49 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  /* Nouvelle palette de couleurs moderne */
+  --primary-color: #4318FF;        /* Violet principal Admin */
+  --primary-light: #e8e3ff;        /* Violet clair */
+  --primary-dark: #3311cc;         /* Violet foncé */
+
+  --secondary-color: #04BEFE;      /* Bleu ciel Admin */
+  --secondary-light: #e0f7ff;      /* Bleu ciel clair */
+  --secondary-dark: #0284c7;       /* Bleu ciel foncé */
+
+  --accent-color: #6946ff;         /* Violet secondaire Admin */
+  --accent-light: #ede8ff;         /* Violet secondaire clair */
+
+  --indigo-color: #2B3674;         /* Indigo Admin pour textes */
+  --indigo-light: #e8eaf6;         /* Indigo clair */
+
+  --success-color: #05CD99;        /* Vert succès Admin */
+  --success-light: #e0f7f0;        /* Vert succès clair */
+
+  --warning-color: #FFCE20;        /* Jaune warning Admin */
+  --warning-light: #fff8e1;        /* Jaune warning clair */
+
+  --error-color: #EE5D50;          /* Rouge erreur Admin */
+  --error-light: #ffebee;          /* Rouge erreur clair */
+
+  --gray-50: #f9fafb;
+  --gray-100: #f3f4f6;
+  --gray-200: #e5e7eb;
+  --gray-300: #d1d5db;
+  --gray-400: #9ca3af;
+  --gray-500: #6b7280;
+  --gray-600: #4b5563;
+  --gray-700: #374151;
+  --gray-800: #1f2937;
+  --gray-900: #111827;
+
+  /* Dégradés modernes - Admin Theme */
+  --gradient-primary: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
+  --gradient-secondary: linear-gradient(135deg, var(--secondary-color) 0%, #6AD2FF 100%);
+  --gradient-success: linear-gradient(135deg, var(--success-color) 0%, #01B574 100%);
+  --gradient-warning: linear-gradient(135deg, var(--warning-color) 0%, #FFB547 100%);
+  --gradient-error: linear-gradient(135deg, var(--error-color) 0%, #E31A1A 100%);
+  --gradient-soft: linear-gradient(135deg, var(--gray-50) 0%, var(--gray-100) 100%);
 }
 
 body {

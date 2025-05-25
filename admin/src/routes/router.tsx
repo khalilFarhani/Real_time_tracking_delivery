@@ -5,6 +5,7 @@ import paths, { rootPaths } from './paths';
 const App = lazy(() => import('App'));
 const MainLayout = lazy(() => import('layouts/main-layout'));
 const AuthLayout = lazy(() => import('layouts/auth-layout'));
+const AuthGuard = lazy(() => import('components/auth/AuthGuard'));
 const Dashboard = lazy(() => import('pages/dashboard/Dashboard'));
 const SignIn = lazy(() => import('pages/authentication/SignIn'));
 const Logout = lazy(() => import('pages/authentication/Logout'));
@@ -53,11 +54,13 @@ export const routes = [
       {
         path: rootPaths.appRoot,
         element: (
-          <MainLayout>
-            <Suspense fallback={<PageLoader />}>
-              <Outlet />
-            </Suspense>
-          </MainLayout>
+          <AuthGuard>
+            <MainLayout>
+              <Suspense fallback={<PageLoader />}>
+                <Outlet />
+              </Suspense>
+            </MainLayout>
+          </AuthGuard>
         ),
         children: [
           {

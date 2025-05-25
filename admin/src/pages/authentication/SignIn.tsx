@@ -19,25 +19,15 @@ import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
+import CircularProgress from '@mui/material/CircularProgress';
 // Import the logo
 import logo from 'assets/images/logo.png';
+import { authService } from 'services/authService';
+import type { AxiosErrorResponse } from 'types/api';
 
 interface User {
   identifiant: string;
   password: string;
-}
-
-interface UserData {
-  Id: string;
-  Nom: string;
-  Email: string;
-  ImagePath: string;
-  EstAdmin: boolean;
-  EstLivreur: boolean;
-  Permissions?: {
-    permissionName: string;
-    description?: string;
-  }[];
 }
 
 const CompactTextField = styled(TextField)(({ theme }) => ({
@@ -82,6 +72,7 @@ const SignIn = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [dialogOpen, setDialogOpen] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
+  const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
 
   const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {
@@ -95,69 +86,62 @@ const SignIn = () => {
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setLoading(true);
 
     try {
-      const response = await fetch('http://localhost:5283/api/authentification/connexion', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          Identifiant: user.identifiant,
-          MotDePasse: user.password,
-        }),
+      const authResponse = await authService.login({
+        Identifiant: user.identifiant,
+        MotDePasse: user.password,
       });
 
-      const data = await response.json();
+      // Check if user is a livreur
+      if (authResponse.estLivreur) {
+        setErrorMessage(
+          "Les livreurs ne peuvent pas accéder à cette application. Veuillez utiliser l'application dédiée aux livreurs.",
+        );
+        setDialogOpen(true);
+        await authService.logout(); // Clear any stored tokens
+        return;
+      }
 
-      if (response.ok) {
-        // Check if user is a livreur
-        if (data.estLivreur) {
-          setErrorMessage(
-            "Les livreurs ne peuvent pas accéder à cette application. Veuillez utiliser l'application dédiée aux livreurs.",
-          );
-          setDialogOpen(true);
-          return;
-        }
+      // Determine where to redirect based on permissions
+      if (authResponse.estAdmin) {
+        navigate(paths.dashboard);
+      } else if (authResponse.permissions && authResponse.permissions.length > 0) {
+        // Find the first permission that matches a route
+        const availableRoutes = sitemap.filter((route: MenuItem) =>
+          authResponse.permissions?.some((p) => p.permissionName === route.subheader),
+        );
 
-        const userData: UserData = {
-          Id: data.userId,
-          Nom: data.nom,
-          Email: data.email,
-          ImagePath: data.imagePath,
-          EstAdmin: data.estAdmin,
-          EstLivreur: data.estLivreur,
-          Permissions: data.permissions,
-        };
-
-        localStorage.setItem('user', JSON.stringify(userData));
-
-        // Determine where to redirect based on permissions
-        if (userData.EstAdmin) {
-          navigate(paths.dashboard);
-        } else if (userData.Permissions && userData.Permissions.length > 0) {
-          // Find the first permission that matches a route
-          const availableRoutes = sitemap.filter((route: MenuItem) =>
-            userData.Permissions?.some((p) => p.permissionName === route.subheader),
-          );
-
-          if (availableRoutes.length > 0) {
-            navigate(availableRoutes[0].path || paths.tracking);
-          } else {
-            navigate(paths.tracking); // Fallback to tracking page
-          }
+        if (availableRoutes.length > 0) {
+          navigate(availableRoutes[0].path || paths.tracking);
         } else {
-          // No permissions, go to tracking page
-          navigate(paths.tracking);
+          navigate(paths.tracking); // Fallback to tracking page
         }
       } else {
-        setErrorMessage(data.message || 'Erreur de connexion');
-        setDialogOpen(true);
+        // No permissions, go to tracking page
+        navigate(paths.tracking);
       }
-    } catch (error) {
-      console.error('Erreur lors de la connexion:', error);
-      setErrorMessage('Erreur lors de la connexion');
+    } catch (error: unknown) {
+      console.error('Erreur de connexion:', error);
+
+      let errorMsg = 'Erreur de connexion au serveur';
+
+      const axiosError = error as AxiosErrorResponse;
+      if (axiosError.response?.data) {
+        if (typeof axiosError.response.data === 'string') {
+          errorMsg = axiosError.response.data;
+        } else if (axiosError.response.data.message) {
+          errorMsg = axiosError.response.data.message;
+        }
+      } else if (axiosError.message) {
+        errorMsg = axiosError.message;
+      }
+
+      setErrorMessage(errorMsg);
       setDialogOpen(true);
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -281,15 +265,23 @@ const SignIn = () => {
               type="submit"
               variant="contained"
               size="small"
+              disabled={loading}
               sx={{
                 py: 1.5,
                 fontSize: '0.875rem',
                 textTransform: 'none',
-                pointerEvents: preventClick ? 'none' : 'auto',
+                pointerEvents: preventClick || loading ? 'none' : 'auto',
                 boxShadow: 'none',
               }}
             >
-              Se connecter
+              {loading ? (
+                <>
+                  <CircularProgress size={16} sx={{ mr: 1 }} />
+                  Connexion...
+                </>
+              ) : (
+                'Se connecter'
+              )}
             </Button>
           </Box>
         </Box>

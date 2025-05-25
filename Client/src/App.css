@@ -1,13 +1,19 @@
 :root {
-  --primary-color: #FF6B2B;
-  --primary-light: #FFE4D9;
-  --accent-color: #2B4EFF;
-  --accent-light: #D9E4FF;
-  --text-color: #1A202C;
-  --text-secondary: #4A5568;
-  --background-color: #F8F9FA;
-  --border-radius: 16px;
-  --box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  --primary-color: #4318FF;
+  --primary-light: #e8e3ff;
+  --secondary-color: #04BEFE;
+  --secondary-light: #e0f7ff;
+  --accent-color: #6946ff;
+  --accent-light: #ede8ff;
+  --indigo-color: #2B3674;
+  --success-color: #05CD99;
+  --warning-color: #FFCE20;
+  --error-color: #EE5D50;
+  --text-color: #2B3674;
+  --text-secondary: #A3AED0;
+  --background-color: #f8f9fa;
+  --border-radius: 12px;
+  --box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   --transition: all 0.3s ease;
 }
 
@@ -45,6 +51,13 @@
 .hero-title span {
   color: var(--primary-color);
   display: block;
+}
+
+/* Style spécifique pour "en temps réel" du titre principal en bleu ciel */
+.temps-reel-hero {
+  color: var(--secondary-color) !important;
+  font-weight: 700;
+  display: inline !important;
 }
 
 .hero-subtitle {
@@ -97,47 +110,47 @@
 
 .feature-card:hover {
   transform: translateY(-5px);
-  background-color: #FFF5E4;
+  background-color: var(--secondary-light);
 }
 
 .feature-card:nth-child(1):hover {
-  background-color: #FFF5E4;
+  background-color: var(--secondary-light);
 }
 
 .feature-card:nth-child(2):hover {
-  background-color: #FFF5E4;
+  background-color: var(--secondary-light);
 }
 
 .feature-card:nth-child(3):hover {
-  background-color: #FFF5E4;
+  background-color: var(--secondary-light);
 }
 
 .feature-card:nth-child(4):hover {
-  background-color: #FFF5E4;
+  background-color: var(--secondary-light);
 }
 
 /* Couleur par défaut pour toutes les icônes */
 .feature-icon {
   font-size: 3rem !important;
-  color: var(--primary-color) !important; /* #FF6B2B */
+  color: var(--secondary-color) !important;
   margin-bottom: 1rem;
 }
 
-/* Modification des couleurs d'icônes spécifiques */
+/* Modification des couleurs d'icônes spécifiques - toutes en bleu ciel */
 .feature-card:nth-child(1) .feature-icon {
-  color: var(--primary-color) !important; /* #FF6B2B */
+  color: var(--secondary-color) !important; /* Bleu ciel */
 }
 
 .feature-card:nth-child(2) .feature-icon {
-  color: var(--primary-color) !important; /* #FF6B2B */
+  color: var(--secondary-color) !important; /* Bleu ciel */
 }
 
 .feature-card:nth-child(3) .feature-icon {
-  color: var(--primary-color) !important; /* #FF6B2B */
+  color: var(--secondary-color) !important; /* Bleu ciel */
 }
 
 .feature-card:nth-child(4) .feature-icon {
-  color: var(--primary-color) !important; /* #FF6B2B */
+  color: var(--secondary-color) !important; /* Bleu ciel */
 }
 
 .feature-card h3 {
@@ -228,8 +241,8 @@
 }
 
 .MuiButton-root:hover {
-  background-color: var(--primary-dark) !important;
-  box-shadow: 0 4px 12px rgba(255, 107, 43, 0.2) !important; /* Ajusté pour l'orange */
+  background-color: #1d4ed8 !important;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2) !important;
 }
 
 .MuiButton-root.primary {
@@ -237,8 +250,8 @@
 }
 
 .MuiButton-root.primary:hover {
-  background-color: var(--primary-dark) !important;
-  box-shadow: 0 4px 12px rgba(255, 107, 43, 0.2) !important;
+  background-color: #1d4ed8 !important;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2) !important;
 }
 
 /* Style pour les montants */
@@ -275,9 +288,9 @@
 /* Media Queries */
 @media (max-width: 768px) {
   .hero-title {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
   }
-  
+
   .features-grid,
   .steps-container {
     grid-template-columns: 1fr;
