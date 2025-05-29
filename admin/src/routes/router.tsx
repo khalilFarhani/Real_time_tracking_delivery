@@ -17,6 +17,8 @@ const GestionPermission = lazy(() => import('pages/permission/GestionPermission'
 const GestionCommande = lazy(() => import('pages/commande/GestionCommande'));
 const GestionLivreur = lazy(() => import('pages/livreur/GestionLivreur'));
 const GestionFournisseur = lazy(() => import('pages/fournisseur/GestionFournisseur'));
+const RapportLivreur = lazy(() => import('pages/rapport/RapportLivreur'));
+const RapportLivreurIndividuel = lazy(() => import('pages/rapport/RapportLivreurIndividuel'));
 const CommandeDetailsPage = lazy(() => import('pages/commande/CommandeDetailsPage'));
 const CommandeMapPage = lazy(() => import('pages/commande/CommandeMapPage'));
 
@@ -94,6 +96,14 @@ export const routes = [
           {
             path: paths.fournisseur,
             element: <GestionFournisseur />,
+          },
+          {
+            path: paths.rapport,
+            element: <RapportLivreur />,
+          },
+          {
+            path: paths.rapport + '/livreur/:livreurId',
+            element: <RapportLivreurIndividuel />,
           },
           {
             path: 'tracking-page',

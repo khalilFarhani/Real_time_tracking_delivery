@@ -726,6 +726,159 @@
     ]
   },
   {
+    "ContainingType": "AxiaLivraisonAPI.Controllers.RapportController",
+    "Method": "GetDonneesCompletes",
+    "RelativePath": "api/Rapport/donnees-completes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "periode",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AxiaLivraisonAPI.Controllers.RapportController",
+    "Method": "GetLivreurDashboard",
+    "RelativePath": "api/Rapport/livreur-dashboard/{livreurId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "livreurId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "periode",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AxiaLivraisonAPI.Controllers.RapportController",
+    "Method": "GetLivreurs",
+    "RelativePath": "api/Rapport/livreurs",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AxiaLivraisonAPI.Controllers.RapportController",
+    "Method": "GetLivreursEvolutionTemporelle",
+    "RelativePath": "api/Rapport/livreurs-evolution-temporelle",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "periode",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AxiaLivraisonAPI.Controllers.RapportController",
+    "Method": "GetLivreursPerformance",
+    "RelativePath": "api/Rapport/livreurs-performance",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "periode",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AxiaLivraisonAPI.Controllers.RapportController",
+    "Method": "GetLivreursRepartitionStatuts",
+    "RelativePath": "api/Rapport/livreurs-repartition-statuts",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "periode",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AxiaLivraisonAPI.Controllers.RapportController",
+    "Method": "GetLivreursStatistiquesGlobales",
+    "RelativePath": "api/Rapport/livreurs-statistiques-globales",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "periode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "livreurId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AxiaLivraisonAPI.Controllers.RapportController",
+    "Method": "GetLivreursTempsTraitementMoyen",
+    "RelativePath": "api/Rapport/livreurs-temps-moyen",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "periode",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AxiaLivraisonAPI.Controllers.RapportController",
+    "Method": "GetTopLivreurs",
+    "RelativePath": "api/Rapport/top-livreurs",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "periode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "limit",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "AxiaLivraisonAPI.Controllers.StatistiquesController",
     "Method": "GetCommandesAujourdhui",
     "RelativePath": "api/Statistiques/commandes-aujourdhui",

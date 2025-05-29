@@ -30,7 +30,7 @@ const mapContainerStyle = {
 // Custom car icon
 const carIcon = new Icon({
   iconUrl: 'https://cdn-icons-png.flaticon.com/512/3097/3097144.png', // Icône de voiture rouge
-  iconSize: [32, 32],
+  iconSize: [36, 36],
   iconAnchor: [16, 16],
   popupAnchor: [0, -16]
 });

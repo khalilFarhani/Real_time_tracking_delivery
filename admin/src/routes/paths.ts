@@ -12,6 +12,7 @@ const paths = {
   commande: `${rootPaths.appRoot}/commande`,
   livreur: `${rootPaths.appRoot}/livreur`,
   fournisseur: `${rootPaths.appRoot}/fournisseur`,
+  rapport: `${rootPaths.appRoot}/rapport`,
   dashboard: `${rootPaths.appRoot}`,
   tracking: `${rootPaths.appRoot}/tracking-page`,
 };

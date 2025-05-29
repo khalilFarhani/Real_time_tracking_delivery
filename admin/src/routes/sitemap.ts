@@ -66,6 +66,13 @@ const sitemap: MenuItem[] = [
   },
   {
     id: 7,
+    subheader: 'Rapport',
+    path: paths.rapport,
+    icon: 'ic:round-assessment',
+    active: false,
+  },
+  {
+    id: 8,
     subheader: 'Logout',
     path: paths.logout,
     icon: 'ic:round-exit-to-app',

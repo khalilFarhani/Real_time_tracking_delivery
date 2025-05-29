@@ -1247,6 +1247,220 @@
         }
       }
     },
+    "/api/Rapport/livreurs": {
+      "get": {
+        "tags": [
+          "Rapport"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Rapport/livreurs-performance": {
+      "get": {
+        "tags": [
+          "Rapport"
+        ],
+        "parameters": [
+          {
+            "name": "periode",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": "mois"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Rapport/livreurs-statistiques-globales": {
+      "get": {
+        "tags": [
+          "Rapport"
+        ],
+        "parameters": [
+          {
+            "name": "periode",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": "mois"
+            }
+          },
+          {
+            "name": "livreurId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Rapport/livreurs-evolution-temporelle": {
+      "get": {
+        "tags": [
+          "Rapport"
+        ],
+        "parameters": [
+          {
+            "name": "periode",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": "mois"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Rapport/top-livreurs": {
+      "get": {
+        "tags": [
+          "Rapport"
+        ],
+        "parameters": [
+          {
+            "name": "periode",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": "mois"
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 10
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Rapport/livreurs-temps-moyen": {
+      "get": {
+        "tags": [
+          "Rapport"
+        ],
+        "parameters": [
+          {
+            "name": "periode",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": "mois"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Rapport/livreurs-repartition-statuts": {
+      "get": {
+        "tags": [
+          "Rapport"
+        ],
+        "parameters": [
+          {
+            "name": "periode",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": "mois"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Rapport/donnees-completes": {
+      "get": {
+        "tags": [
+          "Rapport"
+        ],
+        "parameters": [
+          {
+            "name": "periode",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": "mois"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Rapport/livreur-dashboard/{livreurId}": {
+      "get": {
+        "tags": [
+          "Rapport"
+        ],
+        "parameters": [
+          {
+            "name": "livreurId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "periode",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": "mois"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Statistiques/commandes-par-statut": {
       "get": {
         "tags": [
