@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import {
   Box,
@@ -17,6 +17,7 @@ import {
   Divider,
   Badge,
   GlobalStyles,
+  Tooltip as MuiTooltip,
 } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
@@ -40,7 +41,7 @@ import {
   XAxis,
   YAxis,
   CartesianGrid,
-  Tooltip,
+  Tooltip as RechartsTooltip,
   ResponsiveContainer,
   PieChart,
   Pie,
@@ -50,6 +51,7 @@ import {
   Legend,
 } from 'recharts';
 import axios from 'axios';
+import { generateIndividualLivreurReportPDF } from '../../utils/pdfGenerator';
 
 const API_URL = 'http://localhost:5283';
 
@@ -510,6 +512,8 @@ const RapportLivreurIndividuel = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [data, setData] = useState<LivreurDashboardData | null>(null);
+  const [isGeneratingPDF, setIsGeneratingPDF] = useState(false);
+  const reportRef = useRef<HTMLDivElement>(null);
 
   const handlePeriodeChange = (event: SelectChangeEvent<Periode>) => {
     setPeriode(event.target.value as Periode);
@@ -625,6 +629,25 @@ const RapportLivreurIndividuel = () => {
     }
   };
 
+  const generatePDF = async () => {
+    if (!reportRef.current || !data || !periode) return;
+
+    try {
+      setIsGeneratingPDF(true);
+      await generateIndividualLivreurReportPDF(
+        reportRef,
+        data.livreurInfo.nom,
+        periode,
+        getPeriodeLabel,
+      );
+    } catch (error) {
+      console.error('Erreur lors de la génération du PDF:', error);
+      alert('Erreur lors de la génération du PDF. Veuillez réessayer.');
+    } finally {
+      setIsGeneratingPDF(false);
+    }
+  };
+
   if (loading) {
     return (
       <Box sx={{ p: 3 }}>
@@ -662,6 +685,7 @@ const RapportLivreurIndividuel = () => {
     <>
       {globalStyles}
       <Box
+        ref={reportRef}
         sx={{
           minHeight: '100vh',
           background: `
@@ -764,28 +788,39 @@ const RapportLivreurIndividuel = () => {
 
               {/* Bouton de téléchargement et sélecteur de période */}
               <Box display="flex" alignItems="center" gap={2}>
-                <Box
-                  sx={{
-                    background: 'linear-gradient(135deg, #4318FF, #04BEFE)',
-                    borderRadius: '8px',
-                    p: 1,
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    cursor: 'pointer',
-                    transition: 'all 0.3s ease',
-                    boxShadow: '0 2px 10px rgba(67, 24, 255, 0.3)',
-                    '&:hover': {
-                      transform: 'translateY(-2px)',
-                      boxShadow: '0 6px 20px rgba(67, 24, 255, 0.4)',
-                    },
-                  }}
-                  onClick={() => {
-                    console.log('Téléchargement du rapport...');
-                  }}
+                <MuiTooltip
+                  title={isGeneratingPDF ? 'Génération en cours...' : 'Télécharger le rapport PDF'}
+                  arrow
                 >
-                  <DownloadIcon sx={{ color: 'white', fontSize: '24px' }} />
-                </Box>
+                  <Box
+                    sx={{
+                      background: 'linear-gradient(135deg, #4318FF, #04BEFE)',
+                      borderRadius: '8px',
+                      p: 1,
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      cursor: isGeneratingPDF ? 'not-allowed' : 'pointer',
+                      transition: 'all 0.3s ease',
+                      boxShadow: '0 2px 10px rgba(67, 24, 255, 0.3)',
+                      opacity: isGeneratingPDF ? 0.7 : 1,
+                      '&:hover': {
+                        transform: isGeneratingPDF ? 'none' : 'translateY(-2px)',
+                        boxShadow: isGeneratingPDF
+                          ? '0 2px 10px rgba(67, 24, 255, 0.3)'
+                          : '0 6px 20px rgba(67, 24, 255, 0.4)',
+                      },
+                    }}
+                    onClick={isGeneratingPDF ? undefined : generatePDF}
+                    className="download-button"
+                  >
+                    {isGeneratingPDF ? (
+                      <CircularProgress size={24} sx={{ color: 'white' }} />
+                    ) : (
+                      <DownloadIcon sx={{ color: 'white', fontSize: '24px' }} />
+                    )}
+                  </Box>
+                </MuiTooltip>
                 {/* Sélecteur de période - visible uniquement sur grands écrans */}
                 <Box sx={{ display: { xs: 'none', md: 'block' } }}>
                   <FormControl
@@ -1751,7 +1786,7 @@ const RapportLivreurIndividuel = () => {
                           }}
                         />
 
-                        <Tooltip
+                        <RechartsTooltip
                           contentStyle={{
                             background:
                               'linear-gradient(135deg, rgba(255,255,255,0.98), rgba(248,250,252,0.95))',
@@ -2624,7 +2659,7 @@ const RapportLivreurIndividuel = () => {
                           })}
                         </Pie>
 
-                        <Tooltip
+                        <RechartsTooltip
                           content={({ active, payload }) => {
                             if (active && payload && payload.length) {
                               const data = payload[0].payload;
@@ -3071,7 +3106,7 @@ const RapportLivreurIndividuel = () => {
                           tickLine={{ stroke: '#f97316', strokeWidth: 2 }}
                         />
 
-                        <Tooltip
+                        <RechartsTooltip
                           formatter={(value, name) => {
                             if (name === 'nombreLivraisons') {
                               return [`${value} livraisons`, '📦 Livraisons'];

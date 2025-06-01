@@ -4182,3 +4182,4 @@ E:\PFE\Test\pf\backend\obj\Debug\net8.0\refint\AxiaLivraisonAPI.dll
 E:\PFE\Test\pf\backend\obj\Debug\net8.0\AxiaLivraisonAPI.pdb
 E:\PFE\Test\pf\backend\obj\Debug\net8.0\AxiaLivraisonAPI.genruntimeconfig.cache
 E:\PFE\Test\pf\backend\obj\Debug\net8.0\ref\AxiaLivraisonAPI.dll
+E:\PFE\Test\pfe\backend\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

@@ -1,7 +1,7 @@
 import { useEffect, useState, useCallback, useRef } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
-import { Map as LeafletMap, Icon, DivIcon } from 'leaflet';
+import { Map as LeafletMap, Icon } from 'leaflet';
 import {
   Container,
   Paper,

@@ -727,6 +727,22 @@
   },
   {
     "ContainingType": "AxiaLivraisonAPI.Controllers.RapportController",
+    "Method": "CreateTestData",
+    "RelativePath": "api/Rapport/create-test-data/{livreurId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "livreurId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AxiaLivraisonAPI.Controllers.RapportController",
     "Method": "GetDonneesCompletes",
     "RelativePath": "api/Rapport/donnees-completes",
     "HttpMethod": "GET",

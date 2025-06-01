@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import {
   Grid,
@@ -15,9 +15,11 @@ import {
   Autocomplete,
   TextField,
   Avatar,
+  Tooltip,
 } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import axios from 'axios';
+import { generateLivreurReportPDF } from '../../utils/pdfGenerator';
 
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
@@ -195,6 +197,8 @@ const RapportLivreur = () => {
   const [livreurs, setLivreurs] = useState<Livreur[]>([]);
   const [loadingLivreurs, setLoadingLivreurs] = useState(false);
   const [autocompleteOpen, setAutocompleteOpen] = useState(false);
+  const [isGeneratingPDF, setIsGeneratingPDF] = useState(false);
+  const reportRef = useRef<HTMLDivElement>(null);
 
   const handlePeriodeChange = (event: SelectChangeEvent<Periode>) => {
     setPeriode(event.target.value as Periode);
@@ -307,6 +311,20 @@ const RapportLivreur = () => {
     }
   };
 
+  const generatePDF = async () => {
+    if (!reportRef.current || !data || !periode) return;
+
+    try {
+      setIsGeneratingPDF(true);
+      await generateLivreurReportPDF(reportRef, periode, getPeriodeLabel);
+    } catch (error) {
+      console.error('Erreur lors de la génération du PDF:', error);
+      alert('Erreur lors de la génération du PDF. Veuillez réessayer.');
+    } finally {
+      setIsGeneratingPDF(false);
+    }
+  };
+
   if (loading) {
     return (
       <Box display="flex" justifyContent="center" alignItems="center" minHeight="400px">
@@ -327,7 +345,7 @@ const RapportLivreur = () => {
   }
 
   return (
-    <Box sx={{ p: 3 }}>
+    <Box sx={{ p: 3 }} ref={reportRef}>
       {/* En-tête avec sélecteur de période */}
       <HeaderCard>
         <CardContent>
@@ -348,34 +366,53 @@ const RapportLivreur = () => {
             </Box>
 
             {/* Bouton de téléchargement plus petit et aligné en haut */}
-            <Box
-              sx={{
-                background: 'linear-gradient(135deg, #4318FF, #04BEFE)',
-                borderRadius: '8px',
-                p: 1,
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                cursor: 'pointer',
-                transition: 'all 0.3s ease',
-                boxShadow: '0 2px 10px rgba(67, 24, 255, 0.3)',
-                alignSelf: 'flex-start',
-                '&:hover': {
-                  transform: 'translateY(-2px)',
-                  boxShadow: '0 6px 20px rgba(67, 24, 255, 0.4)',
-                },
-              }}
-              onClick={() => {
-                // Fonction de téléchargement à implémenter plus tard
-                console.log('Téléchargement du rapport...');
-              }}
+            <Tooltip
+              title={
+                isGeneratingPDF ? 'Génération du PDF en cours...' : 'Télécharger le rapport en PDF'
+              }
+              arrow
             >
-              <DownloadIcon sx={{ color: 'white', fontSize: '24px' }} />
-            </Box>
+              <Box
+                sx={{
+                  background: 'linear-gradient(135deg, #4318FF, #04BEFE)',
+                  borderRadius: '8px',
+                  p: 1,
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  cursor: isGeneratingPDF ? 'not-allowed' : 'pointer',
+                  transition: 'all 0.3s ease',
+                  boxShadow: '0 2px 10px rgba(67, 24, 255, 0.3)',
+                  alignSelf: 'flex-start',
+                  opacity: isGeneratingPDF ? 0.7 : 1,
+                  '&:hover': {
+                    transform: isGeneratingPDF ? 'none' : 'translateY(-2px)',
+                    boxShadow: isGeneratingPDF
+                      ? '0 2px 10px rgba(67, 24, 255, 0.3)'
+                      : '0 6px 20px rgba(67, 24, 255, 0.4)',
+                  },
+                }}
+                onClick={isGeneratingPDF ? undefined : generatePDF}
+                className="download-button"
+              >
+                {isGeneratingPDF ? (
+                  <CircularProgress size={24} sx={{ color: 'white' }} />
+                ) : (
+                  <DownloadIcon sx={{ color: 'white', fontSize: '24px' }} />
+                )}
+              </Box>
+            </Tooltip>
           </Box>
 
           {/* Zone de sélection période et livreur avec espacement maximal */}
-          <Box display="flex" justifyContent="space-between" alignItems="center" mt={2} px={2}>
+          <Box
+            display="flex"
+            justifyContent="space-between"
+            alignItems="center"
+            mt={2}
+            px={2}
+            className="header-controls"
+          >
             {/* Zone de sélection de période */}
             <FormControl
               variant="outlined"
@@ -632,7 +669,7 @@ const RapportLivreur = () => {
       </HeaderCard>
 
       {/* Grille des composants */}
-      <Grid container spacing={3}>
+      <Grid container spacing={3} className="rapport-content">
         {/* Statistiques globales */}
         <Grid item xs={12}>
           <StyledCard>

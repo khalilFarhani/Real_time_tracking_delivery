@@ -253,6 +253,23 @@ namespace AxiaLivraisonAPI.Controllers
 
                 switch (periode.ToLower())
                 {
+                    case "jour":
+                        // Aujourd'hui seulement
+                        var aujourdhui = DateTime.Today;
+                        var demain = aujourdhui.AddDays(1);
+
+                        var statsAujourdhui = await GetStatsJour(aujourdhui, demain);
+                        evolution.Add(new
+                        {
+                            Periode = "Aujourd'hui",
+                            Date = aujourdhui.ToString("yyyy-MM-dd"),
+                            statsAujourdhui.CommandesTotales,
+                            statsAujourdhui.CommandesLivrees,
+                            statsAujourdhui.Revenus,
+                            statsAujourdhui.LivreursActifs
+                        });
+                        break;
+
                     case "semaine":
                         // Les 7 derniers jours
                         for (int i = 6; i >= 0; i--)
@@ -315,7 +332,7 @@ namespace AxiaLivraisonAPI.Controllers
                         break;
 
                     default:
-                        return BadRequest("Période non valide. Utilisez 'semaine', 'mois' ou 'annee'.");
+                        return BadRequest("Période non valide. Utilisez 'jour', 'semaine', 'mois' ou 'annee'.");
                 }
 
                 return Ok(new
