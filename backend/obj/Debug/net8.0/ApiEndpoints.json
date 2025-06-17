@@ -1438,6 +1438,22 @@
   },
   {
     "ContainingType": "AxiaLivraisonAPI.Controllers.UtilisateurController",
+    "Method": "DeleteUtilisateurForce",
+    "RelativePath": "api/utilisateurs/supprimer-force/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AxiaLivraisonAPI.Controllers.UtilisateurController",
     "Method": "DeleteUtilisateur",
     "RelativePath": "api/utilisateurs/supprimer/{id}",
     "HttpMethod": "DELETE",

@@ -108,24 +108,6 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\18c6d5b0-c941-4678-bda5-df4bb1483d0c.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\195cb5e4-1395-40af-9f46-5a0a67a2c428.jpg'))">
-      <SourceType>Package</SourceType>
-      <SourceId>AxiaLivraisonAPI</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/AxiaLivraisonAPI</BasePath>
-      <RelativePath>images/195cb5e4-1395-40af-9f46-5a0a67a2c428.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>qnm2sdhxlw</Fingerprint>
-      <Integrity>Nh8VmTOKvjBLfiQMV8dj8fcsV4P7dkbegPBRCBv2H/o=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\195cb5e4-1395-40af-9f46-5a0a67a2c428.jpg'))</OriginalItemSpec>
-    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\196ec4f9-84a8-421c-97aa-8e806f53e0f8.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>AxiaLivraisonAPI</SourceId>
@@ -305,6 +287,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\46ced7a6-91b2-4154-a398-63f0a718511a.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\5c04daf2-4cbc-45b1-b47b-f5846096acb1.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>AxiaLivraisonAPI</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/AxiaLivraisonAPI</BasePath>
+      <RelativePath>images/5c04daf2-4cbc-45b1-b47b-f5846096acb1.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>x4yrcyph8t</Fingerprint>
+      <Integrity>b/bnQn2cmEOPnRLZo0uLwe9r31csSTCziACGoPXsQQY=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\5c04daf2-4cbc-45b1-b47b-f5846096acb1.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\5ed9384a-3eb2-4458-899c-f972d67842e2.jpg'))">
       <SourceType>Package</SourceType>
@@ -594,24 +594,6 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\9bcd17a4-e657-40b8-a588-2ecc0b8fcf12.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\9cd6e244-498a-427f-9f34-f6bb65ac836a.jpg'))">
-      <SourceType>Package</SourceType>
-      <SourceId>AxiaLivraisonAPI</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/AxiaLivraisonAPI</BasePath>
-      <RelativePath>images/9cd6e244-498a-427f-9f34-f6bb65ac836a.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>eo3mxj5mxn</Fingerprint>
-      <Integrity>HnnJxEAnl0I0MUYdcfQyWLfUH9kgWPLdCotDkJvC9Ps=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\9cd6e244-498a-427f-9f34-f6bb65ac836a.jpg'))</OriginalItemSpec>
-    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\9daa176f-a15b-4645-bfdb-9161022a0357.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>AxiaLivraisonAPI</SourceId>
@@ -647,24 +629,6 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\9e25fa7c-2def-43ef-ae84-f7f436bf96e4.jpg'))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\a205a330-1d05-4b34-bff5-fc1ea560b66d.jpg'))">
-      <SourceType>Package</SourceType>
-      <SourceId>AxiaLivraisonAPI</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/AxiaLivraisonAPI</BasePath>
-      <RelativePath>images/a205a330-1d05-4b34-bff5-fc1ea560b66d.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>3517qrawef</Fingerprint>
-      <Integrity>h0fXlbQdu/l1Hd//CBo25CU3ycgNsaLk2IRqIHtxKL0=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\a205a330-1d05-4b34-bff5-fc1ea560b66d.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\a2c5da39-5f51-436a-b3b4-02ac5e948660.jpg'))">
       <SourceType>Package</SourceType>
@@ -935,24 +899,6 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\f3bca1f9-438c-4e34-8b3c-1f9a1671fd83.jpg'))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\f624a313-a4c5-4aab-a12e-b7418d1f7909.jpg'))">
-      <SourceType>Package</SourceType>
-      <SourceId>AxiaLivraisonAPI</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/AxiaLivraisonAPI</BasePath>
-      <RelativePath>images/f624a313-a4c5-4aab-a12e-b7418d1f7909.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>r50pjbt1wt</Fingerprint>
-      <Integrity>D9zEY864E68vOpG4strTGEcI88FCfUUEUIpWuR60L6M=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\f624a313-a4c5-4aab-a12e-b7418d1f7909.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
   </ItemGroup>
 </Project>

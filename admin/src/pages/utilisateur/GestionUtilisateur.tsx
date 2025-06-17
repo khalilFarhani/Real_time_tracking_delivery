@@ -58,13 +58,9 @@ const GestionUtilisateur: React.FC = () => {
     }
   };
 
-  const handleDeleteUser = async (id: number) => {
-    try {
-      await axios.delete(`${API_URL}/api/utilisateurs/supprimer/${id}`);
-      fetchUtilisateurs();
-    } catch (error) {
-      console.error("Erreur lors de la suppression de l'utilisateur :", error);
-    }
+  const handleDeleteUser = async () => {
+    // Refresh the list after deletion
+    fetchUtilisateurs();
   };
 
   return (

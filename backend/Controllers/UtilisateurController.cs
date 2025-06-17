@@ -237,22 +237,124 @@ namespace AxiaLivraisonAPI.Controllers
                 return NotFound(new { message = "Utilisateur non trouvé." });
             }
 
-            // Delete associated image if it exists
-            if (!string.IsNullOrEmpty(utilisateur.ImagePath))
+            try
             {
-                var filePath = Path.Combine(_env.WebRootPath, utilisateur.ImagePath.TrimStart('/'));
-                if (System.IO.File.Exists(filePath))
+                // Check if user has any commandes first
+                var hasCommandes = await _context.Commandes
+                    .AnyAsync(c => c.UtilisateurId == id);
+
+                if (hasCommandes)
                 {
-                    System.IO.File.Delete(filePath);
+                    return BadRequest("Impossible de supprimer cet utilisateur car il est associé à une ou plusieurs commandes. Veuillez d'abord supprimer ces commandes ou les réassigner à un autre utilisateur.");
                 }
+
+                // Remove all user-permission associations for this user
+                var userPermissions = await _context.UtilisateurPermissions
+                    .Where(up => up.UtilisateurId == id)
+                    .ToListAsync();
+
+                if (userPermissions.Any())
+                {
+                    _context.UtilisateurPermissions.RemoveRange(userPermissions);
+                }
+
+                // Delete associated image if it exists
+                if (!string.IsNullOrEmpty(utilisateur.ImagePath))
+                {
+                    var filePath = Path.Combine(_env.WebRootPath, utilisateur.ImagePath.TrimStart('/'));
+                    if (System.IO.File.Exists(filePath))
+                    {
+                        System.IO.File.Delete(filePath);
+                    }
+                }
+
+                // Remove the user
+                _context.Utilisateurs.Remove(utilisateur);
+
+                // Save all changes in one transaction
+                await _context.SaveChangesAsync();
+
+                return NoContent();
             }
-
-            _context.Utilisateurs.Remove(utilisateur);
-            await _context.SaveChangesAsync();
-
-            return NoContent();
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { message = "Erreur lors de la suppression de l'utilisateur", error = ex.Message });
+            }
         }
 
+        // DELETE: api/utilisateurs/supprimer-force/{id}
+        [HttpDelete("supprimer-force/{id:int}")]
+        public async Task<IActionResult> DeleteUtilisateurForce(int id)
+        {
+            var utilisateur = await _context.Utilisateurs.FindAsync(id);
+            if (utilisateur == null)
+            {
+                return NotFound(new { message = "Utilisateur non trouvé." });
+            }
+
+            try
+            {
+                // Remove all user-permission associations for this user
+                var userPermissions = await _context.UtilisateurPermissions
+                    .Where(up => up.UtilisateurId == id)
+                    .ToListAsync();
+
+                if (userPermissions.Any())
+                {
+                    _context.UtilisateurPermissions.RemoveRange(userPermissions);
+                }
+
+                // Remove all commandes associated with this user
+                var commandes = await _context.Commandes
+                    .Where(c => c.UtilisateurId == id)
+                    .ToListAsync();
+
+                if (commandes.Any())
+                {
+                    // First remove all rapports associated with these commandes
+                    foreach (var commande in commandes)
+                    {
+                        var rapports = await _context.Rapports
+                            .Where(r => r.CommandeId == commande.Id)
+                            .ToListAsync();
+
+                        if (rapports.Any())
+                        {
+                            _context.Rapports.RemoveRange(rapports);
+                        }
+                    }
+
+                    // Then remove the commandes
+                    _context.Commandes.RemoveRange(commandes);
+                }
+
+                // Delete associated image if it exists
+                if (!string.IsNullOrEmpty(utilisateur.ImagePath))
+                {
+                    var filePath = Path.Combine(_env.WebRootPath, utilisateur.ImagePath.TrimStart('/'));
+                    if (System.IO.File.Exists(filePath))
+                    {
+                        System.IO.File.Delete(filePath);
+                    }
+                }
+
+                // Remove the user
+                _context.Utilisateurs.Remove(utilisateur);
+
+                // Save all changes in one transaction
+                await _context.SaveChangesAsync();
+
+                return Ok(new
+                {
+                    message = "Utilisateur et ses données associées supprimés avec succès",
+                    commandesCount = commandes.Count
+                });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { message = "Erreur lors de la suppression forcée de l'utilisateur", error = ex.Message });
+            }
+        }
 
         private bool UtilisateurExists(int id)
         {

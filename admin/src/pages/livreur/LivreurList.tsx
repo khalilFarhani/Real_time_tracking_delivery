@@ -17,7 +17,7 @@ interface LivreurListProps {
   livreurs: Utilisateur[];
   onAddLivreur: () => void;
   onEditLivreur: (livreur: Utilisateur) => void;
-  onDeleteLivreur: (id: number) => void;
+  onDeleteLivreur: () => void;
 }
 
 const LivreurList: React.FC<LivreurListProps> = ({

@@ -58,13 +58,9 @@ const GestionLivreur: React.FC = () => {
     }
   };
 
-  const handleDelete = async (id: number) => {
-    try {
-      await axios.delete(`${API_URL}/api/utilisateurs/supprimer/${id}`);
-      fetchLivreurs(); // Refresh the list
-    } catch (error) {
-      console.error('Erreur lors de la suppression du livreur :', error);
-    }
+  const handleDelete = async () => {
+    // Refresh the list after deletion
+    fetchLivreurs();
   };
 
   return (

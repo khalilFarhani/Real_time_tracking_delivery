@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "gmxXQgb6AHeUoXQW1dHK4lKWrFnGBwRhqiTL1HQMqD8=",
+  "Hash": "OHToZSkdrf/oxD0o881u3TbXSRtPdMIxRX9EyfD4Q8E=",
   "Source": "AxiaLivraisonAPI",
   "BasePath": "_content/AxiaLivraisonAPI",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "AxiaLivraisonAPI\\wwwroot",
       "Source": "AxiaLivraisonAPI",
-      "ContentRoot": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\",
+      "ContentRoot": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\",
       "BasePath": "_content/AxiaLivraisonAPI",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\005546d0-8a8c-46e0-ba77-3ff7be7e4b1d.jpg",
+      "Identity": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\005546d0-8a8c-46e0-ba77-3ff7be7e4b1d.jpg",
       "SourceId": "AxiaLivraisonAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\",
+      "ContentRoot": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\",
       "BasePath": "_content/AxiaLivraisonAPI",
       "RelativePath": "images/005546d0-8a8c-46e0-ba77-3ff7be7e4b1d#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -38,10 +38,10 @@
       "OriginalItemSpec": "wwwroot\\images\\005546d0-8a8c-46e0-ba77-3ff7be7e4b1d.jpg"
     },
     {
-      "Identity": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\06721f68-6df5-4ed5-baaa-d604f66edcb5.jpg",
+      "Identity": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\06721f68-6df5-4ed5-baaa-d604f66edcb5.jpg",
       "SourceId": "AxiaLivraisonAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\",
+      "ContentRoot": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\",
       "BasePath": "_content/AxiaLivraisonAPI",
       "RelativePath": "images/06721f68-6df5-4ed5-baaa-d604f66edcb5#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -59,10 +59,10 @@
       "OriginalItemSpec": "wwwroot\\images\\06721f68-6df5-4ed5-baaa-d604f66edcb5.jpg"
     },
     {
-      "Identity": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\096a7b5e-2d44-4fcb-88aa-27580c4a140f.jpg",
+      "Identity": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\096a7b5e-2d44-4fcb-88aa-27580c4a140f.jpg",
       "SourceId": "AxiaLivraisonAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\",
+      "ContentRoot": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\",
       "BasePath": "_content/AxiaLivraisonAPI",
       "RelativePath": "images/096a7b5e-2d44-4fcb-88aa-27580c4a140f#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -80,10 +80,10 @@
       "OriginalItemSpec": "wwwroot\\images\\096a7b5e-2d44-4fcb-88aa-27580c4a140f.jpg"
     },
     {
-      "Identity": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\0e135733-0e22-4a6a-9b43-8ebed6ee0759.jpg",
+      "Identity": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\0e135733-0e22-4a6a-9b43-8ebed6ee0759.jpg",
       "SourceId": "AxiaLivraisonAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\",
+      "ContentRoot": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\",
       "BasePath": "_content/AxiaLivraisonAPI",
       "RelativePath": "images/0e135733-0e22-4a6a-9b43-8ebed6ee0759#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -101,10 +101,10 @@
       "OriginalItemSpec": "wwwroot\\images\\0e135733-0e22-4a6a-9b43-8ebed6ee0759.jpg"
     },
     {
-      "Identity": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\13a6cb07-d72e-4070-9d53-a880bd5f102b.jpg",
+      "Identity": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\13a6cb07-d72e-4070-9d53-a880bd5f102b.jpg",
       "SourceId": "AxiaLivraisonAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\",
+      "ContentRoot": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\",
       "BasePath": "_content/AxiaLivraisonAPI",
       "RelativePath": "images/13a6cb07-d72e-4070-9d53-a880bd5f102b#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -122,10 +122,10 @@
       "OriginalItemSpec": "wwwroot\\images\\13a6cb07-d72e-4070-9d53-a880bd5f102b.jpg"
     },
     {
-      "Identity": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\18c6d5b0-c941-4678-bda5-df4bb1483d0c.jpg",
+      "Identity": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\18c6d5b0-c941-4678-bda5-df4bb1483d0c.jpg",
       "SourceId": "AxiaLivraisonAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\",
+      "ContentRoot": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\",
       "BasePath": "_content/AxiaLivraisonAPI",
       "RelativePath": "images/18c6d5b0-c941-4678-bda5-df4bb1483d0c#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -143,31 +143,10 @@
       "OriginalItemSpec": "wwwroot\\images\\18c6d5b0-c941-4678-bda5-df4bb1483d0c.jpg"
     },
     {
-      "Identity": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\195cb5e4-1395-40af-9f46-5a0a67a2c428.jpg",
+      "Identity": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\196ec4f9-84a8-421c-97aa-8e806f53e0f8.jpg",
       "SourceId": "AxiaLivraisonAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\",
-      "BasePath": "_content/AxiaLivraisonAPI",
-      "RelativePath": "images/195cb5e4-1395-40af-9f46-5a0a67a2c428#[.{fingerprint}]?.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "qnm2sdhxlw",
-      "Integrity": "Nh8VmTOKvjBLfiQMV8dj8fcsV4P7dkbegPBRCBv2H/o=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\195cb5e4-1395-40af-9f46-5a0a67a2c428.jpg"
-    },
-    {
-      "Identity": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\196ec4f9-84a8-421c-97aa-8e806f53e0f8.jpg",
-      "SourceId": "AxiaLivraisonAPI",
-      "SourceType": "Discovered",
-      "ContentRoot": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\",
+      "ContentRoot": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\",
       "BasePath": "_content/AxiaLivraisonAPI",
       "RelativePath": "images/196ec4f9-84a8-421c-97aa-8e806f53e0f8#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -185,10 +164,10 @@
       "OriginalItemSpec": "wwwroot\\images\\196ec4f9-84a8-421c-97aa-8e806f53e0f8.jpg"
     },
     {
-      "Identity": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\1b7c5726-0410-4815-8246-f473e12b367e.jpg",
+      "Identity": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\1b7c5726-0410-4815-8246-f473e12b367e.jpg",
       "SourceId": "AxiaLivraisonAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\",
+      "ContentRoot": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\",
       "BasePath": "_content/AxiaLivraisonAPI",
       "RelativePath": "images/1b7c5726-0410-4815-8246-f473e12b367e#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -206,10 +185,10 @@
       "OriginalItemSpec": "wwwroot\\images\\1b7c5726-0410-4815-8246-f473e12b367e.jpg"
     },
     {
-      "Identity": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\1fdc2c63-c21c-448e-874d-a366ff09a4a4.png",
+      "Identity": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\1fdc2c63-c21c-448e-874d-a366ff09a4a4.png",
       "SourceId": "AxiaLivraisonAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\",
+      "ContentRoot": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\",
       "BasePath": "_content/AxiaLivraisonAPI",
       "RelativePath": "images/1fdc2c63-c21c-448e-874d-a366ff09a4a4#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -227,10 +206,10 @@
       "OriginalItemSpec": "wwwroot\\images\\1fdc2c63-c21c-448e-874d-a366ff09a4a4.png"
     },
     {
-      "Identity": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\2186cdac-2a4d-4d47-b471-9f4e05ec67f6.jpg",
+      "Identity": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\2186cdac-2a4d-4d47-b471-9f4e05ec67f6.jpg",
       "SourceId": "AxiaLivraisonAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\",
+      "ContentRoot": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\",
       "BasePath": "_content/AxiaLivraisonAPI",
       "RelativePath": "images/2186cdac-2a4d-4d47-b471-9f4e05ec67f6#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -248,10 +227,10 @@
       "OriginalItemSpec": "wwwroot\\images\\2186cdac-2a4d-4d47-b471-9f4e05ec67f6.jpg"
     },
     {
-      "Identity": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\27b74322-2bca-412c-96de-b81906b19b91.jpg",
+      "Identity": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\27b74322-2bca-412c-96de-b81906b19b91.jpg",
       "SourceId": "AxiaLivraisonAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\",
+      "ContentRoot": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\",
       "BasePath": "_content/AxiaLivraisonAPI",
       "RelativePath": "images/27b74322-2bca-412c-96de-b81906b19b91#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -269,10 +248,10 @@
       "OriginalItemSpec": "wwwroot\\images\\27b74322-2bca-412c-96de-b81906b19b91.jpg"
     },
     {
-      "Identity": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\326fdabd-657b-4d51-820b-3191a4ea0dce.jpg",
+      "Identity": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\326fdabd-657b-4d51-820b-3191a4ea0dce.jpg",
       "SourceId": "AxiaLivraisonAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\",
+      "ContentRoot": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\",
       "BasePath": "_content/AxiaLivraisonAPI",
       "RelativePath": "images/326fdabd-657b-4d51-820b-3191a4ea0dce#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -290,10 +269,10 @@
       "OriginalItemSpec": "wwwroot\\images\\326fdabd-657b-4d51-820b-3191a4ea0dce.jpg"
     },
     {
-      "Identity": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\355a5115-cbd1-4467-a432-16fbb83e14b5.jpg",
+      "Identity": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\355a5115-cbd1-4467-a432-16fbb83e14b5.jpg",
       "SourceId": "AxiaLivraisonAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\",
+      "ContentRoot": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\",
       "BasePath": "_content/AxiaLivraisonAPI",
       "RelativePath": "images/355a5115-cbd1-4467-a432-16fbb83e14b5#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -311,10 +290,10 @@
       "OriginalItemSpec": "wwwroot\\images\\355a5115-cbd1-4467-a432-16fbb83e14b5.jpg"
     },
     {
-      "Identity": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\3eb94508-fb17-4e6f-b304-493f1643ccc4.jpg",
+      "Identity": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\3eb94508-fb17-4e6f-b304-493f1643ccc4.jpg",
       "SourceId": "AxiaLivraisonAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\",
+      "ContentRoot": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\",
       "BasePath": "_content/AxiaLivraisonAPI",
       "RelativePath": "images/3eb94508-fb17-4e6f-b304-493f1643ccc4#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -332,10 +311,10 @@
       "OriginalItemSpec": "wwwroot\\images\\3eb94508-fb17-4e6f-b304-493f1643ccc4.jpg"
     },
     {
-      "Identity": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\42432a2a-1ad9-4e9a-9810-97ef4b9164ba.jpg",
+      "Identity": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\42432a2a-1ad9-4e9a-9810-97ef4b9164ba.jpg",
       "SourceId": "AxiaLivraisonAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\",
+      "ContentRoot": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\",
       "BasePath": "_content/AxiaLivraisonAPI",
       "RelativePath": "images/42432a2a-1ad9-4e9a-9810-97ef4b9164ba#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -353,10 +332,10 @@
       "OriginalItemSpec": "wwwroot\\images\\42432a2a-1ad9-4e9a-9810-97ef4b9164ba.jpg"
     },
     {
-      "Identity": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\46ced7a6-91b2-4154-a398-63f0a718511a.jpg",
+      "Identity": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\46ced7a6-91b2-4154-a398-63f0a718511a.jpg",
       "SourceId": "AxiaLivraisonAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\",
+      "ContentRoot": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\",
       "BasePath": "_content/AxiaLivraisonAPI",
       "RelativePath": "images/46ced7a6-91b2-4154-a398-63f0a718511a#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -374,10 +353,31 @@
       "OriginalItemSpec": "wwwroot\\images\\46ced7a6-91b2-4154-a398-63f0a718511a.jpg"
     },
     {
-      "Identity": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\5ed9384a-3eb2-4458-899c-f972d67842e2.jpg",
+      "Identity": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\5c04daf2-4cbc-45b1-b47b-f5846096acb1.jpg",
       "SourceId": "AxiaLivraisonAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\",
+      "ContentRoot": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\",
+      "BasePath": "_content/AxiaLivraisonAPI",
+      "RelativePath": "images/5c04daf2-4cbc-45b1-b47b-f5846096acb1#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "x4yrcyph8t",
+      "Integrity": "b/bnQn2cmEOPnRLZo0uLwe9r31csSTCziACGoPXsQQY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\5c04daf2-4cbc-45b1-b47b-f5846096acb1.jpg"
+    },
+    {
+      "Identity": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\5ed9384a-3eb2-4458-899c-f972d67842e2.jpg",
+      "SourceId": "AxiaLivraisonAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\",
       "BasePath": "_content/AxiaLivraisonAPI",
       "RelativePath": "images/5ed9384a-3eb2-4458-899c-f972d67842e2#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -395,10 +395,10 @@
       "OriginalItemSpec": "wwwroot\\images\\5ed9384a-3eb2-4458-899c-f972d67842e2.jpg"
     },
     {
-      "Identity": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\5fd9386a-1611-44db-91b3-0fb5846a03d7.jpg",
+      "Identity": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\5fd9386a-1611-44db-91b3-0fb5846a03d7.jpg",
       "SourceId": "AxiaLivraisonAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\",
+      "ContentRoot": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\",
       "BasePath": "_content/AxiaLivraisonAPI",
       "RelativePath": "images/5fd9386a-1611-44db-91b3-0fb5846a03d7#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -416,10 +416,10 @@
       "OriginalItemSpec": "wwwroot\\images\\5fd9386a-1611-44db-91b3-0fb5846a03d7.jpg"
     },
     {
-      "Identity": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\60c139fa-d48c-409a-8fae-ce8ee9cfd78c.jpg",
+      "Identity": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\60c139fa-d48c-409a-8fae-ce8ee9cfd78c.jpg",
       "SourceId": "AxiaLivraisonAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\",
+      "ContentRoot": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\",
       "BasePath": "_content/AxiaLivraisonAPI",
       "RelativePath": "images/60c139fa-d48c-409a-8fae-ce8ee9cfd78c#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -437,10 +437,10 @@
       "OriginalItemSpec": "wwwroot\\images\\60c139fa-d48c-409a-8fae-ce8ee9cfd78c.jpg"
     },
     {
-      "Identity": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\6130cb30-9aa8-4355-803e-a387ab50f561.jpg",
+      "Identity": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\6130cb30-9aa8-4355-803e-a387ab50f561.jpg",
       "SourceId": "AxiaLivraisonAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\",
+      "ContentRoot": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\",
       "BasePath": "_content/AxiaLivraisonAPI",
       "RelativePath": "images/6130cb30-9aa8-4355-803e-a387ab50f561#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -458,10 +458,10 @@
       "OriginalItemSpec": "wwwroot\\images\\6130cb30-9aa8-4355-803e-a387ab50f561.jpg"
     },
     {
-      "Identity": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\6351ecb4-a44e-40e3-8f7b-0d3053c84eeb.jpg",
+      "Identity": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\6351ecb4-a44e-40e3-8f7b-0d3053c84eeb.jpg",
       "SourceId": "AxiaLivraisonAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\",
+      "ContentRoot": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\",
       "BasePath": "_content/AxiaLivraisonAPI",
       "RelativePath": "images/6351ecb4-a44e-40e3-8f7b-0d3053c84eeb#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -479,10 +479,10 @@
       "OriginalItemSpec": "wwwroot\\images\\6351ecb4-a44e-40e3-8f7b-0d3053c84eeb.jpg"
     },
     {
-      "Identity": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\65011fdc-6230-4810-b357-b9e6603e2c7b.jpg",
+      "Identity": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\65011fdc-6230-4810-b357-b9e6603e2c7b.jpg",
       "SourceId": "AxiaLivraisonAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\",
+      "ContentRoot": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\",
       "BasePath": "_content/AxiaLivraisonAPI",
       "RelativePath": "images/65011fdc-6230-4810-b357-b9e6603e2c7b#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -500,10 +500,10 @@
       "OriginalItemSpec": "wwwroot\\images\\65011fdc-6230-4810-b357-b9e6603e2c7b.jpg"
     },
     {
-      "Identity": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\69a1ed3b-b82c-4e2e-9c5c-dedc076dfbb3.jpg",
+      "Identity": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\69a1ed3b-b82c-4e2e-9c5c-dedc076dfbb3.jpg",
       "SourceId": "AxiaLivraisonAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\",
+      "ContentRoot": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\",
       "BasePath": "_content/AxiaLivraisonAPI",
       "RelativePath": "images/69a1ed3b-b82c-4e2e-9c5c-dedc076dfbb3#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -521,10 +521,10 @@
       "OriginalItemSpec": "wwwroot\\images\\69a1ed3b-b82c-4e2e-9c5c-dedc076dfbb3.jpg"
     },
     {
-      "Identity": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\6d0aa260-7dcc-4919-bd4c-299e42b280fa.jpg",
+      "Identity": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\6d0aa260-7dcc-4919-bd4c-299e42b280fa.jpg",
       "SourceId": "AxiaLivraisonAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\",
+      "ContentRoot": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\",
       "BasePath": "_content/AxiaLivraisonAPI",
       "RelativePath": "images/6d0aa260-7dcc-4919-bd4c-299e42b280fa#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -542,10 +542,10 @@
       "OriginalItemSpec": "wwwroot\\images\\6d0aa260-7dcc-4919-bd4c-299e42b280fa.jpg"
     },
     {
-      "Identity": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\7bfffe35-0d14-46d5-b64e-701be59c8080.jpg",
+      "Identity": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\7bfffe35-0d14-46d5-b64e-701be59c8080.jpg",
       "SourceId": "AxiaLivraisonAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\",
+      "ContentRoot": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\",
       "BasePath": "_content/AxiaLivraisonAPI",
       "RelativePath": "images/7bfffe35-0d14-46d5-b64e-701be59c8080#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -563,10 +563,10 @@
       "OriginalItemSpec": "wwwroot\\images\\7bfffe35-0d14-46d5-b64e-701be59c8080.jpg"
     },
     {
-      "Identity": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\7fad217f-d87d-412b-9e80-cade35d639a8.jpg",
+      "Identity": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\7fad217f-d87d-412b-9e80-cade35d639a8.jpg",
       "SourceId": "AxiaLivraisonAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\",
+      "ContentRoot": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\",
       "BasePath": "_content/AxiaLivraisonAPI",
       "RelativePath": "images/7fad217f-d87d-412b-9e80-cade35d639a8#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -584,10 +584,10 @@
       "OriginalItemSpec": "wwwroot\\images\\7fad217f-d87d-412b-9e80-cade35d639a8.jpg"
     },
     {
-      "Identity": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\8613ffd1-6837-486d-9888-7254e0c670d2.jpg",
+      "Identity": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\8613ffd1-6837-486d-9888-7254e0c670d2.jpg",
       "SourceId": "AxiaLivraisonAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\",
+      "ContentRoot": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\",
       "BasePath": "_content/AxiaLivraisonAPI",
       "RelativePath": "images/8613ffd1-6837-486d-9888-7254e0c670d2#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -605,10 +605,10 @@
       "OriginalItemSpec": "wwwroot\\images\\8613ffd1-6837-486d-9888-7254e0c670d2.jpg"
     },
     {
-      "Identity": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\88283923-7d5b-4e4f-9ae8-caec47aa7c41.jpg",
+      "Identity": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\88283923-7d5b-4e4f-9ae8-caec47aa7c41.jpg",
       "SourceId": "AxiaLivraisonAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\",
+      "ContentRoot": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\",
       "BasePath": "_content/AxiaLivraisonAPI",
       "RelativePath": "images/88283923-7d5b-4e4f-9ae8-caec47aa7c41#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -626,10 +626,10 @@
       "OriginalItemSpec": "wwwroot\\images\\88283923-7d5b-4e4f-9ae8-caec47aa7c41.jpg"
     },
     {
-      "Identity": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\89a2f482-191e-48dc-b1d3-9a675392afc4.jpg",
+      "Identity": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\89a2f482-191e-48dc-b1d3-9a675392afc4.jpg",
       "SourceId": "AxiaLivraisonAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\",
+      "ContentRoot": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\",
       "BasePath": "_content/AxiaLivraisonAPI",
       "RelativePath": "images/89a2f482-191e-48dc-b1d3-9a675392afc4#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -647,10 +647,10 @@
       "OriginalItemSpec": "wwwroot\\images\\89a2f482-191e-48dc-b1d3-9a675392afc4.jpg"
     },
     {
-      "Identity": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\98db3f39-db33-4f3b-85b2-2b2ee5385551.jpg",
+      "Identity": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\98db3f39-db33-4f3b-85b2-2b2ee5385551.jpg",
       "SourceId": "AxiaLivraisonAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\",
+      "ContentRoot": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\",
       "BasePath": "_content/AxiaLivraisonAPI",
       "RelativePath": "images/98db3f39-db33-4f3b-85b2-2b2ee5385551#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -668,10 +668,10 @@
       "OriginalItemSpec": "wwwroot\\images\\98db3f39-db33-4f3b-85b2-2b2ee5385551.jpg"
     },
     {
-      "Identity": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\9974a692-e9fa-4b84-8bd7-a8a75ccfff33.jpg",
+      "Identity": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\9974a692-e9fa-4b84-8bd7-a8a75ccfff33.jpg",
       "SourceId": "AxiaLivraisonAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\",
+      "ContentRoot": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\",
       "BasePath": "_content/AxiaLivraisonAPI",
       "RelativePath": "images/9974a692-e9fa-4b84-8bd7-a8a75ccfff33#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -689,10 +689,10 @@
       "OriginalItemSpec": "wwwroot\\images\\9974a692-e9fa-4b84-8bd7-a8a75ccfff33.jpg"
     },
     {
-      "Identity": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\9bcd17a4-e657-40b8-a588-2ecc0b8fcf12.jpg",
+      "Identity": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\9bcd17a4-e657-40b8-a588-2ecc0b8fcf12.jpg",
       "SourceId": "AxiaLivraisonAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\",
+      "ContentRoot": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\",
       "BasePath": "_content/AxiaLivraisonAPI",
       "RelativePath": "images/9bcd17a4-e657-40b8-a588-2ecc0b8fcf12#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -710,31 +710,10 @@
       "OriginalItemSpec": "wwwroot\\images\\9bcd17a4-e657-40b8-a588-2ecc0b8fcf12.jpg"
     },
     {
-      "Identity": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\9cd6e244-498a-427f-9f34-f6bb65ac836a.jpg",
+      "Identity": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\9daa176f-a15b-4645-bfdb-9161022a0357.jpg",
       "SourceId": "AxiaLivraisonAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\",
-      "BasePath": "_content/AxiaLivraisonAPI",
-      "RelativePath": "images/9cd6e244-498a-427f-9f34-f6bb65ac836a#[.{fingerprint}]?.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "eo3mxj5mxn",
-      "Integrity": "HnnJxEAnl0I0MUYdcfQyWLfUH9kgWPLdCotDkJvC9Ps=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\9cd6e244-498a-427f-9f34-f6bb65ac836a.jpg"
-    },
-    {
-      "Identity": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\9daa176f-a15b-4645-bfdb-9161022a0357.jpg",
-      "SourceId": "AxiaLivraisonAPI",
-      "SourceType": "Discovered",
-      "ContentRoot": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\",
+      "ContentRoot": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\",
       "BasePath": "_content/AxiaLivraisonAPI",
       "RelativePath": "images/9daa176f-a15b-4645-bfdb-9161022a0357#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -752,10 +731,10 @@
       "OriginalItemSpec": "wwwroot\\images\\9daa176f-a15b-4645-bfdb-9161022a0357.jpg"
     },
     {
-      "Identity": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\9e25fa7c-2def-43ef-ae84-f7f436bf96e4.jpg",
+      "Identity": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\9e25fa7c-2def-43ef-ae84-f7f436bf96e4.jpg",
       "SourceId": "AxiaLivraisonAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\",
+      "ContentRoot": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\",
       "BasePath": "_content/AxiaLivraisonAPI",
       "RelativePath": "images/9e25fa7c-2def-43ef-ae84-f7f436bf96e4#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -773,31 +752,10 @@
       "OriginalItemSpec": "wwwroot\\images\\9e25fa7c-2def-43ef-ae84-f7f436bf96e4.jpg"
     },
     {
-      "Identity": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\a205a330-1d05-4b34-bff5-fc1ea560b66d.jpg",
+      "Identity": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\a2c5da39-5f51-436a-b3b4-02ac5e948660.jpg",
       "SourceId": "AxiaLivraisonAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\",
-      "BasePath": "_content/AxiaLivraisonAPI",
-      "RelativePath": "images/a205a330-1d05-4b34-bff5-fc1ea560b66d#[.{fingerprint}]?.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "3517qrawef",
-      "Integrity": "h0fXlbQdu/l1Hd//CBo25CU3ycgNsaLk2IRqIHtxKL0=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\a205a330-1d05-4b34-bff5-fc1ea560b66d.jpg"
-    },
-    {
-      "Identity": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\a2c5da39-5f51-436a-b3b4-02ac5e948660.jpg",
-      "SourceId": "AxiaLivraisonAPI",
-      "SourceType": "Discovered",
-      "ContentRoot": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\",
+      "ContentRoot": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\",
       "BasePath": "_content/AxiaLivraisonAPI",
       "RelativePath": "images/a2c5da39-5f51-436a-b3b4-02ac5e948660#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -815,10 +773,10 @@
       "OriginalItemSpec": "wwwroot\\images\\a2c5da39-5f51-436a-b3b4-02ac5e948660.jpg"
     },
     {
-      "Identity": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\a43abb09-ce57-4753-af6a-c35200cc9a89.jpg",
+      "Identity": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\a43abb09-ce57-4753-af6a-c35200cc9a89.jpg",
       "SourceId": "AxiaLivraisonAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\",
+      "ContentRoot": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\",
       "BasePath": "_content/AxiaLivraisonAPI",
       "RelativePath": "images/a43abb09-ce57-4753-af6a-c35200cc9a89#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -836,10 +794,10 @@
       "OriginalItemSpec": "wwwroot\\images\\a43abb09-ce57-4753-af6a-c35200cc9a89.jpg"
     },
     {
-      "Identity": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\aa498f60-804f-420f-bedd-3ef7d0c88f5c.jpg",
+      "Identity": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\aa498f60-804f-420f-bedd-3ef7d0c88f5c.jpg",
       "SourceId": "AxiaLivraisonAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\",
+      "ContentRoot": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\",
       "BasePath": "_content/AxiaLivraisonAPI",
       "RelativePath": "images/aa498f60-804f-420f-bedd-3ef7d0c88f5c#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -857,10 +815,10 @@
       "OriginalItemSpec": "wwwroot\\images\\aa498f60-804f-420f-bedd-3ef7d0c88f5c.jpg"
     },
     {
-      "Identity": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\b056a6ad-2e7c-44c2-b755-a2be0f53c6f5.jpg",
+      "Identity": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\b056a6ad-2e7c-44c2-b755-a2be0f53c6f5.jpg",
       "SourceId": "AxiaLivraisonAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\",
+      "ContentRoot": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\",
       "BasePath": "_content/AxiaLivraisonAPI",
       "RelativePath": "images/b056a6ad-2e7c-44c2-b755-a2be0f53c6f5#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -878,10 +836,10 @@
       "OriginalItemSpec": "wwwroot\\images\\b056a6ad-2e7c-44c2-b755-a2be0f53c6f5.jpg"
     },
     {
-      "Identity": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\b34c2d0c-62ec-4346-821d-7b6769833e3e.jpg",
+      "Identity": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\b34c2d0c-62ec-4346-821d-7b6769833e3e.jpg",
       "SourceId": "AxiaLivraisonAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\",
+      "ContentRoot": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\",
       "BasePath": "_content/AxiaLivraisonAPI",
       "RelativePath": "images/b34c2d0c-62ec-4346-821d-7b6769833e3e#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -899,10 +857,10 @@
       "OriginalItemSpec": "wwwroot\\images\\b34c2d0c-62ec-4346-821d-7b6769833e3e.jpg"
     },
     {
-      "Identity": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\b84ad7fb-9cfa-4f30-a49d-c8e1edde2849.jpg",
+      "Identity": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\b84ad7fb-9cfa-4f30-a49d-c8e1edde2849.jpg",
       "SourceId": "AxiaLivraisonAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\",
+      "ContentRoot": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\",
       "BasePath": "_content/AxiaLivraisonAPI",
       "RelativePath": "images/b84ad7fb-9cfa-4f30-a49d-c8e1edde2849#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -920,10 +878,10 @@
       "OriginalItemSpec": "wwwroot\\images\\b84ad7fb-9cfa-4f30-a49d-c8e1edde2849.jpg"
     },
     {
-      "Identity": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\baa10373-2532-48b9-b4aa-31941d477813.jpg",
+      "Identity": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\baa10373-2532-48b9-b4aa-31941d477813.jpg",
       "SourceId": "AxiaLivraisonAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\",
+      "ContentRoot": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\",
       "BasePath": "_content/AxiaLivraisonAPI",
       "RelativePath": "images/baa10373-2532-48b9-b4aa-31941d477813#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -941,10 +899,10 @@
       "OriginalItemSpec": "wwwroot\\images\\baa10373-2532-48b9-b4aa-31941d477813.jpg"
     },
     {
-      "Identity": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\ceb7ab8b-6dd3-475c-90bc-f1409b4dcba5.jpg",
+      "Identity": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\ceb7ab8b-6dd3-475c-90bc-f1409b4dcba5.jpg",
       "SourceId": "AxiaLivraisonAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\",
+      "ContentRoot": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\",
       "BasePath": "_content/AxiaLivraisonAPI",
       "RelativePath": "images/ceb7ab8b-6dd3-475c-90bc-f1409b4dcba5#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -962,10 +920,10 @@
       "OriginalItemSpec": "wwwroot\\images\\ceb7ab8b-6dd3-475c-90bc-f1409b4dcba5.jpg"
     },
     {
-      "Identity": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\d512463f-5bf5-4c63-a059-e50be78a053e.jpg",
+      "Identity": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\d512463f-5bf5-4c63-a059-e50be78a053e.jpg",
       "SourceId": "AxiaLivraisonAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\",
+      "ContentRoot": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\",
       "BasePath": "_content/AxiaLivraisonAPI",
       "RelativePath": "images/d512463f-5bf5-4c63-a059-e50be78a053e#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -983,10 +941,10 @@
       "OriginalItemSpec": "wwwroot\\images\\d512463f-5bf5-4c63-a059-e50be78a053e.jpg"
     },
     {
-      "Identity": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\d81a43d1-52b8-4e7a-b5b5-d79e8ba2eea7.jpg",
+      "Identity": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\d81a43d1-52b8-4e7a-b5b5-d79e8ba2eea7.jpg",
       "SourceId": "AxiaLivraisonAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\",
+      "ContentRoot": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\",
       "BasePath": "_content/AxiaLivraisonAPI",
       "RelativePath": "images/d81a43d1-52b8-4e7a-b5b5-d79e8ba2eea7#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -1004,10 +962,10 @@
       "OriginalItemSpec": "wwwroot\\images\\d81a43d1-52b8-4e7a-b5b5-d79e8ba2eea7.jpg"
     },
     {
-      "Identity": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\da31aaa6-2097-4f41-ae69-0e4a459829ac.jpg",
+      "Identity": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\da31aaa6-2097-4f41-ae69-0e4a459829ac.jpg",
       "SourceId": "AxiaLivraisonAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\",
+      "ContentRoot": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\",
       "BasePath": "_content/AxiaLivraisonAPI",
       "RelativePath": "images/da31aaa6-2097-4f41-ae69-0e4a459829ac#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -1025,10 +983,10 @@
       "OriginalItemSpec": "wwwroot\\images\\da31aaa6-2097-4f41-ae69-0e4a459829ac.jpg"
     },
     {
-      "Identity": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\dfd29d80-02cf-4362-b5a4-6d79eef9a1a5.jpg",
+      "Identity": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\dfd29d80-02cf-4362-b5a4-6d79eef9a1a5.jpg",
       "SourceId": "AxiaLivraisonAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\",
+      "ContentRoot": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\",
       "BasePath": "_content/AxiaLivraisonAPI",
       "RelativePath": "images/dfd29d80-02cf-4362-b5a4-6d79eef9a1a5#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -1046,10 +1004,10 @@
       "OriginalItemSpec": "wwwroot\\images\\dfd29d80-02cf-4362-b5a4-6d79eef9a1a5.jpg"
     },
     {
-      "Identity": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\dfdf4737-9588-4d0e-a1a2-a7368a602bc4.jpg",
+      "Identity": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\dfdf4737-9588-4d0e-a1a2-a7368a602bc4.jpg",
       "SourceId": "AxiaLivraisonAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\",
+      "ContentRoot": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\",
       "BasePath": "_content/AxiaLivraisonAPI",
       "RelativePath": "images/dfdf4737-9588-4d0e-a1a2-a7368a602bc4#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -1067,10 +1025,10 @@
       "OriginalItemSpec": "wwwroot\\images\\dfdf4737-9588-4d0e-a1a2-a7368a602bc4.jpg"
     },
     {
-      "Identity": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\ef4ff516-0b6c-4b7d-8e83-531b793b7db5.jpg",
+      "Identity": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\ef4ff516-0b6c-4b7d-8e83-531b793b7db5.jpg",
       "SourceId": "AxiaLivraisonAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\",
+      "ContentRoot": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\",
       "BasePath": "_content/AxiaLivraisonAPI",
       "RelativePath": "images/ef4ff516-0b6c-4b7d-8e83-531b793b7db5#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -1088,10 +1046,10 @@
       "OriginalItemSpec": "wwwroot\\images\\ef4ff516-0b6c-4b7d-8e83-531b793b7db5.jpg"
     },
     {
-      "Identity": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\f3bca1f9-438c-4e34-8b3c-1f9a1671fd83.jpg",
+      "Identity": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\f3bca1f9-438c-4e34-8b3c-1f9a1671fd83.jpg",
       "SourceId": "AxiaLivraisonAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\",
+      "ContentRoot": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\",
       "BasePath": "_content/AxiaLivraisonAPI",
       "RelativePath": "images/f3bca1f9-438c-4e34-8b3c-1f9a1671fd83#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -1107,33 +1065,12 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\f3bca1f9-438c-4e34-8b3c-1f9a1671fd83.jpg"
-    },
-    {
-      "Identity": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\f624a313-a4c5-4aab-a12e-b7418d1f7909.jpg",
-      "SourceId": "AxiaLivraisonAPI",
-      "SourceType": "Discovered",
-      "ContentRoot": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\",
-      "BasePath": "_content/AxiaLivraisonAPI",
-      "RelativePath": "images/f624a313-a4c5-4aab-a12e-b7418d1f7909#[.{fingerprint}]?.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "r50pjbt1wt",
-      "Integrity": "D9zEY864E68vOpG4strTGEcI88FCfUUEUIpWuR60L6M=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\f624a313-a4c5-4aab-a12e-b7418d1f7909.jpg"
     }
   ],
   "Endpoints": [
     {
       "Route": "images/005546d0-8a8c-46e0-ba77-3ff7be7e4b1d.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\005546d0-8a8c-46e0-ba77-3ff7be7e4b1d.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\005546d0-8a8c-46e0-ba77-3ff7be7e4b1d.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1154,7 +1091,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 06 May 2025 22:25:00 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1170,7 +1107,7 @@
     },
     {
       "Route": "images/005546d0-8a8c-46e0-ba77-3ff7be7e4b1d.w7efxvrxrb.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\005546d0-8a8c-46e0-ba77-3ff7be7e4b1d.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\005546d0-8a8c-46e0-ba77-3ff7be7e4b1d.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1191,7 +1128,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 06 May 2025 22:25:00 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1215,7 +1152,7 @@
     },
     {
       "Route": "images/06721f68-6df5-4ed5-baaa-d604f66edcb5.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\06721f68-6df5-4ed5-baaa-d604f66edcb5.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\06721f68-6df5-4ed5-baaa-d604f66edcb5.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1236,7 +1173,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 06 May 2025 22:28:53 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1252,7 +1189,7 @@
     },
     {
       "Route": "images/06721f68-6df5-4ed5-baaa-d604f66edcb5.r50pjbt1wt.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\06721f68-6df5-4ed5-baaa-d604f66edcb5.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\06721f68-6df5-4ed5-baaa-d604f66edcb5.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1273,7 +1210,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 06 May 2025 22:28:53 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1297,7 +1234,7 @@
     },
     {
       "Route": "images/096a7b5e-2d44-4fcb-88aa-27580c4a140f.47trw8ea01.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\096a7b5e-2d44-4fcb-88aa-27580c4a140f.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\096a7b5e-2d44-4fcb-88aa-27580c4a140f.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1318,7 +1255,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 11 May 2025 00:35:03 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1342,7 +1279,7 @@
     },
     {
       "Route": "images/096a7b5e-2d44-4fcb-88aa-27580c4a140f.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\096a7b5e-2d44-4fcb-88aa-27580c4a140f.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\096a7b5e-2d44-4fcb-88aa-27580c4a140f.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1363,7 +1300,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 11 May 2025 00:35:03 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1379,7 +1316,7 @@
     },
     {
       "Route": "images/0e135733-0e22-4a6a-9b43-8ebed6ee0759.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\0e135733-0e22-4a6a-9b43-8ebed6ee0759.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\0e135733-0e22-4a6a-9b43-8ebed6ee0759.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1400,7 +1337,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 06 May 2025 15:43:37 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1416,7 +1353,7 @@
     },
     {
       "Route": "images/0e135733-0e22-4a6a-9b43-8ebed6ee0759.qnm2sdhxlw.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\0e135733-0e22-4a6a-9b43-8ebed6ee0759.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\0e135733-0e22-4a6a-9b43-8ebed6ee0759.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1437,7 +1374,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 06 May 2025 15:43:37 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1461,7 +1398,7 @@
     },
     {
       "Route": "images/13a6cb07-d72e-4070-9d53-a880bd5f102b.3517qrawef.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\13a6cb07-d72e-4070-9d53-a880bd5f102b.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\13a6cb07-d72e-4070-9d53-a880bd5f102b.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1482,7 +1419,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 16 Mar 2025 19:51:46 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1506,7 +1443,7 @@
     },
     {
       "Route": "images/13a6cb07-d72e-4070-9d53-a880bd5f102b.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\13a6cb07-d72e-4070-9d53-a880bd5f102b.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\13a6cb07-d72e-4070-9d53-a880bd5f102b.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1527,7 +1464,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 16 Mar 2025 19:51:46 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1543,7 +1480,7 @@
     },
     {
       "Route": "images/18c6d5b0-c941-4678-bda5-df4bb1483d0c.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\18c6d5b0-c941-4678-bda5-df4bb1483d0c.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\18c6d5b0-c941-4678-bda5-df4bb1483d0c.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1564,7 +1501,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 16 Mar 2025 21:50:40 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1580,7 +1517,7 @@
     },
     {
       "Route": "images/18c6d5b0-c941-4678-bda5-df4bb1483d0c.v79tpejokb.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\18c6d5b0-c941-4678-bda5-df4bb1483d0c.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\18c6d5b0-c941-4678-bda5-df4bb1483d0c.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1601,7 +1538,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 16 Mar 2025 21:50:40 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1624,90 +1561,8 @@
       ]
     },
     {
-      "Route": "images/195cb5e4-1395-40af-9f46-5a0a67a2c428.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\195cb5e4-1395-40af-9f46-5a0a67a2c428.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "294092"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Nh8VmTOKvjBLfiQMV8dj8fcsV4P7dkbegPBRCBv2H/o=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 18 Mar 2025 23:33:25 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-Nh8VmTOKvjBLfiQMV8dj8fcsV4P7dkbegPBRCBv2H/o="
-        }
-      ]
-    },
-    {
-      "Route": "images/195cb5e4-1395-40af-9f46-5a0a67a2c428.qnm2sdhxlw.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\195cb5e4-1395-40af-9f46-5a0a67a2c428.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "294092"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Nh8VmTOKvjBLfiQMV8dj8fcsV4P7dkbegPBRCBv2H/o=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 18 Mar 2025 23:33:25 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "qnm2sdhxlw"
-        },
-        {
-          "Name": "label",
-          "Value": "images/195cb5e4-1395-40af-9f46-5a0a67a2c428.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-Nh8VmTOKvjBLfiQMV8dj8fcsV4P7dkbegPBRCBv2H/o="
-        }
-      ]
-    },
-    {
       "Route": "images/196ec4f9-84a8-421c-97aa-8e806f53e0f8.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\196ec4f9-84a8-421c-97aa-8e806f53e0f8.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\196ec4f9-84a8-421c-97aa-8e806f53e0f8.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1728,7 +1583,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 11 May 2025 00:35:47 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1744,7 +1599,7 @@
     },
     {
       "Route": "images/196ec4f9-84a8-421c-97aa-8e806f53e0f8.rt6dutv1i2.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\196ec4f9-84a8-421c-97aa-8e806f53e0f8.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\196ec4f9-84a8-421c-97aa-8e806f53e0f8.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1765,7 +1620,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 11 May 2025 00:35:47 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1789,7 +1644,7 @@
     },
     {
       "Route": "images/1b7c5726-0410-4815-8246-f473e12b367e.chwdejbf1h.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\1b7c5726-0410-4815-8246-f473e12b367e.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\1b7c5726-0410-4815-8246-f473e12b367e.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1810,7 +1665,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 06 May 2025 22:09:53 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1834,7 +1689,7 @@
     },
     {
       "Route": "images/1b7c5726-0410-4815-8246-f473e12b367e.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\1b7c5726-0410-4815-8246-f473e12b367e.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\1b7c5726-0410-4815-8246-f473e12b367e.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1855,7 +1710,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 06 May 2025 22:09:53 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1871,7 +1726,7 @@
     },
     {
       "Route": "images/1fdc2c63-c21c-448e-874d-a366ff09a4a4.m33tmdwdmt.png",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\1fdc2c63-c21c-448e-874d-a366ff09a4a4.png",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\1fdc2c63-c21c-448e-874d-a366ff09a4a4.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1892,7 +1747,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 27 May 2025 00:10:48 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1916,7 +1771,7 @@
     },
     {
       "Route": "images/1fdc2c63-c21c-448e-874d-a366ff09a4a4.png",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\1fdc2c63-c21c-448e-874d-a366ff09a4a4.png",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\1fdc2c63-c21c-448e-874d-a366ff09a4a4.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1937,7 +1792,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 27 May 2025 00:10:48 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1953,7 +1808,7 @@
     },
     {
       "Route": "images/2186cdac-2a4d-4d47-b471-9f4e05ec67f6.47trw8ea01.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\2186cdac-2a4d-4d47-b471-9f4e05ec67f6.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\2186cdac-2a4d-4d47-b471-9f4e05ec67f6.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1974,7 +1829,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 06 May 2025 15:47:20 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1998,7 +1853,7 @@
     },
     {
       "Route": "images/2186cdac-2a4d-4d47-b471-9f4e05ec67f6.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\2186cdac-2a4d-4d47-b471-9f4e05ec67f6.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\2186cdac-2a4d-4d47-b471-9f4e05ec67f6.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2019,7 +1874,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 06 May 2025 15:47:20 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2035,7 +1890,7 @@
     },
     {
       "Route": "images/27b74322-2bca-412c-96de-b81906b19b91.47trw8ea01.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\27b74322-2bca-412c-96de-b81906b19b91.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\27b74322-2bca-412c-96de-b81906b19b91.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2056,7 +1911,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 06 May 2025 15:00:55 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2080,7 +1935,7 @@
     },
     {
       "Route": "images/27b74322-2bca-412c-96de-b81906b19b91.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\27b74322-2bca-412c-96de-b81906b19b91.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\27b74322-2bca-412c-96de-b81906b19b91.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2101,7 +1956,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 06 May 2025 15:00:55 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2117,7 +1972,7 @@
     },
     {
       "Route": "images/326fdabd-657b-4d51-820b-3191a4ea0dce.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\326fdabd-657b-4d51-820b-3191a4ea0dce.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\326fdabd-657b-4d51-820b-3191a4ea0dce.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2138,7 +1993,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 11 May 2025 00:35:40 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2154,7 +2009,7 @@
     },
     {
       "Route": "images/326fdabd-657b-4d51-820b-3191a4ea0dce.x4yrcyph8t.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\326fdabd-657b-4d51-820b-3191a4ea0dce.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\326fdabd-657b-4d51-820b-3191a4ea0dce.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2175,7 +2030,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 11 May 2025 00:35:40 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2199,7 +2054,7 @@
     },
     {
       "Route": "images/355a5115-cbd1-4467-a432-16fbb83e14b5.afp1ewpj0n.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\355a5115-cbd1-4467-a432-16fbb83e14b5.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\355a5115-cbd1-4467-a432-16fbb83e14b5.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2220,7 +2075,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 06 May 2025 15:50:15 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2244,7 +2099,7 @@
     },
     {
       "Route": "images/355a5115-cbd1-4467-a432-16fbb83e14b5.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\355a5115-cbd1-4467-a432-16fbb83e14b5.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\355a5115-cbd1-4467-a432-16fbb83e14b5.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2265,7 +2120,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 06 May 2025 15:50:15 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2281,7 +2136,7 @@
     },
     {
       "Route": "images/3eb94508-fb17-4e6f-b304-493f1643ccc4.4d7105xi7w.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\3eb94508-fb17-4e6f-b304-493f1643ccc4.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\3eb94508-fb17-4e6f-b304-493f1643ccc4.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2302,7 +2157,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 06 May 2025 22:26:18 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2326,7 +2181,7 @@
     },
     {
       "Route": "images/3eb94508-fb17-4e6f-b304-493f1643ccc4.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\3eb94508-fb17-4e6f-b304-493f1643ccc4.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\3eb94508-fb17-4e6f-b304-493f1643ccc4.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2347,7 +2202,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 06 May 2025 22:26:18 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2363,7 +2218,7 @@
     },
     {
       "Route": "images/42432a2a-1ad9-4e9a-9810-97ef4b9164ba.8fxkx8b49a.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\42432a2a-1ad9-4e9a-9810-97ef4b9164ba.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\42432a2a-1ad9-4e9a-9810-97ef4b9164ba.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2384,7 +2239,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 17 Mar 2025 00:07:18 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2408,7 +2263,7 @@
     },
     {
       "Route": "images/42432a2a-1ad9-4e9a-9810-97ef4b9164ba.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\42432a2a-1ad9-4e9a-9810-97ef4b9164ba.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\42432a2a-1ad9-4e9a-9810-97ef4b9164ba.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2429,7 +2284,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 17 Mar 2025 00:07:18 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2445,7 +2300,7 @@
     },
     {
       "Route": "images/46ced7a6-91b2-4154-a398-63f0a718511a.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\46ced7a6-91b2-4154-a398-63f0a718511a.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\46ced7a6-91b2-4154-a398-63f0a718511a.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2466,7 +2321,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 06 May 2025 22:27:11 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2482,7 +2337,7 @@
     },
     {
       "Route": "images/46ced7a6-91b2-4154-a398-63f0a718511a.vn89gpy398.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\46ced7a6-91b2-4154-a398-63f0a718511a.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\46ced7a6-91b2-4154-a398-63f0a718511a.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2503,7 +2358,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 06 May 2025 22:27:11 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2526,8 +2381,90 @@
       ]
     },
     {
+      "Route": "images/5c04daf2-4cbc-45b1-b47b-f5846096acb1.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\5c04daf2-4cbc-45b1-b47b-f5846096acb1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1639225"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"b/bnQn2cmEOPnRLZo0uLwe9r31csSTCziACGoPXsQQY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Jun 2025 20:13:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-b/bnQn2cmEOPnRLZo0uLwe9r31csSTCziACGoPXsQQY="
+        }
+      ]
+    },
+    {
+      "Route": "images/5c04daf2-4cbc-45b1-b47b-f5846096acb1.x4yrcyph8t.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\5c04daf2-4cbc-45b1-b47b-f5846096acb1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1639225"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"b/bnQn2cmEOPnRLZo0uLwe9r31csSTCziACGoPXsQQY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Jun 2025 20:13:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "x4yrcyph8t"
+        },
+        {
+          "Name": "label",
+          "Value": "images/5c04daf2-4cbc-45b1-b47b-f5846096acb1.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-b/bnQn2cmEOPnRLZo0uLwe9r31csSTCziACGoPXsQQY="
+        }
+      ]
+    },
+    {
       "Route": "images/5ed9384a-3eb2-4458-899c-f972d67842e2.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\5ed9384a-3eb2-4458-899c-f972d67842e2.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\5ed9384a-3eb2-4458-899c-f972d67842e2.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2548,7 +2485,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 07 May 2025 00:58:06 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2564,7 +2501,7 @@
     },
     {
       "Route": "images/5ed9384a-3eb2-4458-899c-f972d67842e2.z8u37y215a.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\5ed9384a-3eb2-4458-899c-f972d67842e2.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\5ed9384a-3eb2-4458-899c-f972d67842e2.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2585,7 +2522,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 07 May 2025 00:58:06 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2609,7 +2546,7 @@
     },
     {
       "Route": "images/5fd9386a-1611-44db-91b3-0fb5846a03d7.4winu45883.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\5fd9386a-1611-44db-91b3-0fb5846a03d7.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\5fd9386a-1611-44db-91b3-0fb5846a03d7.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2630,7 +2567,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 06 May 2025 13:22:07 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2654,7 +2591,7 @@
     },
     {
       "Route": "images/5fd9386a-1611-44db-91b3-0fb5846a03d7.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\5fd9386a-1611-44db-91b3-0fb5846a03d7.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\5fd9386a-1611-44db-91b3-0fb5846a03d7.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2675,7 +2612,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 06 May 2025 13:22:07 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2691,7 +2628,7 @@
     },
     {
       "Route": "images/60c139fa-d48c-409a-8fae-ce8ee9cfd78c.chwdejbf1h.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\60c139fa-d48c-409a-8fae-ce8ee9cfd78c.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\60c139fa-d48c-409a-8fae-ce8ee9cfd78c.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2712,7 +2649,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 06 May 2025 13:13:47 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2736,7 +2673,7 @@
     },
     {
       "Route": "images/60c139fa-d48c-409a-8fae-ce8ee9cfd78c.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\60c139fa-d48c-409a-8fae-ce8ee9cfd78c.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\60c139fa-d48c-409a-8fae-ce8ee9cfd78c.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2757,7 +2694,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 06 May 2025 13:13:47 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2773,7 +2710,7 @@
     },
     {
       "Route": "images/6130cb30-9aa8-4355-803e-a387ab50f561.gttyby9orm.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\6130cb30-9aa8-4355-803e-a387ab50f561.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\6130cb30-9aa8-4355-803e-a387ab50f561.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2794,7 +2731,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 06 May 2025 16:11:37 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2818,7 +2755,7 @@
     },
     {
       "Route": "images/6130cb30-9aa8-4355-803e-a387ab50f561.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\6130cb30-9aa8-4355-803e-a387ab50f561.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\6130cb30-9aa8-4355-803e-a387ab50f561.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2839,7 +2776,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 06 May 2025 16:11:37 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2855,7 +2792,7 @@
     },
     {
       "Route": "images/6351ecb4-a44e-40e3-8f7b-0d3053c84eeb.eo3mxj5mxn.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\6351ecb4-a44e-40e3-8f7b-0d3053c84eeb.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\6351ecb4-a44e-40e3-8f7b-0d3053c84eeb.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2876,7 +2813,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 06 May 2025 15:03:37 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2900,7 +2837,7 @@
     },
     {
       "Route": "images/6351ecb4-a44e-40e3-8f7b-0d3053c84eeb.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\6351ecb4-a44e-40e3-8f7b-0d3053c84eeb.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\6351ecb4-a44e-40e3-8f7b-0d3053c84eeb.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2921,7 +2858,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 06 May 2025 15:03:37 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2937,7 +2874,7 @@
     },
     {
       "Route": "images/65011fdc-6230-4810-b357-b9e6603e2c7b.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\65011fdc-6230-4810-b357-b9e6603e2c7b.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\65011fdc-6230-4810-b357-b9e6603e2c7b.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2958,7 +2895,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 19 Mar 2025 03:32:39 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2974,7 +2911,7 @@
     },
     {
       "Route": "images/65011fdc-6230-4810-b357-b9e6603e2c7b.rt6dutv1i2.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\65011fdc-6230-4810-b357-b9e6603e2c7b.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\65011fdc-6230-4810-b357-b9e6603e2c7b.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2995,7 +2932,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 19 Mar 2025 03:32:39 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3019,7 +2956,7 @@
     },
     {
       "Route": "images/69a1ed3b-b82c-4e2e-9c5c-dedc076dfbb3.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\69a1ed3b-b82c-4e2e-9c5c-dedc076dfbb3.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\69a1ed3b-b82c-4e2e-9c5c-dedc076dfbb3.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3040,7 +2977,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 11 May 2025 00:34:52 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3056,7 +2993,7 @@
     },
     {
       "Route": "images/69a1ed3b-b82c-4e2e-9c5c-dedc076dfbb3.v79tpejokb.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\69a1ed3b-b82c-4e2e-9c5c-dedc076dfbb3.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\69a1ed3b-b82c-4e2e-9c5c-dedc076dfbb3.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3077,7 +3014,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 11 May 2025 00:34:52 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3101,7 +3038,7 @@
     },
     {
       "Route": "images/6d0aa260-7dcc-4919-bd4c-299e42b280fa.47trw8ea01.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\6d0aa260-7dcc-4919-bd4c-299e42b280fa.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\6d0aa260-7dcc-4919-bd4c-299e42b280fa.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3122,7 +3059,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 06 May 2025 15:29:31 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3146,7 +3083,7 @@
     },
     {
       "Route": "images/6d0aa260-7dcc-4919-bd4c-299e42b280fa.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\6d0aa260-7dcc-4919-bd4c-299e42b280fa.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\6d0aa260-7dcc-4919-bd4c-299e42b280fa.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3167,7 +3104,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 06 May 2025 15:29:31 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3183,7 +3120,7 @@
     },
     {
       "Route": "images/7bfffe35-0d14-46d5-b64e-701be59c8080.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\7bfffe35-0d14-46d5-b64e-701be59c8080.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\7bfffe35-0d14-46d5-b64e-701be59c8080.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3204,7 +3141,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 11 May 2025 00:35:20 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3220,7 +3157,7 @@
     },
     {
       "Route": "images/7bfffe35-0d14-46d5-b64e-701be59c8080.qnm2sdhxlw.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\7bfffe35-0d14-46d5-b64e-701be59c8080.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\7bfffe35-0d14-46d5-b64e-701be59c8080.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3241,7 +3178,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 11 May 2025 00:35:20 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3265,7 +3202,7 @@
     },
     {
       "Route": "images/7fad217f-d87d-412b-9e80-cade35d639a8.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\7fad217f-d87d-412b-9e80-cade35d639a8.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\7fad217f-d87d-412b-9e80-cade35d639a8.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3286,7 +3223,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 13 Apr 2025 11:18:09 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3302,7 +3239,7 @@
     },
     {
       "Route": "images/7fad217f-d87d-412b-9e80-cade35d639a8.umes14da17.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\7fad217f-d87d-412b-9e80-cade35d639a8.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\7fad217f-d87d-412b-9e80-cade35d639a8.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3323,7 +3260,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 13 Apr 2025 11:18:09 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3347,7 +3284,7 @@
     },
     {
       "Route": "images/8613ffd1-6837-486d-9888-7254e0c670d2.bbffdd21bv.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\8613ffd1-6837-486d-9888-7254e0c670d2.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\8613ffd1-6837-486d-9888-7254e0c670d2.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3368,7 +3305,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 11 May 2025 00:35:12 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3392,7 +3329,7 @@
     },
     {
       "Route": "images/8613ffd1-6837-486d-9888-7254e0c670d2.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\8613ffd1-6837-486d-9888-7254e0c670d2.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\8613ffd1-6837-486d-9888-7254e0c670d2.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3413,7 +3350,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 11 May 2025 00:35:12 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3429,7 +3366,7 @@
     },
     {
       "Route": "images/88283923-7d5b-4e4f-9ae8-caec47aa7c41.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\88283923-7d5b-4e4f-9ae8-caec47aa7c41.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\88283923-7d5b-4e4f-9ae8-caec47aa7c41.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3450,7 +3387,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 16 Mar 2025 19:34:18 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3466,7 +3403,7 @@
     },
     {
       "Route": "images/88283923-7d5b-4e4f-9ae8-caec47aa7c41.qnm2sdhxlw.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\88283923-7d5b-4e4f-9ae8-caec47aa7c41.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\88283923-7d5b-4e4f-9ae8-caec47aa7c41.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3487,7 +3424,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 16 Mar 2025 19:34:18 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3511,7 +3448,7 @@
     },
     {
       "Route": "images/89a2f482-191e-48dc-b1d3-9a675392afc4.15g87boz00.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\89a2f482-191e-48dc-b1d3-9a675392afc4.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\89a2f482-191e-48dc-b1d3-9a675392afc4.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3532,7 +3469,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 06 May 2025 22:29:55 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3556,7 +3493,7 @@
     },
     {
       "Route": "images/89a2f482-191e-48dc-b1d3-9a675392afc4.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\89a2f482-191e-48dc-b1d3-9a675392afc4.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\89a2f482-191e-48dc-b1d3-9a675392afc4.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3577,7 +3514,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 06 May 2025 22:29:55 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3593,7 +3530,7 @@
     },
     {
       "Route": "images/98db3f39-db33-4f3b-85b2-2b2ee5385551.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\98db3f39-db33-4f3b-85b2-2b2ee5385551.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\98db3f39-db33-4f3b-85b2-2b2ee5385551.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3614,7 +3551,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 11 May 2025 00:35:59 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3630,7 +3567,7 @@
     },
     {
       "Route": "images/98db3f39-db33-4f3b-85b2-2b2ee5385551.umes14da17.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\98db3f39-db33-4f3b-85b2-2b2ee5385551.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\98db3f39-db33-4f3b-85b2-2b2ee5385551.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3651,7 +3588,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 11 May 2025 00:35:59 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3675,7 +3612,7 @@
     },
     {
       "Route": "images/9974a692-e9fa-4b84-8bd7-a8a75ccfff33.4d7105xi7w.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\9974a692-e9fa-4b84-8bd7-a8a75ccfff33.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\9974a692-e9fa-4b84-8bd7-a8a75ccfff33.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3696,7 +3633,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 06 May 2025 16:18:03 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3720,7 +3657,7 @@
     },
     {
       "Route": "images/9974a692-e9fa-4b84-8bd7-a8a75ccfff33.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\9974a692-e9fa-4b84-8bd7-a8a75ccfff33.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\9974a692-e9fa-4b84-8bd7-a8a75ccfff33.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3741,7 +3678,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 06 May 2025 16:18:03 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3757,7 +3694,7 @@
     },
     {
       "Route": "images/9bcd17a4-e657-40b8-a588-2ecc0b8fcf12.iipnr8wwz7.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\9bcd17a4-e657-40b8-a588-2ecc0b8fcf12.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\9bcd17a4-e657-40b8-a588-2ecc0b8fcf12.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3778,7 +3715,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 16 Mar 2025 22:06:58 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3802,7 +3739,7 @@
     },
     {
       "Route": "images/9bcd17a4-e657-40b8-a588-2ecc0b8fcf12.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\9bcd17a4-e657-40b8-a588-2ecc0b8fcf12.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\9bcd17a4-e657-40b8-a588-2ecc0b8fcf12.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3823,7 +3760,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 16 Mar 2025 22:06:58 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3838,90 +3775,8 @@
       ]
     },
     {
-      "Route": "images/9cd6e244-498a-427f-9f34-f6bb65ac836a.eo3mxj5mxn.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\9cd6e244-498a-427f-9f34-f6bb65ac836a.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1711930"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"HnnJxEAnl0I0MUYdcfQyWLfUH9kgWPLdCotDkJvC9Ps=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 11 May 2025 12:54:32 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "eo3mxj5mxn"
-        },
-        {
-          "Name": "label",
-          "Value": "images/9cd6e244-498a-427f-9f34-f6bb65ac836a.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-HnnJxEAnl0I0MUYdcfQyWLfUH9kgWPLdCotDkJvC9Ps="
-        }
-      ]
-    },
-    {
-      "Route": "images/9cd6e244-498a-427f-9f34-f6bb65ac836a.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\9cd6e244-498a-427f-9f34-f6bb65ac836a.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1711930"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"HnnJxEAnl0I0MUYdcfQyWLfUH9kgWPLdCotDkJvC9Ps=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 11 May 2025 12:54:32 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-HnnJxEAnl0I0MUYdcfQyWLfUH9kgWPLdCotDkJvC9Ps="
-        }
-      ]
-    },
-    {
       "Route": "images/9daa176f-a15b-4645-bfdb-9161022a0357.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\9daa176f-a15b-4645-bfdb-9161022a0357.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\9daa176f-a15b-4645-bfdb-9161022a0357.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3942,7 +3797,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 12 May 2025 21:20:26 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3958,7 +3813,7 @@
     },
     {
       "Route": "images/9daa176f-a15b-4645-bfdb-9161022a0357.rt6dutv1i2.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\9daa176f-a15b-4645-bfdb-9161022a0357.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\9daa176f-a15b-4645-bfdb-9161022a0357.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3979,7 +3834,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 12 May 2025 21:20:26 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4003,7 +3858,7 @@
     },
     {
       "Route": "images/9e25fa7c-2def-43ef-ae84-f7f436bf96e4.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\9e25fa7c-2def-43ef-ae84-f7f436bf96e4.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\9e25fa7c-2def-43ef-ae84-f7f436bf96e4.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4024,7 +3879,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 15:50:40 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4040,7 +3895,7 @@
     },
     {
       "Route": "images/9e25fa7c-2def-43ef-ae84-f7f436bf96e4.x4yrcyph8t.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\9e25fa7c-2def-43ef-ae84-f7f436bf96e4.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\9e25fa7c-2def-43ef-ae84-f7f436bf96e4.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4061,7 +3916,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 15:50:40 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4084,90 +3939,8 @@
       ]
     },
     {
-      "Route": "images/a205a330-1d05-4b34-bff5-fc1ea560b66d.3517qrawef.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\a205a330-1d05-4b34-bff5-fc1ea560b66d.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1845070"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"h0fXlbQdu/l1Hd//CBo25CU3ycgNsaLk2IRqIHtxKL0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 17 Mar 2025 05:20:52 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "3517qrawef"
-        },
-        {
-          "Name": "label",
-          "Value": "images/a205a330-1d05-4b34-bff5-fc1ea560b66d.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-h0fXlbQdu/l1Hd//CBo25CU3ycgNsaLk2IRqIHtxKL0="
-        }
-      ]
-    },
-    {
-      "Route": "images/a205a330-1d05-4b34-bff5-fc1ea560b66d.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\a205a330-1d05-4b34-bff5-fc1ea560b66d.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1845070"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"h0fXlbQdu/l1Hd//CBo25CU3ycgNsaLk2IRqIHtxKL0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 17 Mar 2025 05:20:52 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-h0fXlbQdu/l1Hd//CBo25CU3ycgNsaLk2IRqIHtxKL0="
-        }
-      ]
-    },
-    {
       "Route": "images/a2c5da39-5f51-436a-b3b4-02ac5e948660.eo3mxj5mxn.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\a2c5da39-5f51-436a-b3b4-02ac5e948660.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\a2c5da39-5f51-436a-b3b4-02ac5e948660.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4188,7 +3961,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 06 May 2025 16:20:48 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4212,7 +3985,7 @@
     },
     {
       "Route": "images/a2c5da39-5f51-436a-b3b4-02ac5e948660.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\a2c5da39-5f51-436a-b3b4-02ac5e948660.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\a2c5da39-5f51-436a-b3b4-02ac5e948660.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4233,7 +4006,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 06 May 2025 16:20:48 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4249,7 +4022,7 @@
     },
     {
       "Route": "images/a43abb09-ce57-4753-af6a-c35200cc9a89.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\a43abb09-ce57-4753-af6a-c35200cc9a89.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\a43abb09-ce57-4753-af6a-c35200cc9a89.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4270,7 +4043,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 16 Mar 2025 23:27:01 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4286,7 +4059,7 @@
     },
     {
       "Route": "images/a43abb09-ce57-4753-af6a-c35200cc9a89.r50pjbt1wt.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\a43abb09-ce57-4753-af6a-c35200cc9a89.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\a43abb09-ce57-4753-af6a-c35200cc9a89.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4307,7 +4080,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 16 Mar 2025 23:27:01 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4331,7 +4104,7 @@
     },
     {
       "Route": "images/aa498f60-804f-420f-bedd-3ef7d0c88f5c.47trw8ea01.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\aa498f60-804f-420f-bedd-3ef7d0c88f5c.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\aa498f60-804f-420f-bedd-3ef7d0c88f5c.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4352,7 +4125,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 06 May 2025 22:39:31 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4376,7 +4149,7 @@
     },
     {
       "Route": "images/aa498f60-804f-420f-bedd-3ef7d0c88f5c.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\aa498f60-804f-420f-bedd-3ef7d0c88f5c.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\aa498f60-804f-420f-bedd-3ef7d0c88f5c.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4397,7 +4170,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 06 May 2025 22:39:31 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4413,7 +4186,7 @@
     },
     {
       "Route": "images/b056a6ad-2e7c-44c2-b755-a2be0f53c6f5.8fxkx8b49a.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\b056a6ad-2e7c-44c2-b755-a2be0f53c6f5.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\b056a6ad-2e7c-44c2-b755-a2be0f53c6f5.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4434,7 +4207,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 06 May 2025 16:19:28 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4458,7 +4231,7 @@
     },
     {
       "Route": "images/b056a6ad-2e7c-44c2-b755-a2be0f53c6f5.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\b056a6ad-2e7c-44c2-b755-a2be0f53c6f5.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\b056a6ad-2e7c-44c2-b755-a2be0f53c6f5.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4479,7 +4252,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 06 May 2025 16:19:28 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4495,7 +4268,7 @@
     },
     {
       "Route": "images/b34c2d0c-62ec-4346-821d-7b6769833e3e.4d7105xi7w.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\b34c2d0c-62ec-4346-821d-7b6769833e3e.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\b34c2d0c-62ec-4346-821d-7b6769833e3e.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4516,7 +4289,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 06 May 2025 22:10:56 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4540,7 +4313,7 @@
     },
     {
       "Route": "images/b34c2d0c-62ec-4346-821d-7b6769833e3e.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\b34c2d0c-62ec-4346-821d-7b6769833e3e.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\b34c2d0c-62ec-4346-821d-7b6769833e3e.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4561,7 +4334,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 06 May 2025 22:10:56 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4577,7 +4350,7 @@
     },
     {
       "Route": "images/b84ad7fb-9cfa-4f30-a49d-c8e1edde2849.eo3mxj5mxn.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\b84ad7fb-9cfa-4f30-a49d-c8e1edde2849.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\b84ad7fb-9cfa-4f30-a49d-c8e1edde2849.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4598,7 +4371,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 06 May 2025 15:45:10 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4622,7 +4395,7 @@
     },
     {
       "Route": "images/b84ad7fb-9cfa-4f30-a49d-c8e1edde2849.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\b84ad7fb-9cfa-4f30-a49d-c8e1edde2849.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\b84ad7fb-9cfa-4f30-a49d-c8e1edde2849.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4643,7 +4416,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 06 May 2025 15:45:10 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4659,7 +4432,7 @@
     },
     {
       "Route": "images/baa10373-2532-48b9-b4aa-31941d477813.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\baa10373-2532-48b9-b4aa-31941d477813.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\baa10373-2532-48b9-b4aa-31941d477813.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4680,7 +4453,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 19 Mar 2025 03:28:06 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4696,7 +4469,7 @@
     },
     {
       "Route": "images/baa10373-2532-48b9-b4aa-31941d477813.r50pjbt1wt.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\baa10373-2532-48b9-b4aa-31941d477813.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\baa10373-2532-48b9-b4aa-31941d477813.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4717,7 +4490,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 19 Mar 2025 03:28:06 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4741,7 +4514,7 @@
     },
     {
       "Route": "images/ceb7ab8b-6dd3-475c-90bc-f1409b4dcba5.chwdejbf1h.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\ceb7ab8b-6dd3-475c-90bc-f1409b4dcba5.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\ceb7ab8b-6dd3-475c-90bc-f1409b4dcba5.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4762,7 +4535,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 12 May 2025 21:48:06 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4786,7 +4559,7 @@
     },
     {
       "Route": "images/ceb7ab8b-6dd3-475c-90bc-f1409b4dcba5.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\ceb7ab8b-6dd3-475c-90bc-f1409b4dcba5.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\ceb7ab8b-6dd3-475c-90bc-f1409b4dcba5.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4807,7 +4580,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 12 May 2025 21:48:06 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4823,7 +4596,7 @@
     },
     {
       "Route": "images/d512463f-5bf5-4c63-a059-e50be78a053e.47trw8ea01.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\d512463f-5bf5-4c63-a059-e50be78a053e.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\d512463f-5bf5-4c63-a059-e50be78a053e.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4844,7 +4617,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 06 May 2025 15:31:47 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4868,7 +4641,7 @@
     },
     {
       "Route": "images/d512463f-5bf5-4c63-a059-e50be78a053e.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\d512463f-5bf5-4c63-a059-e50be78a053e.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\d512463f-5bf5-4c63-a059-e50be78a053e.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4889,7 +4662,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 06 May 2025 15:31:47 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4905,7 +4678,7 @@
     },
     {
       "Route": "images/d81a43d1-52b8-4e7a-b5b5-d79e8ba2eea7.15g87boz00.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\d81a43d1-52b8-4e7a-b5b5-d79e8ba2eea7.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\d81a43d1-52b8-4e7a-b5b5-d79e8ba2eea7.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4926,7 +4699,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 06 May 2025 22:37:04 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4950,7 +4723,7 @@
     },
     {
       "Route": "images/d81a43d1-52b8-4e7a-b5b5-d79e8ba2eea7.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\d81a43d1-52b8-4e7a-b5b5-d79e8ba2eea7.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\d81a43d1-52b8-4e7a-b5b5-d79e8ba2eea7.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4971,7 +4744,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 06 May 2025 22:37:04 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4987,7 +4760,7 @@
     },
     {
       "Route": "images/da31aaa6-2097-4f41-ae69-0e4a459829ac.4d7105xi7w.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\da31aaa6-2097-4f41-ae69-0e4a459829ac.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\da31aaa6-2097-4f41-ae69-0e4a459829ac.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5008,7 +4781,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 19 Mar 2025 03:34:00 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5032,7 +4805,7 @@
     },
     {
       "Route": "images/da31aaa6-2097-4f41-ae69-0e4a459829ac.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\da31aaa6-2097-4f41-ae69-0e4a459829ac.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\da31aaa6-2097-4f41-ae69-0e4a459829ac.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5053,7 +4826,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 19 Mar 2025 03:34:00 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5069,7 +4842,7 @@
     },
     {
       "Route": "images/dfd29d80-02cf-4362-b5a4-6d79eef9a1a5.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\dfd29d80-02cf-4362-b5a4-6d79eef9a1a5.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\dfd29d80-02cf-4362-b5a4-6d79eef9a1a5.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5090,7 +4863,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 06 May 2025 15:43:52 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5106,7 +4879,7 @@
     },
     {
       "Route": "images/dfd29d80-02cf-4362-b5a4-6d79eef9a1a5.qnm2sdhxlw.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\dfd29d80-02cf-4362-b5a4-6d79eef9a1a5.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\dfd29d80-02cf-4362-b5a4-6d79eef9a1a5.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5127,7 +4900,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 06 May 2025 15:43:52 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5151,7 +4924,7 @@
     },
     {
       "Route": "images/dfdf4737-9588-4d0e-a1a2-a7368a602bc4.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\dfdf4737-9588-4d0e-a1a2-a7368a602bc4.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\dfdf4737-9588-4d0e-a1a2-a7368a602bc4.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5172,7 +4945,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 06 May 2025 14:56:04 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5188,7 +4961,7 @@
     },
     {
       "Route": "images/dfdf4737-9588-4d0e-a1a2-a7368a602bc4.v79tpejokb.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\dfdf4737-9588-4d0e-a1a2-a7368a602bc4.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\dfdf4737-9588-4d0e-a1a2-a7368a602bc4.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5209,7 +4982,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 06 May 2025 14:56:04 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5233,7 +5006,7 @@
     },
     {
       "Route": "images/ef4ff516-0b6c-4b7d-8e83-531b793b7db5.15g87boz00.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\ef4ff516-0b6c-4b7d-8e83-531b793b7db5.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\ef4ff516-0b6c-4b7d-8e83-531b793b7db5.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5254,7 +5027,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 06 May 2025 22:35:36 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5278,7 +5051,7 @@
     },
     {
       "Route": "images/ef4ff516-0b6c-4b7d-8e83-531b793b7db5.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\ef4ff516-0b6c-4b7d-8e83-531b793b7db5.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\ef4ff516-0b6c-4b7d-8e83-531b793b7db5.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5299,7 +5072,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 06 May 2025 22:35:36 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5315,7 +5088,7 @@
     },
     {
       "Route": "images/f3bca1f9-438c-4e34-8b3c-1f9a1671fd83.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\f3bca1f9-438c-4e34-8b3c-1f9a1671fd83.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\f3bca1f9-438c-4e34-8b3c-1f9a1671fd83.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5336,7 +5109,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 17 Mar 2025 00:33:03 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5352,7 +5125,7 @@
     },
     {
       "Route": "images/f3bca1f9-438c-4e34-8b3c-1f9a1671fd83.r50pjbt1wt.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\f3bca1f9-438c-4e34-8b3c-1f9a1671fd83.jpg",
+      "AssetFile": "E:\\PFE\\Test\\AxiaLivraison\\backend\\wwwroot\\images\\f3bca1f9-438c-4e34-8b3c-1f9a1671fd83.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5373,7 +5146,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 17 Mar 2025 00:33:03 GMT"
+          "Value": "Mon, 16 Jun 2025 13:32:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5388,88 +5161,6 @@
         {
           "Name": "label",
           "Value": "images/f3bca1f9-438c-4e34-8b3c-1f9a1671fd83.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-D9zEY864E68vOpG4strTGEcI88FCfUUEUIpWuR60L6M="
-        }
-      ]
-    },
-    {
-      "Route": "images/f624a313-a4c5-4aab-a12e-b7418d1f7909.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\f624a313-a4c5-4aab-a12e-b7418d1f7909.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1393731"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"D9zEY864E68vOpG4strTGEcI88FCfUUEUIpWuR60L6M=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 19 Mar 2025 03:29:14 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-D9zEY864E68vOpG4strTGEcI88FCfUUEUIpWuR60L6M="
-        }
-      ]
-    },
-    {
-      "Route": "images/f624a313-a4c5-4aab-a12e-b7418d1f7909.r50pjbt1wt.jpg",
-      "AssetFile": "E:\\PFE\\Test\\pfe\\backend\\wwwroot\\images\\f624a313-a4c5-4aab-a12e-b7418d1f7909.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1393731"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"D9zEY864E68vOpG4strTGEcI88FCfUUEUIpWuR60L6M=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 19 Mar 2025 03:29:14 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "r50pjbt1wt"
-        },
-        {
-          "Name": "label",
-          "Value": "images/f624a313-a4c5-4aab-a12e-b7418d1f7909.jpg"
         },
         {
           "Name": "integrity",

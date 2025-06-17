@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
-import { IconButton, InputBase, Badge, Menu, MenuItem, Typography, Box, Divider, Chip } from '@mui/material';
+import { IconButton, InputBase, Badge, Menu, MenuItem, Typography, Box, Divider } from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
 import RefreshIcon from '@mui/icons-material/Refresh';
 import NotificationsIcon from '@mui/icons-material/Notifications';
@@ -116,33 +116,20 @@ export function Header() {
 
       // Filter out the current notification if we're on a notification detail page
       const filteredNotifications = currentNotificationId
-        ? formattedNotifications.filter(n => n.id !== currentNotificationId)
+        ? formattedNotifications.filter((n: Notification) => n.id !== currentNotificationId)
         : formattedNotifications;
 
       setNotifications(filteredNotifications);
 
       // Count unread notifications
-      const unreadCount = filteredNotifications.filter(n => !n.isRead).length;
+      const unreadCount = filteredNotifications.filter((n: Notification) => !n.isRead).length;
       setUnreadCount(unreadCount);
     } catch (err) {
       console.error('Erreur:', err);
     }
   };
 
-  const fetchUnreadCountForCommande = async (commandeId: number) => {
-    try {
-      const response = await fetch(`http://localhost:5283/api/notification/unread-count/by-commande/${commandeId}`);
 
-      if (!response.ok) {
-        throw new Error('Erreur lors de la récupération du nombre de notifications');
-      }
-
-      const data = await response.json();
-      setUnreadCount(data.count);
-    } catch (err) {
-      console.error('Erreur:', err);
-    }
-  };
 
   const handleNotificationMenuOpen = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorEl(event.currentTarget);
@@ -206,11 +193,7 @@ export function Header() {
     return 'other';
   };
 
-  // Fonction pour extraire le code de suivi du sujet
-  const extractCodeSuivi = (subject: string): string | null => {
-    const match = subject.match(/#([a-zA-Z0-9-]+)/);
-    return match ? match[1] : null;
-  };
+
 
   // Fonction pour extraire le statut du corps du message
   const extractStatus = (body: string): string | null => {

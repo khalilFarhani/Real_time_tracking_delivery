@@ -1,5 +1,5 @@
 import { useLocation, useNavigate } from 'react-router-dom';
-import { Container, Typography, Paper, Box, Button, Chip, Divider } from '@mui/material';
+import { Container, Typography, Paper, Box, Divider } from '@mui/material';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import LocalShippingIcon from '@mui/icons-material/LocalShipping';
@@ -14,6 +14,7 @@ interface Notification {
   sentDate: string;
   isRead: boolean;
   codeSuivi: string | null;
+  commandeId: number;
 }
 
 export const NotificationDetail = () => {
@@ -21,9 +22,9 @@ export const NotificationDetail = () => {
   const navigate = useNavigate();
   const { notification } = location.state as { notification: Notification };
   const [commandeDetails, setCommandeDetails] = useState<any>(null);
-  const [loading, setLoading] = useState<boolean>(false);
-  const [error, setError] = useState<string | null>(null);
-  const [relatedNotifications, setRelatedNotifications] = useState<Notification[]>([]);
+  const [, setLoading] = useState<boolean>(false);
+  const [, setError] = useState<string | null>(null);
+  const [, setRelatedNotifications] = useState<Notification[]>([]);
 
   // Add this at the beginning of the component to debug
   useEffect(() => {
@@ -155,35 +156,7 @@ export const NotificationDetail = () => {
     return { __html: body };
   };
 
-  // Fonction pour naviguer vers les détails de la commande
-  const handleViewOrder = () => {
-    if (notification.codeSuivi) {
-      navigate(`/commande/${notification.codeSuivi}`, { 
-        state: { commandeDetails: commandeDetails } 
-      });
-    }
-  };
 
-  // Add this function to mark all notifications as read for a specific order
-  const handleMarkAllAsRead = async (commandeId: number) => {
-    if (!commandeId) return;
-    
-    try {
-      const response = await fetch(`http://localhost:5283/api/notification/mark-all-read/by-commande/${commandeId}`, {
-        method: 'PUT'
-      });
-      
-      if (!response.ok) {
-        throw new Error('Impossible de marquer toutes les notifications comme lues');
-      }
-      
-      // Update local state to mark all notifications as read
-      setRelatedNotifications(relatedNotifications.map(n => ({...n, isRead: true})));
-    } catch (err) {
-      console.error('Erreur:', err);
-      setError(err instanceof Error ? err.message : 'Erreur lors de la mise à jour des notifications');
-    }
-  };
 
   return (
     <Container maxWidth="md" sx={{ py: 4 }}>

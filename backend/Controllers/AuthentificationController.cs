@@ -11,16 +11,24 @@ using System.Security.Claims;
 
 namespace AxiaLivraisonAPI.Controllers
 {
+    // Marquer cette classe comme contr�leur d'API
     [ApiController]
+    // D�finir la route de base pour ce contr�leur
     [Route("api/authentification")]
+    // Contr�leur qui g�re l'authentification des utilisateurs
     public class AuthentificationController : ControllerBase
     {
+        // Contexte de base de donn�es pour acc�der aux donn�es
         private readonly ApplicationDbContext _context;
+        // Service JWT pour g�rer les tokens
         private readonly IJwtService _jwtService;
 
+        // Constructeur qui re�oit les d�pendances par injection
         public AuthentificationController(ApplicationDbContext context, IJwtService jwtService)
         {
+            // Initialiser le contexte de base de donn�es
             _context = context;
+            // Initialiser le service JWT
             _jwtService = jwtService;
         }
         // POST: api/authentification/connexion
@@ -54,13 +62,13 @@ namespace AxiaLivraisonAPI.Controllers
             var accessToken = _jwtService.GenerateAccessToken(utilisateur, permissions);
             var refreshToken = _jwtService.GenerateRefreshToken(utilisateur.Id, GetIpAddress());
 
-            // Temporairement : ne pas sauvegarder en base jusqu'à la migration
+            // Temporairement : ne pas sauvegarder en base jusqu'� la migration
             // _context.RefreshTokens.Add(refreshToken);
             // await _context.SaveChangesAsync();
 
             var response = new AuthResponseDTO
             {
-                Message = "Connexion réussie !",
+                Message = "Connexion r�ussie !",
                 UserId = utilisateur.Id,
                 Nom = utilisateur.Nom,
                 Email = utilisateur.Email,
@@ -84,7 +92,7 @@ namespace AxiaLivraisonAPI.Controllers
 
             if (livreur == null)
             {
-                return Unauthorized("Identifiant incorrect ou vous n'êtes pas un livreur.");
+                return Unauthorized("Identifiant incorrect ou vous n'�tes pas un livreur.");
             }
 
             if (!BCrypt.Net.BCrypt.Verify(loginDTO.MotDePasse, livreur.MotDePasse))
@@ -96,13 +104,13 @@ namespace AxiaLivraisonAPI.Controllers
             var accessToken = _jwtService.GenerateAccessToken(livreur);
             var refreshToken = _jwtService.GenerateRefreshToken(livreur.Id, GetIpAddress());
 
-            // Temporairement : ne pas sauvegarder en base jusqu'à la migration
+            // Temporairement : ne pas sauvegarder en base jusqu'� la migration
             // _context.RefreshTokens.Add(refreshToken);
             // await _context.SaveChangesAsync();
 
             var response = new AuthResponseDTO
             {
-                Message = "Connexion réussie !",
+                Message = "Connexion r�ussie !",
                 UserId = livreur.Id,
                 Nom = livreur.Nom,
                 Email = livreur.Email,
@@ -136,7 +144,7 @@ namespace AxiaLivraisonAPI.Controllers
                     // Blacklist the current token
                     await _jwtService.BlacklistTokenAsync(tokenId, jwtToken.ValidTo, "User logout", int.Parse(userId ?? "0"));
 
-                    // Temporairement désactivé jusqu'à la migration
+                    // Temporairement d�sactiv� jusqu'� la migration
                     // var refreshTokens = await _context.RefreshTokens
                     //     .Where(rt => rt.UtilisateurId == int.Parse(userId ?? "0") && rt.IsActive)
                     //     .ToListAsync();
@@ -148,14 +156,14 @@ namespace AxiaLivraisonAPI.Controllers
                 }
             }
 
-            return Ok(new { Message = "Déconnexion réussie !" });
+            return Ok(new { Message = "D�connexion r�ussie !" });
         }
 
         // POST: api/authentification/refresh-token
         [HttpPost("refresh-token")]
         public async Task<IActionResult> RefreshToken(RefreshTokenDTO refreshTokenDto)
         {
-            // Temporairement désactivé jusqu'à la migration
+            // Temporairement d�sactiv� jusqu'� la migration
             return Unauthorized("Refresh token functionality temporarily disabled until migration");
         }
 
@@ -164,7 +172,7 @@ namespace AxiaLivraisonAPI.Controllers
         [Authorize]
         public async Task<IActionResult> RevokeToken(RefreshTokenDTO refreshTokenDto)
         {
-            // Temporairement désactivé jusqu'à la migration
+            // Temporairement d�sactiv� jusqu'� la migration
             return Ok(new { Message = "Token revoke functionality temporarily disabled until migration" });
         }
 
@@ -177,7 +185,7 @@ namespace AxiaLivraisonAPI.Controllers
 
             if (client == null)
             {
-                return Unauthorized("Identifiant incorrect ou vous n'êtes pas un client.");
+                return Unauthorized("Identifiant incorrect ou vous n'�tes pas un client.");
             }
 
             if (!BCrypt.Net.BCrypt.Verify(loginDTO.MotDePasse, client.MotDePasse))
@@ -189,13 +197,13 @@ namespace AxiaLivraisonAPI.Controllers
             var accessToken = _jwtService.GenerateAccessToken(client);
             var refreshToken = _jwtService.GenerateRefreshToken(client.Id, GetIpAddress());
 
-            // Temporairement désactivé jusqu'à la migration
+            // Temporairement d�sactiv� jusqu'� la migration
             // _context.RefreshTokens.Add(refreshToken);
             // await _context.SaveChangesAsync();
 
             var response = new AuthResponseDTO
             {
-                Message = "Connexion réussie !",
+                Message = "Connexion r�ussie !",
                 UserId = client.Id,
                 Nom = client.Nom,
                 Email = client.Email,
@@ -220,7 +228,7 @@ namespace AxiaLivraisonAPI.Controllers
 
             if (existingUser != null)
             {
-                return BadRequest("Un utilisateur avec cet identifiant ou email existe déjà.");
+                return BadRequest("Un utilisateur avec cet identifiant ou email existe d�j�.");
             }
 
             // Create new client user
@@ -242,13 +250,13 @@ namespace AxiaLivraisonAPI.Controllers
             var accessToken = _jwtService.GenerateAccessToken(client);
             var refreshToken = _jwtService.GenerateRefreshToken(client.Id, GetIpAddress());
 
-            // Temporairement désactivé jusqu'à la migration
+            // Temporairement d�sactiv� jusqu'� la migration
             // _context.RefreshTokens.Add(refreshToken);
             // await _context.SaveChangesAsync();
 
             var response = new AuthResponseDTO
             {
-                Message = "Inscription réussie !",
+                Message = "Inscription r�ussie !",
                 UserId = client.Id,
                 Nom = client.Nom,
                 Email = client.Email,

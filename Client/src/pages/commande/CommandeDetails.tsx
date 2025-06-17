@@ -9,15 +9,9 @@ import {
   Chip,
   CircularProgress,
   Alert,
-  Divider,
   Tooltip,
   Grid,
-  Card,
-  CardContent,
   LinearProgress,
-  Stepper,
-  Step,
-  StepLabel,
   Table,
   TableBody,
   TableCell,
@@ -26,28 +20,19 @@ import {
 } from "@mui/material";
 import {
   ArrowBack as ArrowBackIcon,
-  LocalShipping as LocalShippingIcon,
   Subject as SubjectIcon,
-  Description as DescriptionIcon,  // Pour l'en-tête "Détails de la commande"
   Person as PersonIcon,
   Paid as PaidIcon,
-  MonetizationOn as MonetizationOnIcon,
   ShoppingCart as ShoppingCartIcon,
   RequestQuote as RequestQuoteIcon,
   Percent as PercentIcon,
   Email as EmailIcon,
   Phone as PhoneIcon,
   LocationOn as LocationOnIcon,
-  Timeline as TimelineIcon,
   CheckCircle as CheckCircleIcon,
-  Schedule as ScheduleIcon,
   LocalShipping as DeliveryIcon,
-  Assignment as AssignmentIcon,
   Home as HomeIcon,
-  Notifications as NotificationsIcon,
-  WbSunny as WeatherIcon,
   Speed as SpeedIcon,
-  Star as StarIcon,
   TrendingUp as TrendingUpIcon,
   Security as SecurityIcon,
 } from "@mui/icons-material";
@@ -55,6 +40,7 @@ import './CommandeDetails.css';
 
 // ==================== Types & Interfaces ====================
 interface CommandeDetails {
+  id?: number;
   codeSuivi: string;
   statut: string;
   quantite: number;
@@ -84,13 +70,7 @@ const formatDate = (dateString: string): string => {
   });
 };
 
-const getStatusStyle = (statut: string) => {
-  // Utilise les mêmes couleurs pour tous les statuts
-  return {
-    bgcolor: '#FFF3CD',
-    color: '#856404'
-  };
-};
+
 
 const getTimelineSteps = (statut: string) => {
   const steps = [

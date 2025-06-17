@@ -17,7 +17,7 @@ interface UtilisateurListProps {
   utilisateurs: Utilisateur[];
   onAddUtilisateur: () => void;
   onEditUtilisateur: (utilisateur: Utilisateur) => void;
-  onDeleteUtilisateur: (id: number) => void;
+  onDeleteUtilisateur: () => void;
 }
 
 const UtilisateurList: React.FC<UtilisateurListProps> = ({

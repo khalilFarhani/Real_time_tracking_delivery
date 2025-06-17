@@ -8,6 +8,11 @@ import {
   TableRow,
   Button,
   Box,
+  Dialog,
+  DialogTitle,
+  DialogContent,
+  DialogActions,
+  Typography,
 } from '@mui/material';
 import axios from 'axios';
 import { Utilisateur } from './types';
@@ -16,7 +21,7 @@ import GestionPermissionsUtilisateur from '../permission/GestionPermissionsUtili
 interface UtilisateurTableProps {
   utilisateurs: Utilisateur[];
   onEditUtilisateur: (utilisateur: Utilisateur) => void;
-  onDeleteUtilisateur: (id: number) => void;
+  onDeleteUtilisateur: () => void;
 }
 
 const UtilisateurTable: React.FC<UtilisateurTableProps> = ({
@@ -26,6 +31,10 @@ const UtilisateurTable: React.FC<UtilisateurTableProps> = ({
 }) => {
   const [selectedUtilisateur, setSelectedUtilisateur] = useState<Utilisateur | null>(null);
   const [openPermissionsDialog, setOpenPermissionsDialog] = useState(false);
+  const [deleteConfirmOpen, setDeleteConfirmOpen] = useState(false);
+  const [deleteErrorOpen, setDeleteErrorOpen] = useState(false);
+  const [deleteError, setDeleteError] = useState('');
+  const [utilisateurToDelete, setUtilisateurToDelete] = useState<number | null>(null);
   const API_URL = 'http://localhost:5283';
 
   const handleSavePermissions = async (utilisateurId: number, permissionIds: number[]) => {
@@ -37,6 +46,56 @@ const UtilisateurTable: React.FC<UtilisateurTableProps> = ({
     } catch (error) {
       console.error('Erreur lors de la sauvegarde des permissions:', error);
     }
+  };
+
+  const handleDelete = async (id: number, force: boolean = false) => {
+    try {
+      const endpoint = force
+        ? `${API_URL}/api/utilisateurs/supprimer-force/${id}`
+        : `${API_URL}/api/utilisateurs/supprimer/${id}`;
+
+      await axios.delete(endpoint);
+      onDeleteUtilisateur();
+    } catch (error) {
+      console.error("Erreur lors de la suppression de l'utilisateur :", error);
+
+      // Show error dialog with details
+      if (axios.isAxiosError(error) && error.response) {
+        let errorMsg = "Une erreur est survenue lors de la suppression de l'utilisateur.";
+
+        // If there's a specific error message from the server
+        if (error.response.data && typeof error.response.data === 'string') {
+          errorMsg = error.response.data;
+        } else if (error.response.data && error.response.data.message) {
+          errorMsg = error.response.data.message;
+        }
+
+        setDeleteError(errorMsg);
+        setDeleteErrorOpen(true);
+      }
+    }
+  };
+
+  const confirmDelete = (id: number) => {
+    setUtilisateurToDelete(id);
+    setDeleteConfirmOpen(true);
+  };
+
+  const handleDeleteConfirmed = async () => {
+    if (utilisateurToDelete) {
+      await handleDelete(utilisateurToDelete, false);
+      setUtilisateurToDelete(null);
+    }
+    setDeleteConfirmOpen(false);
+  };
+
+  const handleForceDelete = async () => {
+    if (utilisateurToDelete) {
+      await handleDelete(utilisateurToDelete, true);
+      setUtilisateurToDelete(null);
+    }
+    setDeleteErrorOpen(false);
+    setDeleteConfirmOpen(false);
   };
 
   return (
@@ -93,7 +152,7 @@ const UtilisateurTable: React.FC<UtilisateurTableProps> = ({
                       variant="contained"
                       color="error"
                       size="small"
-                      onClick={() => onDeleteUtilisateur(utilisateur.id)}
+                      onClick={() => confirmDelete(utilisateur.id)}
                       sx={{ textTransform: 'none' }}
                     >
                       Supprimer
@@ -129,6 +188,43 @@ const UtilisateurTable: React.FC<UtilisateurTableProps> = ({
           onSave={handleSavePermissions}
         />
       )}
+
+      {/* Dialog d'erreur de suppression */}
+      <Dialog open={deleteErrorOpen} onClose={() => setDeleteErrorOpen(false)}>
+        <DialogTitle>Suppression avec données associées</DialogTitle>
+        <DialogContent>
+          <Typography>{deleteError}</Typography>
+          <Typography sx={{ mt: 2, color: 'warning.main' }}>
+            ⚠️ Attention : Supprimer cet utilisateur supprimera également toutes ses commandes et
+            rapports associés. Cette action est irréversible.
+          </Typography>
+        </DialogContent>
+        <DialogActions>
+          <Button onClick={() => setDeleteErrorOpen(false)} color="primary">
+            Annuler
+          </Button>
+          <Button onClick={handleForceDelete} color="error" variant="contained">
+            Supprimer quand même
+          </Button>
+        </DialogActions>
+      </Dialog>
+
+      {/* Dialog de confirmation de suppression */}
+      <Dialog open={deleteConfirmOpen} onClose={() => setDeleteConfirmOpen(false)}>
+        <DialogTitle>Confirmer la suppression</DialogTitle>
+        <DialogContent>
+          <Typography>Êtes-vous sûr de vouloir supprimer cet utilisateur ?</Typography>
+          <Typography sx={{ mt: 2, color: 'warning.main' }}>
+            Cette action est irréversible.
+          </Typography>
+        </DialogContent>
+        <DialogActions>
+          <Button onClick={() => setDeleteConfirmOpen(false)}>Annuler</Button>
+          <Button onClick={handleDeleteConfirmed} color="error" variant="contained">
+            Supprimer
+          </Button>
+        </DialogActions>
+      </Dialog>
     </>
   );
 };

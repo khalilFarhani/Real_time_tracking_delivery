@@ -92,6 +92,33 @@ class AuthService {
     return authData;
   }
 
+  async loginDeliverer(credentials: LoginRequest): Promise<AuthResponse> {
+    const response: AxiosResponse<AuthResponse> = await axios.post(
+      `${API_BASE_URL}/authentification/connexion-livreur`,
+      credentials,
+    );
+
+    const authData = response.data;
+    const expiry = new Date(authData.tokenExpiry);
+
+    // Save tokens
+    this.saveTokensToStorage(authData.accessToken, authData.refreshToken, expiry);
+
+    // Save user data
+    const userData = {
+      Id: authData.userId,
+      Nom: authData.nom,
+      Email: authData.email,
+      ImagePath: authData.imagePath,
+      EstAdmin: authData.estAdmin,
+      EstLivreur: authData.estLivreur,
+      Permissions: authData.permissions,
+    };
+    localStorage.setItem('user', JSON.stringify(userData));
+
+    return authData;
+  }
+
   async logout(): Promise<void> {
     try {
       if (this.accessToken) {
