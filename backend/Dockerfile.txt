@@ -1,0 +1,25 @@
+# Étape 1 : Build de l'application
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
+WORKDIR /app
+
+# Copier tous les fichiers dans l'image
+COPY . .
+
+# Restaurer les dépendances
+RUN dotnet restore
+
+# Compiler et publier l'application
+RUN dotnet publish -c Release -o /out
+
+# Étape 2 : Runtime (exécution)
+FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS runtime
+WORKDIR /app
+
+# Copier les fichiers compilés depuis l'étape "build"
+COPY --from=build /out .
+
+# Exposer le port 80 (Render utilise ce port pour envoyer les requêtes)
+EXPOSE 80
+
+# Lancer l'application (⚠️ change le nom du DLL si différent)
+ENTRYPOINT ["dotnet", "AxiaLivraisonAPI.dll"]
