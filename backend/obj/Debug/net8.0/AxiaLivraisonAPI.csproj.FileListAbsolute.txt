@@ -4369,3 +4369,4 @@ E:\PFE\Test\Real_time_tracking_delivery-main\backend\obj\Debug\net8.0\refint\Axi
 E:\PFE\Test\Real_time_tracking_delivery-main\backend\obj\Debug\net8.0\AxiaLivraisonAPI.pdb
 E:\PFE\Test\Real_time_tracking_delivery-main\backend\obj\Debug\net8.0\AxiaLivraisonAPI.genruntimeconfig.cache
 E:\PFE\Test\Real_time_tracking_delivery-main\backend\obj\Debug\net8.0\ref\AxiaLivraisonAPI.dll
+E:\PFE\Test\AxiaLivraison\backend\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
