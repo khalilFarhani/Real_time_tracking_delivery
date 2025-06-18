@@ -23,4 +23,18 @@ export default defineConfig({
     port: 3000,
   },
   base: '/horizon',
+  build: {
+    rollupOptions: {
+      external: [],
+      output: {
+        manualChunks: undefined,
+      },
+    },
+    commonjsOptions: {
+      include: [/node_modules/],
+    },
+  },
+  optimizeDeps: {
+    include: ['@mui/system', '@mui/material', '@mui/x-date-pickers'],
+  },
 });
