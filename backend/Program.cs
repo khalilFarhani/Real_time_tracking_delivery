@@ -14,8 +14,16 @@ using Microsoft.IdentityModel.Tokens; // Pour la sécurité des tokens
 using System.Text; // Pour encoder/décoder du texte
 using AxiaLivraisonAPI.Middleware; // Pour les middlewares personnalisés
 
+
 // Créer un constructeur d'application web avec les arguments de ligne de commande
 var builder = WebApplication.CreateBuilder(args);
+
+// pour le deploiement
+var port = Environment.GetEnvironmentVariable("PORT") ?? "5000";
+builder.WebHost.ConfigureKestrel(options =>
+{
+    options.ListenAnyIP(int.Parse(port));
+});
 
 // Configurer Kestrel pour écouter sur toutes les interfaces réseau (0.0.0.0) sur le port 5283
 builder.WebHost.UseUrls("http://0.0.0.0:5283");

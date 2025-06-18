@@ -1,0 +1,2 @@
+$env:PORT=5283
+dotnet run

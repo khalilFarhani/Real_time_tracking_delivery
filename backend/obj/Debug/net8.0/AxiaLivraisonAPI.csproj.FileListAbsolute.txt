@@ -3229,7 +3229,6 @@ E:\PFE\Test\AxiaLivraison\backend\obj\Debug\net8.0\staticwebassets\msbuild.build
 E:\PFE\Test\AxiaLivraison\backend\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.AxiaLivraisonAPI.props
 E:\PFE\Test\AxiaLivraison\backend\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.AxiaLivraisonAPI.props
 E:\PFE\Test\AxiaLivraison\backend\obj\Debug\net8.0\staticwebassets.pack.json
-E:\PFE\Test\AxiaLivraison\backend\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 E:\PFE\Test\AxiaLivraison\backend\obj\Debug\net8.0\AxiaLivr.54AE7B83.Up2Date
 E:\PFE\Test\AxiaLivraison\backend\obj\Debug\net8.0\AxiaLivraisonAPI.dll
 E:\PFE\Test\AxiaLivraison\backend\obj\Debug\net8.0\refint\AxiaLivraisonAPI.dll
