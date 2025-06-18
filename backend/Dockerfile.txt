@@ -1,22 +1,13 @@
-# Étape 1 : Build
+# Étape 1 : build
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
-WORKDIR /src
-
-# Copier uniquement les fichiers nécessaires pour la restauration (optimise le cache Docker)
-COPY ["AxiaLivraisonAPI.csproj", "."]
-RUN dotnet restore "AxiaLivraisonAPI.csproj"
-
-# Copier le reste et compiler
-COPY . .
-RUN dotnet publish -c Release -o /app --no-restore
-
-# Étape 2 : Runtime
-FROM mcr.microsoft.com/dotnet/aspnet:8.0
 WORKDIR /app
-COPY --from=build /app .
+COPY . .
+RUN dotnet publish -c Release -o out
 
-# Configurer le port dynamique pour Render
-ENV ASPNETCORE_URLS=http://*:$PORT
-EXPOSE $PORT
+# Étape 2 : runtime
+FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS runtime
+WORKDIR /app
+COPY --from=build /app/out .
 
+EXPOSE 80
 ENTRYPOINT ["dotnet", "AxiaLivraisonAPI.dll"]
